@@ -97,18 +97,18 @@ If you want to understand the  **geometric interpretation**  of the dot product 
 
 #### The Dot Product
 
-Q - The dot product between two vectors a=[1,0,3] and b=[−1,1,2]  is:
-A - Do an element-wise multiplication and add the numbers. Hence, a.b = 5
+Qn: The dot product between two vectors a=[1,0,3] and b=[−1,1,2]  is:
+Ans: Do an element-wise multiplication and add the numbers. Hence, a.b = 5
 
 #### Angle Between Vectors
 
-Q - The angle between two vectors a=[1,0] and b=[0,1] is:
-A - You can also visualize that the angle is 90 degrees, though here's how you do it using the dot product. Since the dot product is zero, or cos(θ)=0, it means that the angle is 90 degrees.
+Qn: The angle between two vectors a=[1,0] and b=[0,1] is:
+Ans: You can also visualize that the angle is 90 degrees, though here's how you do it using the dot product. Since the dot product is zero, or cos(θ)=0, it means that the angle is 90 degrees.
 
 #### The Dot Product of a Vector with Itself
 
-Q - Consider a vector a=[a1,a2]. Let's say that we compute the dot product of the vector with itself, i.e. compute a.a. The relationship between a.a and the magnitude of the vector ||a|| is:
-A - a.a = ||a||  ||a||cos(θ) , where theta is the angle between the same vector, which is zero. Thus, ||a||  ||a||cos(θ) = ||a||  ||a||cos(0)=||a||  ||a||=||a||2
+Qn: Consider a vector a=[a1,a2]. Let's say that we compute the dot product of the vector with itself, i.e. compute a.a. The relationship between a.a and the magnitude of the vector ||a|| is:
+Ans: a.a = ||a||  ||a||cos(θ) , where theta is the angle between the same vector, which is zero. Thus, ||a||  ||a||cos(θ) = ||a||  ||a||cos(0)=||a||  ||a||=||a||2
 
 To summarize the important points, you saw that:
 
@@ -151,6 +151,7 @@ Sample Spam Email
 We'll not build a spam classifier just yet, though let's discuss how we can quantify the  **similarity between emails**. For simplicity, let's assume that there are  **only four words**  (the 'keywords') in the vocabulary - 'money', 'hurry', 'meeting' and 'powerpoint'. That is, you ignore all other words in the emails apart from these four. Let's say you have a few hundred emails. You count the  **number of times** each of these four words occur in an email (i.e. count the **frequency of keywords**  per email) and store them in a table. In the table,  **each row represents an email**  and each column represents the frequency of a keyword (four sample emails shown).
 
 ![Table: Frequency of Keywords in Emails](https://i.ibb.co/fFwdJYx/Table-Frequency-of-Keywords-in-Emails.png)
+
 Now, we can represent each email as a  **vector of 4 dimensions-** the first email is the vector [2,1,0,0], the second email is [0,0,1,1] etc. Each element of the vector represents the frequency of a particular word, so if you imagine a  **four-dimensional space**  with four axes (each representing the frequency of a word), each email will be a vector in this 4d space.
 
 Now we can use the usual vector operations on emails. For example, the  **angle between two emails**  will be small if they are similar to each other and large otherwise. The dot product between the first two emails is [2,1,0,0]  . [0,0,1,1] =0, while that between emails 1 and 3 is [2,1,0,0].[1,1,0,0]=3. You know that the angle between two vectors  a,b is (taking the example of emails 1 and 3):
@@ -172,11 +173,11 @@ Computing angles between vectors which represent real-world things (such as emai
 #### Angle Between Emails
 Refer to the frequency table of words in four sample emails above. 
 
-Q - The angle between emails 1 and 2 is (the first two rows):
-A - The dot product is zero, hence the angle should be 90 degrees.
+Qn: The angle between emails 1 and 2 is (the first two rows):
+Ans: The dot product is zero, hence the angle should be 90 degrees.
 
-Q - You want to know whether email number 4 (the last row) is more similar to email 1 or email 3. Choose all the correct options.
-A - 
+Qn: You want to know whether email number 4 (the last row) is more similar to email 1 or email 3. Choose all the correct options.
+Ans: 
 - The angle between emails 1 and 4 is arccos(3/√5*√3) = 39.230.
 - The angle between emails 3 and 4 is arccos(2/√2*√3) = 35.260.
 - Email number 4 is 'more similar' to email 3 than email 1. The angle between emails 1 and 4 is arccos(3\√5*√3)=39.230 while that between 3 and 4 is arccos(2/√2*√3)=35.260 .
@@ -205,27 +206,27 @@ The following questions will help you verify your understanding of these concept
 
 #### Vector Span
 
-Q - What will be the span of the vectors 3→i and −7→i
-A - The two vectors lie on the same line (the x axis). In other words, the vectors are collinear, and thus any linear combination of them will result in a vector lying on the x axis.
+Qn: What will be the span of the vectors 3→i and −7→i
+Ans: The two vectors lie on the same line (the x axis). In other words, the vectors are collinear, and thus any linear combination of them will result in a vector lying on the x axis.
 
 #### 2D Vectors with a Line as Span
 
-Q - Which of the following vectors in 2D space have a single line as its span?
-A - (→i + →j),(−6→i − 6→j)
+Qn: Which of the following vectors in 2D space have a single line as its span?  
+Ans: (→i + →j),(−6→i − 6→j)
 These two vectors are collinear. Hence, their span is a line.
 
 #### Vector Span
 
-Q - What is the span of vectors  →i + →j and 7→i + 7→j
-A - A straight line.
+Qn: What is the span of vectors  →i + →j and 7→i + 7→j  
+Ans: A straight line.
 
-Q - What is the span of the vectors →i, 9→j and 10→k?
-A - These three vectors are linearly independent, i.e. none of the three vectors are collinear with each other. Hence, you can reach all possible points in the 3d space by adding and scaling these vectors.
+Qn: What is the span of the vectors →i, 9→j and 10→k?  
+Ans: These three vectors are linearly independent, i.e. none of the three vectors are collinear with each other. Hence, you can reach all possible points in the 3d space by adding and scaling these vectors.
 
-Q - What is the span of the vectors i, 4i, 8k?
-A - One of the two vectors i, 4i is redundant since both lie on the x-axis (are collinear). Now, if you take the linear combination of i and 8k, you will get all possible vectors lying on the x-z plane, but nothing apart from the x-z plane.
+Qn: What is the span of the vectors i, 4i, 8k?  
+Ans: One of the two vectors i, 4i is redundant since both lie on the x-axis (are collinear). Now, if you take the linear combination of i and 8k, you will get all possible vectors lying on the x-z plane, but nothing apart from the x-z plane.
 
-Q - Consider the vectors u=[2; 3], v=[0; −1] and w=[2; 2] . 
-A - Correct options:
+Qn: Consider the vectors u=[2; 3], v=[0; −1] and w=[2; 2].  
+Ans: Correct options:
 - The span of the vectors is the entire x-y plane. None of the three vectors are collinear, so the span is the entire 2d plane.
 - The span of the vectors **wouldn't change** if you remove any one of the three vectors from the set. None of the three vectors are collinear, so the span is the entire 2d plane.

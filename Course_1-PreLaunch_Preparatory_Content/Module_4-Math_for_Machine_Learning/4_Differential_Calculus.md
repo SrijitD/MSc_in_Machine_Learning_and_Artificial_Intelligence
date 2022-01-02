@@ -18,11 +18,11 @@ Let's consider an example f(x)=x2 and calculate it's derivative at x=4:
 
 #### Derivatives by First Principles
 
-Q - Differentiate the following function f(x)=x3+x2/2+3 and evaluate the differential at x=5. You may already know how to compute the derivative directly, but you may try doing it using first principles for a short algebra warm-up.
-A - 80
+Qn: Differentiate the following function f(x)=x3+x2/2+3 and evaluate the differential at x=5. You may already know how to compute the derivative directly, but you may try doing it using first principles for a short algebra warm-up.  
+Ans: 80
 
-Q - Differentiate the function f(x)=x2−5x+6 and evaluate the differential at x=−1 using first principles.
-A - -7
+Qn: Differentiate the function f(x)=x2−5x+6 and evaluate the differential at x=−1 using first principles.  
+Ans: -7
 
 In practice, computing derivatives by first principles is a tedious process. But once the derivatives of a few simple functions are known, the derivatives of other complex functions can be easily computed using some rules_._
 
@@ -50,18 +50,18 @@ The following example illustrates some of these rules in action:
 
 #### Differentiation
 
-Q - What is the derivative of the function f(x)=x3cos(x)ex ?
-A - ![](https://i.ibb.co/KmjZhGM/Diff-9.png)
+Qn: What is the derivative of the function f(x)=x3cos(x)ex ?  
+Ans: ![](https://i.ibb.co/KmjZhGM/Diff-9.png)
 ![](https://i.ibb.co/Dp33Ycx/Diff-10.png)
 
 #### Differentiation
 
-Q - What is the derivative of the function  f(x)=x3/2+πx2+√49 evaluated at the point x=2 ?
+Qn: What is the derivative of the function  f(x)=x3/2+πx2+√49 evaluated at the point x=2 ?
 ![](https://i.ibb.co/kMZN4FC/Diff-11.png)
 ![](https://i.ibb.co/4KJYKDg/Diff-12.png)
 
-Q - What is the derivative of the function f(x)=sin(x)e^cos(x) at the point ​x=π​​​​​​?
-A - f'(π)=−1/e
+Qn: What is the derivative of the function f(x)=sin(x)e^cos(x) at the point ​x=π​​​​​​?  
+Ans: f'(π)=−1/e
 
 # Partial Derivatives
 
@@ -82,20 +82,20 @@ Similarly, the partial derivative with respect to the height h  equals:
 This rate represents how the volume of a cone (of a constant radius r) changes as you change the height.
 
 #### Partial Differentiation
-Q - ![](https://i.ibb.co/VNKph7w/Diff-15.png)
+Qn: ![](https://i.ibb.co/VNKph7w/Diff-15.png)
 
-![](https://i.ibb.co/9sTf7KZ/Diff-16.png)
-![enter image description here](https://i.ibb.co/Wg8yqt5/Diff-17.png)
+Ans:  
+![](https://i.ibb.co/9sTf7KZ/Diff-16.png)  
+![](https://i.ibb.co/Wg8yqt5/Diff-17.png)
 
-Q - 
-![](https://i.ibb.co/61znQ2z/Diff-18.png)
-A - 
+Qn: 
+![](https://i.ibb.co/61znQ2z/Diff-18.png)  
+
+Ans: 
 ![](https://i.ibb.co/cgGSv25/Diff-19.png)
 
-Q -
-![](https://i.ibb.co/QXDdWqY/Diff-20.png) 
-A - 
-![](https://i.ibb.co/2ZhVbL2/Diff-21.png)
+Qn: ![](https://i.ibb.co/QXDdWqY/Diff-20.png) 
+Ans: ![](https://i.ibb.co/2ZhVbL2/Diff-21.png)
 ![](https://i.ibb.co/QCpvWj3/Diff-22.png)
 
 ## **Total Derivatives**
@@ -126,8 +126,8 @@ Hence, we can say that the volume of the cone is not changing at this time point
 
 #### Total Derivative
 
-Q - Recall the formula for the total derivative, that is, for f(x,y),x=x(t) and y=y(t):
+Qn: Recall the formula for the total derivative, that is, for f(x,y),x=x(t) and y=y(t):
 ![](https://i.ibb.co/3TSShdh/Diff-25.png)
-Given that f(x,y)=π2x2y, x(t)=t2+1 and y(t)=t2−1, calculate the total derivative df/dt.
-A - ![](https://i.ibb.co/10syB3r/Diff-26.png)
+Given that f(x,y)=π2x2y, x(t)=t2+1 and y(t)=t2−1, calculate the total derivative df/dt.  
+Ans: ![](https://i.ibb.co/10syB3r/Diff-26.png)
 ![](https://i.ibb.co/h8d9bmW/Diff-27.png)

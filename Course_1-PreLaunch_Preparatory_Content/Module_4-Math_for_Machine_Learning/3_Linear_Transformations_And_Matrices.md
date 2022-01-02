@@ -98,12 +98,12 @@ Consider the following two matrices:
 
 ![A, B](https://i.ibb.co/6ZKvmvV/Matrix-9.png)
 
-Q - What is the result of the sum of the matrices?
-A - This is the matrix that results from adding all the individual values in equivalent positions of the two matrices.
+Qn: What is the result of the sum of the matrices?
+Ans: This is the matrix that results from adding all the individual values in equivalent positions of the two matrices.
 ![A+B](https://i.ibb.co/G5jbf6H/Matrix-10.png)
 
-Q - What's the result of the product of the two matrices?
-A - For position [i, j], the value will be equal to the dot product of row 'i' of A and column 'j' of B.
+Qn: What's the result of the product of the two matrices?
+Ans: For position [i, j], the value will be equal to the dot product of row 'i' of A and column 'j' of B.
 ![A*B](https://i.ibb.co/P19FFPh/Matrix-11.png)
 
 ## Matrix Operations in Numpy
@@ -152,8 +152,8 @@ In Numpy, you can compute the transpose of a matrix  A using A.T as follows:
 
 Consider the following matrix
 ![X](https://i.ibb.co/Sy21rMP/Matrix-13.png)
-Q - Now, consider the matrix U=(X′* X), where X' is the transpose of X. Which of the following dimensions can a matrix A have, if U*A is known to exist?
-A - Since X' is a 3 x 4 matrix, U = X'X is a 3 x 3 matrix. For UA to exist, then the number of rows in A should be equal to 3.
+Qn: Now, consider the matrix U=(X′* X), where X' is the transpose of X. Which of the following dimensions can a matrix A have, if U*A is known to exist?
+Ans: Since X' is a 3 x 4 matrix, U = X'X is a 3 x 3 matrix. For UA to exist, then the number of rows in A should be equal to 3.
 
 ## **Matrix Inverse**
 
@@ -201,25 +201,26 @@ Now that you know that a matrix represents a linear transformation, let's unders
 
 #### Vector Positions from Describing Rotation
 
-Q - Consider a linear transformation. In this transformation, the coordinate system is rotated counter-clockwise by 90°. What are the new locations of basis vectors ^i and ^j?
-A - Try visualising a 90 degree counter-clockwise rotation, and imagine the points at which ^inew and ^jnew will fall.
+Qn: Consider a linear transformation. In this transformation, the coordinate system is rotated counter-clockwise by 90°. What are the new locations of basis vectors ^i and ^j?
+Ans: Try visualising a 90 degree counter-clockwise rotation, and imagine the points at which ^inew and ^jnew will fall.
 ![enter image description here](https://i.ibb.co/b6XYdNm/Matrix-18.png)
 
 #### Describing Rotation from Vector Positions
 
-Q - Now let's try the reverse of the previous question. Consider the following positions of basis vectors:
+Qn: Now let's try the reverse of the previous question. Consider the following positions of basis vectors:
 ![enter image description here](https://i.ibb.co/5G5fkHj/Matrix-19.png)
 Which of the following rotations do these positions represent?
-A - 135° clockwise.   ^i is at 45° in the 3rd quadrant, and ^j is at 45° in the 4th quadrant. This requires 90° + 45° of rotation.
+Ans: 135° clockwise.   ^i is at 45° in the 3rd quadrant, and ^j is at 45° in the 4th quadrant. This requires 90° + 45° of rotation.
 
 #### Shearing
 
-Q - You saw the transformation "shearing" in the video. Which of these matrices describe shearing?
-A - The →j vector moves to (1,1). Imagine the rectangle described by the basis vectors "sheared", that is, the top of it moves while its base remains the same. 
+Qn: You saw the transformation "shearing" in the video. Which of these matrices describe shearing?  
+Ans: The →j vector moves to (1,1). Imagine the rectangle described by the basis vectors "sheared", that is, the top of it moves while its base remains the same. 
 ![enter image description here](https://i.ibb.co/mRj0fk3/Matrix-20.png)
+
 #### Composite Transformation
 
-We can also apply multiple linear transformations one after the other. For example, you can rotate the space 90 degrees counter-clockwise, then apply 'positive shear', and then rotate it back again 90 degrees clock-wise. Let's say these matrices are called A, B and C respectively.
+Qn: We can also apply multiple linear transformations one after the other. For example, you can rotate the space 90 degrees counter-clockwise, then apply 'positive shear', and then rotate it back again 90 degrees clock-wise. Let's say these matrices are called A, B and C respectively.
 
 Mathematically, if you imagine these transformations being applied to a vector v, then the final vector would be:
 
@@ -228,8 +229,9 @@ vfinal=CBAv. That is, you apply  A to  v to get the matrix Av, then apply B to A
 Now, you can write the matrix product CBA as another matrix L, i.e. L=CBA. L represents the three transformations done one after the other. In other words, the matrix L=CBA is the  **composite transformation matrix**  - doing the three consecutive transformations is equivalent to the single transformation  L.
 
 You already know the matrices corresponding to the operations described above: rotate the space 90 degrees counter-clockwise (A), then 'shear' it in positive direction (B), and then rotate it back again 90 degrees clock-wise (C). What is the composite matrix L? Hint: The shear matrix is:
-![Shear matrix](https://i.ibb.co/tqqqGGJ/Matrix-21.png)
-A - The product
+![Shear matrix](https://i.ibb.co/tqqqGGJ/Matrix-21.png)  
+
+Ans: The product
 ![enter image description here](https://i.ibb.co/Fqm4bKR/Matrix-23.png)
 You can also imagine the transformations in sequence and see that the vectors ^i and ^j end up at (1, -1) and (0, 1) respectively.
 ![enter image description here](https://i.ibb.co/2WSFmTP/Matrix-22.png)
@@ -308,19 +310,18 @@ In 3d space, the determinant represents the magnitude by which the volume, inste
 
 #### Determinants - Intuition
 
-Q - The determinant of a 2 x 2 matrix being zero means that the matrix:
-A - Represents a transformation that squishes the 2d space into a straight line or a single point
+Qn: The determinant of a 2 x 2 matrix being zero means that the matrix:  
+Ans: Represents a transformation that squishes the 2d space into a straight line or a single point
 
-Q - What is the determinant of the matrix
-![A](https://i.ibb.co/KqDH8Tt/Matrix-28.png)
-A - The determinant is given by (4)*(2) − (−1)\*(1) = 9.
+Qn: What is the determinant of the matrix
+![A](https://i.ibb.co/KqDH8Tt/Matrix-28.png)  
+Ans: The determinant is given by (4)*(2) − (−1)\*(1) = 9.
 
-Q - Following is a matrix A:
+Qn: Following is a matrix A:
 ![A](https://i.ibb.co/v1Y4JFt/Matrix-29.png)
 We know that the determinant of this matrix is 0. What are the possible values of 'x'?
-Hint: Apply the formula, get a quadratic equation of the form ax2+bx+c=0 and solve it. This type of determinant computation will appear in the next session on eigenvalues and eigenvectors.
-
-A - The equation x^2−2x−24=0 reduces to (x−6)*(x+4)=0.
+Hint: Apply the formula, get a quadratic equation of the form ax2+bx+c=0 and solve it. This type of determinant computation will appear in the next session on eigenvalues and eigenvectors.  
+Ans: The equation x^2−2x−24=0 reduces to (x−6)*(x+4)=0.
 
 # System of Linear Equations
 
@@ -370,12 +371,11 @@ You will see that the solution x comes out to be [0, 0, −1]. Verify that this 
 
 #### System of Linear Equations
 
-Q - Solve the following system of three equations and three unknowns in Numpy and report the solution:
+Qn: Solve the following system of three equations and three unknowns in Numpy and report the solution:
 2x+6y−z=0
 x+2y−2z=1
-−5x+2z=8
-
-A - [−2, 0.5, −1] 
+−5x+2z=8  
+Ans: [−2, 0.5, −1] 
 
 # Inverse, Rank, Column and Null Space
 
@@ -423,32 +423,32 @@ is a straight line. Thus, rank is equal to the number of dimensions in the colum
 
 #### Inverse of a Matrix
 
-Q - You now understand what the matrix inverse represents intuitively. Without doing computations by hand (or using any programming language), report the inverse of the following matrix:
-![A](https://i.ibb.co/ZSWVt3X/Matrix-33.png)
-A - First, imagine the transformation represented by the matrix A, then imagine the reverse transformation. A represents an anti-clockwise rotation by 90 degrees, so A−1 should represent a clockwise 90 degrees transformation.
+Qn: You now understand what the matrix inverse represents intuitively. Without doing computations by hand (or using any programming language), report the inverse of the following matrix:
+![A](https://i.ibb.co/ZSWVt3X/Matrix-33.png)  
+Ans: First, imagine the transformation represented by the matrix A, then imagine the reverse transformation. A represents an anti-clockwise rotation by 90 degrees, so A−1 should represent a clockwise 90 degrees transformation.
 ![A'](https://i.ibb.co/dWnFhwm/Matrix-34.png)
 #### The Identity Transformation
 
-Q - Which of the following matrices represents an identity transformation, i.e. a transformation that 'does nothing'?
-A - The identity transformation does not alter the locations of the basis vectors, so ^i and ^j stay at (1, 0) and (0, 1) respectively.
+Qn: Which of the following matrices represents an identity transformation, i.e. a transformation that 'does nothing'?
+Ans: The identity transformation does not alter the locations of the basis vectors, so ^i and ^j stay at (1, 0) and (0, 1) respectively.
 ![I](https://i.ibb.co/9vPpDQV/Matrix-35.png)
 #### Rank of a Matrix
 
-Q - Choose all the correct options. The rank of a 3 x 3 matrix which squishes the 3d space onto:
-A - Rank of a matrix is the number of dimensions of the 'output space', i.e. space onto which the original space is transformed to. A plane is two dimensional and a straight line is one dimensional.
+Qn: Choose all the correct options. The rank of a 3 x 3 matrix which squishes the 3d space onto:  
+Ans: Rank of a matrix is the number of dimensions of the 'output space', i.e. space onto which the original space is transformed to. A plane is two dimensional and a straight line is one dimensional.
 - a straight line is 1
 - a plane is 2
 
 #### Computing the Rank in Numpy
 
-Q - In a previous example, you saw that the following matrix did not have an inverse. This is because the matrix represents a transformation which squishes the 2d space onto a single straight line.
+Qn: In a previous example, you saw that the following matrix did not have an inverse. This is because the matrix represents a transformation which squishes the 2d space onto a single straight line.
 ![A](https://i.ibb.co/ZBSfKM2/Matrix-36.png)
-Compute the rank of the matrix in Numpy using the function np.linalg.matrix_rank().
-A - Rank = 1. Use np.linalg.matrix_rank(A)
+Compute the rank of the matrix in Numpy using the function np.linalg.matrix_rank().  
+Ans: Rank = 1. Use np.linalg.matrix_rank(A)
 
 #### Solving a System of Equations
 
-Q - Consider the following system of three equations and three variables:
+Qn: Consider the following system of three equations and three variables:
 2x−y−z=1
 2x−y+z=0
 4x−2y−3z=−1
@@ -462,13 +462,11 @@ Try solving it in Numpy. You can use the following code to create the arrays:
     
     b = np.array([1, 0, -1])
 
-The system of equations (hint: look at the determinant of the matrix A using np.linalg.det(A):
+The system of equations (hint: look at the determinant of the matrix A using np.linalg.det(A):  
+Ans: You'll see that the determinant (and thus the inverse) does not exist. This indicates that the system does not have a unique solution.
 
-A - You'll see that the determinant (and thus the inverse) does not exist. This indicates that the system does not have a unique solution.
-
-Q - What is the reason this system does not have a solution? You can answer that by computing the rank of the matrix A using np.linalg.matrix_rank(A).
-
-A - The matrix A squishes the 3d space onto a plane, and the vector b does not lie on that plane. The rank of the matrix A comes out to be 2, which implies that the transformation A squishes the 3d space onto a plane (since a plane has two dimensions). It happens that the vector b does not lie on that plane, and thus there is no vector x which satisfies this equation.
+Qn: What is the reason this system does not have a solution? You can answer that by computing the rank of the matrix A using np.linalg.matrix_rank(A).  
+Ans: The matrix A squishes the 3d space onto a plane, and the vector b does not lie on that plane. The rank of the matrix A comes out to be 2, which implies that the transformation A squishes the 3d space onto a plane (since a plane has two dimensions). It happens that the vector b does not lie on that plane, and thus there is no vector x which satisfies this equation.
 
 # Least Squares Approximation
 
