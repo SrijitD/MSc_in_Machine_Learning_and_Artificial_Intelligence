@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2 - Data Ingestion</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><h1 id="data-ingestion">Data Ingestion</h1>
+<p>Data ingestion can be defined as the process of absorbing data for immediate use or storage. It is a bridge to transfer the data generated at a particular source to a destination for storage.</p>
+<p>Let’s understand this in the video ahead:</p>
+<p><strong>VIDEO</strong></p>
+<p>Some of the key aspects that need to be considered during the data ingestion phase include:</p>
+<ol>
+<li>Type of data</li>
+<li>Processing requirements of data</li>
+<li>Storage</li>
+</ol>
+<p>Based on the structure of the data, it can be classified into three types:</p>
+<ol>
+<li><strong>Structured data</strong>: Data is organised and can be stored in SQL databases, i.e., in tables with rows and columns. Therefore, it has the advantage of being  <strong>entered, stored, queried, and analysed</strong>  efficiently using Structured Query Language (SQL).
+<ul>
+<li>Examples include Aadhaar data, financial data and the metadata of files.</li>
+</ul>
+</li>
+<li><strong>Unstructured data</strong>: We can naively describe unstructured data as a complement to structured data, i.e., it cannot be easily organised and stored in the form of tables (columns and rows).
+<ul>
+<li>Examples of unstructured data include images, audio, video and chat messages, which are usually generated and consumed by humans. It’s not surprising that the vast majority (~80%) of the data being created in today’s world is unstructured.</li>
+</ul>
+</li>
+<li><strong>Semi-structured data</strong>: There is no predefined schema for semi-structured data. In terms of readability, it sits between structured and unstructured data.
+<ul>
+<li>XML and JSON files are examples of semi-structured data.</li>
+</ul>
+</li>
+</ol>
+<p>Emails are also examples of semi-structured data since they contain fields such as  <strong>‘From’, ’To’, ’Subject’, and ’Body’</strong>. Emails have internal tags and markings that identify separate data elements; this enables information grouping and the creation of hierarchies among the elements. However, this schema does not constrain the data as in an RDBMS, e.g., the ’Subject’ and ’Body’ fields may contain the text of any size.</p>
+<p>Once we know the type of data being handled, the next step would be to identify the processing requirements of the data. Ingestion tools and storage components vary based on these processing requirements. Different types of processing include:</p>
+<ol>
+<li><strong>Batch processing</strong>: In batch processing, all the data is collected and stored offline. Then, code is run on the complete dataset to generate valuable insights. Usually, batch processing requires a long time to finish but also provides more accurate results.</li>
+<li><strong>Stream processing</strong>: Unlike batch-processing systems, stream-processing systems handle all incoming data instantaneously. Moreover, systems using stream processing handle data that is usually of the order of a few KBs. The results produced are available almost instantly after the data is received.</li>
+<li><strong>Micro-batch processing</strong>: This is very similar to batch processing, except for the fact that batches are tiny. In micro-batch processing, the batch size generally depends on a few events gathered over a short time span, say a few milliseconds.</li>
+</ol>
+<p>Batch processing is generally used for complex analytics, whereas stream processing is used to gain real-time insights.</p>
+<p>Based on the above factors, the storage component for the collected data is decided:</p>
+<ol>
+<li>If the data is well structured, a traditional database can be used.</li>
+<li>If the data is unstructured, then NoSQL databases are necessary to store it.</li>
+</ol>
+<p>Amazon provides multiple storage options such as  <strong>Amazon DynamoDB, Amazon RDS, Amazon Redshift and Amazon Cache</strong>. The choice of these services depends on the type of data you are dealing with, the latency you require, budget and various other aspects.<br>
+The image below best summarizes the concepts learned in this segment. (Please hover on the image for the zoom-in option)</p>
+<p><img src="https://images.upgrad.com/4af8eed6-489b-460a-8fe4-86174fe45055-Data_Ingestion.png" alt="Data Ingestion"></p>
+<p>Now answer the following questions to test your understanding:</p>
+<h4 id="structured-and-semi-structured">Structured and Semi-structured</h4>
+<p>Qn: Pick the reason that justifies why an email is a form of semi-structured data.</p>
+<ul>
+<li>It has metadata justifying the significance of each section (To, CC, BCC, Subject, etc.)</li>
+<li>It can be stored easily in an RDBMS</li>
+<li>It always includes structured content</li>
+<li>It follows a strict format and has to have data in all its sections</li>
+</ul>
+<p>Ans: An email has metadata that gives it a well-defined structure.</p>
+<h4 id="identifying-the-type-of-data">Identifying the Type of Data</h4>
+<p>Qn: Match the following:<br>
+Data:</p>
+<ol>
+<li>JSON data</li>
+<li>A restaurant menu</li>
+<li>A newspaper article</li>
+<li><a href="https://blog.hubspot.com/marketing/form-examples">A website form</a></li>
+</ol>
+<p>Type:</p>
+<ul>
+<li>A - Structured</li>
+<li>B - Unstructured</li>
+<li>C - Semi-structured</li>
+</ul>
+<p>Options:</p>
+<ul>
+<li>1:A, 2:A, 3:B, 4:C</li>
+<li>1:C, 2:A, 3:B, 4:A</li>
+<li>1:C, 2:A, 3:B, 4:C</li>
+<li>1: C, 2:B, 3:B, 4:C</li>
+</ul>
+<p>Ans:</p>
+<ol>
+<li>JSON data is semi-structured because this data is in key-value pairs.</li>
+<li>A restaurant menu is structured because this data only has three columns: serial number, item and price.</li>
+<li>A newspaper article is unstructured because it is pure text.</li>
+<li>A website form is semi-structured because even though it has a structure, the data entered may be unstructured.</li>
+</ol>
+<blockquote>
+<p>Written with <a href="https://stackedit.io/">StackEdit</a>.</p>
+</blockquote>
+</div>
+</body>
+
+</html>

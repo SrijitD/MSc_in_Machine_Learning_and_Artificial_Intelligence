@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>6 - Model Monitoring</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><h1 id="model-monitoring">Model Monitoring</h1>
+<p>Once you have developed the model and successfully deployed it, the last step would be to continuously track its performance. This is done in the model monitoring phase.</p>
+<p>Let’s look at the key aspects of model monitoring in the next video:</p>
+<p><strong>VIDEO</strong></p>
+<p>Model monitoring plays an essential part in making sure that the model’s performance doesn’t deteriorate over time. Also, it helps identify some of the bugs in the system faster. Unexpected things can turn up in production systems, so it is crucial to detect anomalies as early as possible and take corrective action. It gives business users an overview of the metrics that are impacted by the system.</p>
+<p>Steps involved in model monitoring are:</p>
+<ol>
+<li><strong>Data logging</strong>: All the requests and responses are logged in corresponding data storage systems. This helps in debugging issues as one can easily replicate the issue in the dev environment.</li>
+<li><strong>Reporting</strong>: Once you have defined the metrics, the next step is to provide a UI or dashboard for all stakeholders to access and obtain timely updates. Different visualization tools like Tableau, QlikView and PowerBI can be used to design a dashboard that can display all the above metrics.</li>
+<li><strong>Alerting</strong>: An important step is setting up alerts to notify stakeholders about problems in the system. Alerts are a set of rules created using a combination of metrics that are critical and indicate problems with the system.</li>
+<li><strong>Resolution</strong>: Once the problem is detected, the next course of action would be:
+<ul>
+<li>Having a “hot-fix” layer, which enables the system to provide appropriate output by bypassing the ML model.</li>
+<li>Re-training the model.</li>
+</ul>
+</li>
+</ol>
+<p>The image below best summarizes the concepts learned in this segment. (Please hover on the image for the zoom-in option)</p>
+<p><img src="https://images.upgrad.com/bd3e260b-dca4-4528-98b5-c6673c68e80c-Model_Monitoring.png" alt=""></p>
+<p>Now answer the following questions:</p>
+<h4 id="model-monitoring-1">Model Monitoring</h4>
+<p>Qn: Which metrics should be monitored after an ML model is put in production?</p>
+<ul>
+<li>CPU utilization</li>
+<li>Latency</li>
+<li>Throughput</li>
+<li>All of the above.</li>
+</ul>
+<p>Ans: All the above metrics need to be monitored after an ML model is put into production.</p>
+<blockquote>
+<p>Written with <a href="https://stackedit.io/">StackEdit</a>.</p>
+</blockquote>
+</div>
+</body>
+
+</html>

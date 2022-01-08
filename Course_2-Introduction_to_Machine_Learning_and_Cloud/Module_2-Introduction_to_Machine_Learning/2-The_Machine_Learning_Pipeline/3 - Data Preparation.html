@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3 - Data Preparation</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><h1 id="data-preparation">Data Preparation</h1>
+<p>Once you have the necessary data stored at a particular location, the next step is to get the data into the right format. Put simply, let’s say you are cooking a dish:</p>
+<ol>
+<li>The first step is obtaining all the raw materials necessary for the dish</li>
+<li>The next step is preparing the raw materials before making the dish.</li>
+</ol>
+<p>In the same way that the final flavour of the dish depends on how you cut and slice your ingredients, preparing your data preparation is a critical step of building a machine learning solution.</p>
+<p>Let’s hear about this phase from our industry expert :</p>
+<p><strong>VIDEO</strong></p>
+<p>Data preparation is the process of organising or structuring an unprocessed dataset so that it can be used for analysis. The first and foremost step in data preparation includes exploring the dataset.</p>
+<p>During the exploratory phase, two aspects are stressed upon:</p>
+<ol>
+<li><strong>Data consistency</strong>: This involves checking whether the data is consistent throughout the dataset or not. For example, a customer’s transaction data collected across different countries need to follow a specific format before being able to be analysed for insights.</li>
+<li><strong>Data Integrity</strong>: You need to check whether the features in the dataset have permissible values or not. For example, let’s say the age column has values higher than 200, which means there is definitely a particular discrepancy in the dataset. So, you are expected to correct/modify it to make it usable for analysis.</li>
+</ol>
+<p>Once these checks are performed, and specific issues in the dataset such as missing values, outliers and incorrect values are identified, the next step is to rectify them. You may have learnt some of these steps in the earlier modules. Let’s have a quick summary of those steps in the video below:</p>
+<p><strong>VIDEO</strong></p>
+<p>Data cleaning involves handling missing values and outlier values in the dataset. First, you check whether the missing values are at random places across the entire dataset or limited to a part of the dataset with specific properties. Once you have identified this, you may simply discard that particular part of the dataset or choose any of the following methods to impute those values:</p>
+<ol>
+<li>Mean/median/mode imputation</li>
+<li>Random sample imputation</li>
+<li>Replacement by an arbitrary value</li>
+<li>Missing value indicator</li>
+<li>Multivariate imputation</li>
+</ol>
+<p>Once the necessary data cleaning is performed, the next step would be to create new features which best represent the data. This process is known as feature engineering. Let’s hear from the industry expert more about this.</p>
+<p><strong>VIDEO</strong></p>
+<p>Feature engineering is the process of using domain knowledge of the data to create features that can increase the predictive power of machine learning algorithms. For example, consider retail store data that has columns for customer name, product, amount and time of transaction. From this dataset, you can create new features, such as:</p>
+<ul>
+<li><strong>Recency</strong>: Measuring how recently the customer visited the store or made a purchase</li>
+<li><strong>Frequency</strong>: Measuring the frequency of the transactions made by the customers</li>
+<li><strong>Monetary</strong>: Measuring how much the customer spent on his/her purchases</li>
+</ul>
+<p>A few techniques to create new features include</p>
+<ol>
+<li>Indicator variables</li>
+<li>Interaction features</li>
+<li>Binning: a new feature representing a range of values</li>
+<li>Variable transformation: the log of a variable</li>
+<li>Custom features: to convert text data to numerical data
+<ul>
+<li>Word2Vec</li>
+<li>TF-IDF</li>
+<li>Count vectorizer</li>
+<li>n-grams</li>
+</ul>
+</li>
+</ol>
+<p>The image below best summarises the concepts learned in this segment. (Please hover on the image for the zoom-in option)</p>
+<p><img src="https://images.upgrad.com/b036268c-f2dd-44d8-9ac6-d1681fec4723-Data_Preparation.png" alt="Data Preparation"></p>
+<p>Now answer the following questions:</p>
+<h4 id="data-cleaning">Data Cleaning</h4>
+<p>Qn: It is always appropriate to replace a missing value in the data with a measure of central tendency (mean/median/mode) of that corresponding attribute. True or false?<br>
+Ans: False - Replacing a missing value with a measure of central tendency is one of the most common approaches to handle missing values. It isn’t always appropriate because there might be a situation where it is necessary to perform other forms of imputation as well.</p>
+<p>Qn: #### Data Understanding</p>
+<p>A critical part of data understanding is exploring the data by plotting charts. What type of insights can you expect to draw through plots? (Select all that apply.)</p>
+<ul>
+<li>Spotting outlier values</li>
+<li>Observing trends of variables (e.g. increasing/decreasing).</li>
+<li>Observing the correlation between variables</li>
+<li>Building predictive models</li>
+</ul>
+<p>Ans:</p>
+<ul>
+<li>Graphs such as scatter plots and box plots can show you outlier values and the distribution of data.</li>
+<li>Simple scatter plots or line plots can help you figure out trends, something you may not figure out by looking at rows of data.</li>
+<li>You can plot multiple variables against each other or against another variable and see how both the variables are related.</li>
+</ul>
+<p><strong>Additional Links</strong></p>
+<ul>
+<li><a href="https://towardsdatascience.com/ecom-data-cooler-series-what-is-rfm-segmentation-8c4d6c2c0fc0">RFM Segmentation</a></li>
+</ul>
+<blockquote>
+<p>Written with <a href="https://stackedit.io/">StackEdit</a>.</p>
+</blockquote>
+</div>
+</body>
+
+</html>
