@@ -27,7 +27,7 @@ Learn to deploy Machine Learning models using Cloud computing with an M.Sc. Degr
     - [Module 2 - Introduction to Machine Learning](Course_2-Introduction_to_Machine_Learning_and_Cloud/Module_2-Introduction_to_Machine_Learning/)
         - [1 - Understanding Machine Learning](Course_2-Introduction_to_Machine_Learning_and_Cloud/Module_2-Introduction_to_Machine_Learning/1-Understanding_Machine_Learning)
         - [2 - The Machine Learning Pipeline](Course_2-Introduction_to_Machine_Learning_and_Cloud/Module_2-Introduction_to_Machine_Learning/2-The_Machine_Learning_Pipeline)
-        - [3 - The Apriori Algorithm : Theory](Course_2-Introduction_to_Machine_Learning_and_Cloud/Module_2-Introduction_to_Machine_Learning/3-The_Apriori_Algorithm:Theory)
+        - [3 - The Apriori Algorithm : Theory](Course_2-Introduction_to_Machine_Learning_and_Cloud/Module_2-Introduction_to_Machine_Learning/3-The_Apriori_Algorithm_Theory)
 - [Docs](Docs)
 
 #### Partner Universities
