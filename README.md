@@ -34,4 +34,4 @@ Learn to deploy Machine Learning models using Cloud computing with an M.Sc. Degr
 
 ![](https://i.ibb.co/VTRRkkc/IIT-Madras-Logo.png)
 
-![](https://i.ibb.co/nQKMhH6/LJMU.png)
+![](https://i.ibb.co/09WfhTk/LJMU.png)
