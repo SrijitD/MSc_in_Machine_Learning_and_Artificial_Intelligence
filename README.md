@@ -24,10 +24,10 @@ Learn to deploy Machine Learning models using Cloud computing with an M.Sc. Degr
     - [Module 4 - Math for Machine Learning](Course_1-PreLaunch_Preparatory_Content/Module_4-Math_for_Machine_Learning)
     - [Uber Case Study](Course_1-PreLaunch_Preparatory_Content/Uber_Case_Study)
 - [Course 2 - Introduction to Machine Learning and Cloud](Course_2-Introduction_to_Machine_Learning_and_Cloud)
-    - [Module 2 - Introduction to Machine Learning](Course_2-Introduction_to_Machine_Learning_and_Cloud/Module_2-Introduction_to_Machine_Learning/)
-        - [1 - Understanding Machine Learning](Course_2-Introduction_to_Machine_Learning_and_Cloud/Module_2-Introduction_to_Machine_Learning/1-Understanding_Machine_Learning)
-        - [2 - The Machine Learning Pipeline](Course_2-Introduction_to_Machine_Learning_and_Cloud/Module_2-Introduction_to_Machine_Learning/2-The_Machine_Learning_Pipeline)
-        - [3 - The Apriori Algorithm : Theory](Course_2-Introduction_to_Machine_Learning_and_Cloud/Module_2-Introduction_to_Machine_Learning/3-The_Apriori_Algorithm_Theory)
+    - [Module 2 - Introduction to Machine Learning](Course_2-Introduction_to_Machine_Learning_and_Cloud/Module_3-Introduction_to_Machine_Learning/)
+        - [1 - Understanding Machine Learning](Course_2-Introduction_to_Machine_Learning_and_Cloud/Module_3-Introduction_to_Machine_Learning/1-Understanding_Machine_Learning)
+        - [2 - The Machine Learning Pipeline](Course_2-Introduction_to_Machine_Learning_and_Cloud/Module_3-Introduction_to_Machine_Learning/2-The_Machine_Learning_Pipeline)
+        - [3 - The Apriori Algorithm : Theory](Course_2-Introduction_to_Machine_Learning_and_Cloud/Module_3-Introduction_to_Machine_Learning/3-The_Apriori_Algorithm_Theory)
 - [Docs](Docs)
 
 #### Partner Universities
