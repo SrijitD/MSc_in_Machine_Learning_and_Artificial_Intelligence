@@ -61,11 +61,11 @@
 <p>Based on the Apriori principle, we can write the following inequality:<br>
 <strong>support({a}) ≥ support({a, b}) ≥ support({a, b, c})</strong></p>
 <p>Hence, the following equation must hold true:</p>
-<p><img src="https://images.upgrad.com/d2273214-b358-42b7-bd49-17794d8cb746-Capture14.PNG" alt=""></p>
-<p>If you notice carefully, each term is the confidence of a rule generated from the frequent set {a, b, c, d}. Thus we have,</p>
-<p><img src="https://images.upgrad.com/5eb90ef5-b82f-46cf-bd45-cf5b24ba3ecc-Capture15.PNG" alt=""></p>
+<p><img src="https://i.ibb.co/tZ2SqXH/Support-Relationship-Between-Different-Order-Itemsets.png" alt="Support_Relationship_Between_Different_Order_Itemsets"></p>
+<p>If you notice carefully, each term is the confidence of a rule generated from the frequent set {a, b, c, d}. Thus, we have,</p>
+<p><img src="https://i.ibb.co/zxSYqwk/Confidence-Relationship-Between-Different-Order-Itemsets-1.png" alt="Confidence_Relationship_Between_Different_Order_Itemsets_1"></p>
 <p>or</p>
-<p><img src="https://images.upgrad.com/fd18f8ce-55d9-44b1-8b1e-107b65b76e67-Capture16.PNG" alt=""></p>
+<p><img src="https://i.ibb.co/nPFPrmC/Confidence-Relationship-Between-Different-Order-Itemsets-2.png" alt="Confidence_Relationship_Between_Different_Order_Itemsets_2"></p>
 <p>From the above inequality, we can infer that if the rule, {a, b, c} —&gt; {d} is below the confidence threshold, then all the rules obtained from the same frequent item set but having consequents that are a superset of {d} (like {a, d}, {b, c, d}, {c, d}, {a, b, d}) will also be below the confidence threshold.</p>
 </li>
 </ul>

@@ -37,8 +37,8 @@
 </ul>
 </li>
 </ul>
-<p><strong>Note</strong>: All items within an itemset must be arranged in a particular order and this order must be maintained while creating higher-order itemsets. If the order is not preserved, then redundant itemsets will be generated, e.g., you may end up generating all the permutations of items within an itemset such as {A, B, C}, {A, C, B}, {B, C, A} and {C, B, A}. These are all the same itemset.</p>
-<p><img src="https://images.upgrad.com/9dcf3f9f-b6d8-4d53-b548-bf35264e174b-Capture5.png" alt=""></p>
+<p><strong>Note</strong>: All items within an itemset must be arranged in a particular order, and this order must be maintained while creating higher-order itemsets. If the order is not preserved, then redundant itemsets will be generated, e.g., you may end up generating all the permutations of items within an itemset such as {A, B, C}, {A, C, B}, {B, C, A} and {C, B, A}. These are all the same itemset.</p>
+<p><img src="https://i.ibb.co/R7zpYTP/Generating-High-Order-Itemset.png" alt="Generating_High_Order_Itemset"></p>
 <p><strong>Note</strong>: At 5:45, the k input for the itemSetGenerator will be 4 and not 3. This is because, k represents the order of the itemset you want to generate. Thus, in the example given for {a, b, d} and {a, b, c}, the value of k will be 4 since we want to generate 4-itemsets. Using k = 4, when we apply the merging condition, we pick two itemsets and check if their itemsetk[:k-2] are equal, i.e. the first two elements of these two itemsets should match.</p>
 <p><strong>VIDEO</strong></p>
 <h1 id="creating-higher-order-itemsets">Creating Higher order Itemsets</h1>
@@ -62,7 +62,7 @@
 <p>Play Video</p>
 <p>3221820</p>
 <p>In the frquentItemsetGeneration function, Sajan has used the previously created functions to return the support values of all itemsets and frequent itemsets. The flow diagram used for generating the frequent itemsets is given below.</p>
-<p><img src="https://images.upgrad.com/f0750846-7975-4abe-927f-65fed110c5e9-Capture6.png" alt=""></p>
+<p><img src="https://i.ibb.co/bQ7Yjh1/Frequent-Itemset-Generation.png" alt="Frequent_Itemset_Generation"></p>
 <ul>
 <li>
 <p>The <strong>createItem function</strong>  returns all the  <strong>distinct 1-item sets as a frozen set</strong>  so that the order is preserved while generating higher-item sets.</p>

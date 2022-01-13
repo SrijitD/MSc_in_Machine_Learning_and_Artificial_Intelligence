@@ -11,7 +11,7 @@
 <body class="stackedit">
   <div class="stackedit__html"><h1 id="the-apriori-algorithm">The Apriori Algorithm</h1>
 <p>In this segment, you will have a quick walk-through of the steps involved in building the algorithm. Consider a store transaction database that consists of all the transactions made by each customer. Let’s assume that there are only four items in the store {A, B, C, D} and each transaction consists of at least one of the four items. A visual representation of all the possible transaction is as shown below.</p>
-<p><img src="https://images.upgrad.com/7069a6c1-9248-44f9-97d1-7085461a5edc-Apriori%20Algorithm.jpg" alt="Apriori Algorithm"></p>
+<p><img src="https://i.ibb.co/J7QjCDp/Apriori-Algorithm.jpg" alt="Apriori_Algorithm"></p>
 <p>To generate all the frequent itemsets from a list of transactions you use the Apriori principle.</p>
 <p><strong>The Apriori Principle:</strong></p>
 <ul>
@@ -22,7 +22,7 @@
 <li>
 <p>Similarly, if an itemset is found to be infrequent, all of its consequent higher-order itemsets will be infrequent.<br>
 For example, if the itemset {bread, orange} is found to be infrequent (support value is less than the support threshold), then all itemsets containing three or more items having both bread and orange will automatically become infrequent.</p>
-<p><img src="https://images.upgrad.com/6a04cf06-42c6-4b8f-bba1-114fdbc6ac71-Apriori%20Algorithm%202.jpg" alt=""></p>
+<p><img src="https://i.ibb.co/fNXyC1W/Apriori-Algorithm-Explanation.jpg" alt="Apriori_Algorithm_Explanation"></p>
 </li>
 </ul>
 <p>In the next video, let’s understand the two major steps involved in building the algorithm.</p>
@@ -64,7 +64,7 @@ For example, if the itemset {bread, orange} is found to be infrequent (support v
 <p>For each rule, we check the corresponding confidence value and return the rule only if its  <strong>confidence is above the minimum confidence level</strong>.</p>
 </li>
 <li>
-<p>In order to  <strong>avoid generating redundant rules, we utilise confidence-based pruning</strong>. Using this, we  <strong>eliminate the generation of higher-order rules</strong>  if their corresponding lower-order rules are infrequent. This portion will be explained in more detail in the code demonstration of rule generation.</p>
+<p>In order to  <strong>avoid generating redundant rules, we utilize confidence-based pruning</strong>. Using this, we  <strong>eliminate the generation of higher-order rules</strong>  if their corresponding lower-order rules are infrequent. This portion will be explained in more detail in the code demonstration of rule generation.</p>
 </li>
 </ul>
 <p>In the next session, we will begin the implementation of the algorithm in Python. A summary of all the components associated with Apriori and the lecture notes have been provided in the next session.</p>
