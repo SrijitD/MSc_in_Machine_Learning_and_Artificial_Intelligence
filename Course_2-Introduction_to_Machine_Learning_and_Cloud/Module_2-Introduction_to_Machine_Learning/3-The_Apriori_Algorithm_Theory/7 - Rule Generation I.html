@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>7 - Rule Generation I</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><h1 id="rule-generation---i">Rule Generation - I</h1>
+<p>In this segment, you will implement the second part of the algorithm, i.e., rule generation. This part is divided into the following three components:</p>
+<ul>
+<li>
+<p><strong>Calculating the confidence for a rule</strong>  (the calcConf function)</p>
+</li>
+<li>
+<p><strong>Generating rules for higher-order item sets</strong>  (the ruleFromConseq function)</p>
+</li>
+<li>
+<p>Compiling the previous functions to  <strong>generate all the rules</strong>  (the generateRules function)</p>
+</li>
+</ul>
+<p>In order to explain this implementation, Sajan has demonstrated part 1 (the calcConf function) and part 3 (the generateRules function) first and then part 2(the ruleFromConseq function).</p>
+<p>Let us refresh our memory on the properties of rules. Given the rule {A —&gt; B, C}, A is the antecedent and (B, C) is the consequent. In mathematical terms, confidence is defined as:</p>
+<p><strong>Confidence = support(A, B, C) / support(A)</strong></p>
+<p>Notice that {A, B, C} is the frequent itemset and A is the antecedent. Hence, in the set format, we can write the formula as:</p>
+<p><strong>Confidence = support(Frequent Item Set) / support(Frequent Item Set - Consequent)</strong></p>
+<p>You will get more clarity once you watch the next video.</p>
+<p><strong>VIDEO</strong></p>
+<pre><code>def calcConf(freqSet, H, supportDict, bigRuleList, minConf):
+
+    prunedH = []
+    
+    for conseq in H:
+        conf = supportDict[freqSet]/ supportDict[freqSet-conseq]
+        if conf &gt;= minConf:
+            bigRuleList.append((freqSet-conseq, conseq, conf))
+            print(freqSet-conseq, '-&gt;', conseq, 'confidence: ', conf )
+            prunedH.append(conseq)
+    
+    return prunedH
+</code></pre>
+<p>H is the list of possible rule consequents extracted from an item set. If the rule satisfies the confidence threshold, then the consequent is stored within prunedH. This principle follows confidence-based pruning. Let us understand this concept in detail.</p>
+<p><strong>Confidence-based pruning</strong></p>
+<ul>
+<li>
+<p>Let’s generate rules for the itemset {a, b, c, d}.</p>
+</li>
+<li>
+<p>If the confidence for {b, c, d} —&gt; {a} is less than the threshold. then we can eliminate all the rules in which the consequent consists of higher-order itemsets containing {a}.</p>
+</li>
+<li>
+<p>Hence, we can eliminate {b, d} → {a, c}, {c, d} → {a, b}, {b, c} → {a, d}, {d} → {a, b, c}.</p>
+</li>
+<li>
+<p>Let us understand this concept from the mathematical perspective (This part is an optional reading):</p>
+<ul>
+<li>
+<p>Based on the Apriori principle, we can write the following inequality:<br>
+<strong>support({a}) ≥ support({a, b}) ≥ support({a, b, c})</strong></p>
+<p>Hence, the following equation must hold true:</p>
+<p><img src="https://i.ibb.co/tZ2SqXH/Support-Relationship-Between-Different-Order-Itemsets.png" alt="Support_Relationship_Between_Different_Order_Itemsets"></p>
+<p>If you notice carefully, each term is the confidence of a rule generated from the frequent set {a, b, c, d}. Thus, we have,</p>
+<p><img src="https://i.ibb.co/zxSYqwk/Confidence-Relationship-Between-Different-Order-Itemsets-1.png" alt="Confidence_Relationship_Between_Different_Order_Itemsets_1"></p>
+<p>or</p>
+<p><img src="https://i.ibb.co/nPFPrmC/Confidence-Relationship-Between-Different-Order-Itemsets-2.png" alt="Confidence_Relationship_Between_Different_Order_Itemsets_2"></p>
+<p>From the above inequality, we can infer that if the rule, {a, b, c} —&gt; {d} is below the confidence threshold, then all the rules obtained from the same frequent item set but having consequents that are a superset of {d} (like {a, d}, {b, c, d}, {c, d}, {a, b, d}) will also be below the confidence threshold.</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>We will continue this in the next segment.</p>
+<blockquote>
+<p>Written with <a href="https://stackedit.io/">StackEdit</a>.</p>
+</blockquote>
+</div>
+</body>
+
+</html>

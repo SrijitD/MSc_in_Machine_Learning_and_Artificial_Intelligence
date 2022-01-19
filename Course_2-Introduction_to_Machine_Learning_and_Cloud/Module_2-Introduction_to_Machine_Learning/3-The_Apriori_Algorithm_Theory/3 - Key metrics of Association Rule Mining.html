@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3 - Key metrics of Association Rule Mining</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><h1 id="key-metrics-of-association-rule-mining">Key metrics of Association Rule Mining</h1>
+<p>In this segment, we will revise all the key metrics that are used for generating association rules.</p>
+<p><strong>VIDEO</strong></p>
+<p>The key metrics for generating association rules are as follows:</p>
+<ul>
+<li>
+<p><strong>Support</strong>:</p>
+<p>The support denotes the frequency of occurrence of an item.<br>
+Support = (Number of transaction involving the itemset)/(Number of transactions)</p>
+</li>
+<li>
+<p><strong>Confidence</strong>:</p>
+<p>This denotes the likelihood of occurrence of an event, Y given another event, X has occurred. This is similar to writing, the probability of Y given X or P(Y/X) where P(event) denotes the probability of the event. Using conditional probability, we can expand this expression to  <strong>P(Y/X) = P(X, Y)/ P(X)</strong>. In context of association analysis, this conditional probability is referred to as confidence.</p>
+<p>Suppose we want to find the confidence of the rule given below:</p>
+<p><strong>{A, B} —&gt; {C}</strong></p>
+<p>Using probability, it can be expressed as:</p>
+<p><strong>Confidence = P({C}/ {A, B}) = P({A, B, C})/ P({A, B})</strong></p>
+<p>In the context of association analysis, we can use the formula:</p>
+<p><strong>Confidence = Support(A, B, C)/ Support(A, B)</strong></p>
+</li>
+</ul>
+<p>In the above rule, A, B and C are all different items in a data set and {A, B} is an itemset., i.e., a set consisting of two items, A and B.</p>
+<p><strong>All association rule mining algorithms can be broken down into two subparts:</strong></p>
+<ol>
+<li>
+<p><strong>Frequent Itemset Generation</strong></p>
+</li>
+<li>
+<p><strong>Rule Generation</strong></p>
+</li>
+</ol>
+<p><strong>Frequent Itemset Generation</strong></p>
+<ul>
+<li>
+<p>An itemset is considered frequent if it satisfies the following condition:<br>
+<strong>Support of itemset &gt;= minimum support</strong><br>
+A frequent itemset containing n items is called a  <strong>frequent n-itemset</strong>.</p>
+</li>
+<li>
+<p>This part of the algorithm returns all possible combinations of the itemsets that have support values greater than the minimum support threshold.</p>
+</li>
+</ul>
+<p><strong>Rule Generation</strong></p>
+<ul>
+<li>
+<p>This part of the algorithm uses the frequent itemsets generated in the Frequent Itemset Generation to check for rules that satisfy the  <strong>minimum confidence threshold</strong>.</p>
+</li>
+<li>
+<p>From the frequent itemset, we generate all possible rules and calculate their respective confidence. The rule is printed if it satisfies the condition given below:<br>
+<strong>Confidence of the rule &gt;= min_confidence</strong></p>
+</li>
+</ul>
+<p>The  <strong>apriori algorithm</strong>  is one of the popular algorithms used for performing association rule mining. In the next segment, you will learn about this algorithm in detail.</p>
+<p>Use your knowledge of the Apriori algorithm to solve the questions given below.</p>
+<p>Assume minsup = 0.5 and minconf = 0.7</p>
+<p><img src="https://i.ibb.co/Pm8kGd9/Apriori-Algorithm-Example-Transactions.png" alt="Apriori_Algorithm_Example_Transactions"></p>
+<h4 id="apriori-algorithm">Apriori algorithm</h4>
+<p>Qn: Which of the following is a frequent three-itemset?</p>
+<ul>
+<li>{Milk, Bread, Eggs}</li>
+<li>{Beer, Chips, Eggs}</li>
+<li>{Milk, Eggs}</li>
+<li>{Beer, Chips}</li>
+</ul>
+<p>Ans: There are three out of six transactions involving {Milk, Bread, Eggs}, hence the support is 0.5 which is equal to the minimum support. Hence, this item set is frequent.</p>
+<p>Qn: Which of the following is a valid association rule? (More than one option may be correct)</p>
+<ul>
+<li>{Beer} —&gt; {Chips, Eggs}</li>
+<li>{Milk} —&gt; {Eggs, Bread}</li>
+<li>{Eggs} —&gt; {Beer, Chips}</li>
+<li>{Beer} —&gt; {Chips}</li>
+</ul>
+<p>Ans:</p>
+<ul>
+<li>The item set {Milk, Bread, Eggs} is frequent. Thus we can check the rules for this item set. The confidence of this rule is 0.75 which is above the confidence threshold. Hence this is a valid rule.</li>
+<li>We can see that the item set {Beer, Chips} is frequent since the support is 0.5 which is equal to minimum support. The confidence for the above rule is 1 which is above the confidence threshold. Hence, this rule is valid.</li>
+</ul>
+<p>Qn: Which of the following statements is true about the support and confidence metrics?</p>
+<ul>
+<li>The value of confidence ranges from 0 to infinite.</li>
+<li>Support is always larger than or equal to confidence.</li>
+<li>Support and confidence do not have any necessary relationship.</li>
+<li>Support depends on confidence, not the other way around.</li>
+<li>Confidence depends on support, not the other way around.</li>
+</ul>
+<p>Ans: Confidence is the ratio of the support of the item set by the support of the rule antecedent.</p>
+<p>Qn: Given a rule, {A} —&gt; {B} whose confidence is above the confidence threshold, which of the following statements are true? (More than one option might be correct)</p>
+<ul>
+<li>{B} —&gt; {A} will also be a valid rule.</li>
+<li>{A, B} must be a frequent item set</li>
+<li>{A} and {B} must be frequent items</li>
+<li>{A} is frequent, but {B} may or may not be frequent.</li>
+</ul>
+<p>Ans:</p>
+<ul>
+<li>Such a rule can valid only if {A, B} is frequent</li>
+<li>Since {A, B} is frequent, it’s immediate subsets, {A} and {B} must also be frequent.</li>
+</ul>
+<blockquote>
+<p>Written with <a href="https://stackedit.io/">StackEdit</a>.</p>
+</blockquote>
+</div>
+</body>
+
+</html>

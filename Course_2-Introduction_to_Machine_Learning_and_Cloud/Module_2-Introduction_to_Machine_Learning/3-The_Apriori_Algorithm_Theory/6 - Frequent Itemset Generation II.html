@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>6 - Frequent Itemset Generation II</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><h1 id="frequent-itemset-generation---ii">Frequent Itemset Generation - II</h1>
+<p>The next step is to create a function to generate higher-order candidates. You can do this by using the candidate generation principle. So let us understand the concept of candidate generation.</p>
+<p><strong>Candidate Generation:</strong></p>
+<ul>
+<li>
+<p>Candidate Generation is the process of merging itemsets of the kth order to create itemsets of order k+1.</p>
+</li>
+<li>
+<p><strong>Two frequent itemsets of order k are merged only if their k-1 itemsets are identical</strong>.</p>
+</li>
+<li>
+<p><strong>Example 1</strong>: If {A, B} and {A, D} are frequent itemsets, then they can be merged to form {A, B, D}. This is because itemset A is the common 1-itemset in both the sets. Note that you must keep the order of the items consistent throughout the code so that we do not create duplicate itemsets such as {A, D, B}, ({A, B, D} and {A, D, B}.</p>
+</li>
+<li>
+<p><strong>Example 2</strong>: If {A, B, C} and {A, B, D} are frequent itemsets, then they can be merged to form {A, B, C, D}. Here, {A, B} is the common 2-itemset; hence, we can proceed with merging {A, B, C} and {A, B, D}.</p>
+</li>
+<li>
+<p>To give you more clarity, the following itemsets cannot be merged:</p>
+<ul>
+<li>
+<p>{A, B, C} and {A, D, E}</p>
+</li>
+<li>
+<p>{A, B, C} and {B, C, D}</p>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Note</strong>: All items within an itemset must be arranged in a particular order, and this order must be maintained while creating higher-order itemsets. If the order is not preserved, then redundant itemsets will be generated, e.g., you may end up generating all the permutations of items within an itemset such as {A, B, C}, {A, C, B}, {B, C, A} and {C, B, A}. These are all the same itemset.</p>
+<p><img src="https://i.ibb.co/R7zpYTP/Generating-High-Order-Itemset.png" alt="Generating_High_Order_Itemset"></p>
+<p><strong>Note</strong>: At 5:45, the k input for the itemSetGenerator will be 4 and not 3. This is because, k represents the order of the itemset you want to generate. Thus, in the example given for {a, b, d} and {a, b, c}, the value of k will be 4 since we want to generate 4-itemsets. Using k = 4, when we apply the merging condition, we pick two itemsets and check if their itemsetk[:k-2] are equal, i.e. the first two elements of these two itemsets should match.</p>
+<p><strong>VIDEO</strong></p>
+<h1 id="creating-higher-order-itemsets">Creating Higher order Itemsets</h1>
+<pre><code>def itemSetGenerator(itemsetk, k):
+        
+    higherOrderitemset = []
+    lenitemsetk = len(itemsetk)
+    
+    for i in range(lenitemsetk):
+        for j in range(i+1, lenitemsetk): 
+
+            L1 = sorted(list(itemsetk[i]))[:k-2] 
+            L2 = sorted(list(itemsetk[j]))[:k-2] 
+
+            # Two frequent itemsets of order k are merged only if their k-1 itemsets are identical
+            if L1 == L2:
+                higherOrderitemset.append(itemsetk[i] | itemsetk[j]) # Performing set union creates itemset with n+1 items
+               
+    return higherOrderitemset
+</code></pre>
+<p>Play Video</p>
+<p>3221820</p>
+<p>In the frquentItemsetGeneration function, Sajan has used the previously created functions to return the support values of all itemsets and frequent itemsets. The flow diagram used for generating the frequent itemsets is given below.</p>
+<p><img src="https://i.ibb.co/bQ7Yjh1/Frequent-Itemset-Generation.png" alt="Frequent_Itemset_Generation"></p>
+<ul>
+<li>
+<p>The <strong>createItem function</strong>  returns all the  <strong>distinct 1-item sets as a frozen set</strong>  so that the order is preserved while generating higher-item sets.</p>
+</li>
+<li>
+<p>Next, we  <strong>extract the frequent 1 itemsets</strong>  and the corresponding support values from the list of 1 item sets.</p>
+</li>
+<li>
+<p>To  <strong>generate itemsets of two and more items</strong>, Sajan has used a loop. The value ‘k’ denotes the k-itemset, i.e., the number of items in the itemset. The frequent 1-itemsets are  <strong>merged using candidate generation</strong> using the  <strong>itemSetGenerator function</strong>  to generate all the 2 itemsets. Using the  <strong>scanData function</strong>, we  <strong>extract the frequent 2-item</strong>sets and the corresponding support values, and <strong>append them to the freqItemsets list</strong>  and  <strong>supportDict dictionary</strong>.</p>
+</li>
+<li>
+<p>At the end of the first iteration, you will have generated all the frequent 1 and 2 itemsets. The value of k is incremented to 3, and this  <strong>process continues till higher-order itemsets can no longer be generated</strong>.</p>
+</li>
+</ul>
+<p>With this, we have completed the first part of the Apriori implementation, i.e., frequent itemset generation. Now that you have generated all the frequent itemsets, let’s move on to the next step, which is to generate rules from these itemsets. We will continue this in the next segment.</p>
+<h4 id="apriori-algorithm">Apriori algorithm</h4>
+<p>Qn: Which of the following will be the output of the given function?</p>
+<pre><code>Itemset3 = [frozenset({ 'a', 'b' , 'c' }), frozenset({'a', 'c' , 'd' }), frozenset({'b', 'c' , 'd' }),  frozenset({'b', 'c' , 'e' })]
+
+itemSetGenerator(Itemset3, 4)
+</code></pre>
+<ul>
+<li>[frozenset({‘a’,’ b’,’ c’, ‘d’}), frozenset({‘a’,’ c’, ‘d’, ‘e’}), frozenset({‘b’, ‘c’, ‘d’, ‘e’})]</li>
+<li>[]</li>
+<li>[frozenset({‘b’, ‘c’, ‘d’, ‘e’})]</li>
+<li>None of the above</li>
+</ul>
+<p>Ans: In order to merge two item sets, the first two elements must be common. This can only be found in the item sets {b, c, d} and {b, c, e}. Both have the prefix items ‘b’ and ‘c’ as common. Hence, they can be merged to form {b, c, d, e}.</p>
+<blockquote>
+<p>Written with <a href="https://stackedit.io/">StackEdit</a>.</p>
+</blockquote>
+</div>
+</body>
+
+</html>
