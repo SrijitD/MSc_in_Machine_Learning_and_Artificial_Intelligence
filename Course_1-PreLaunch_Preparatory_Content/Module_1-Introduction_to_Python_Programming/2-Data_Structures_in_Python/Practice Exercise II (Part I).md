@@ -2,21 +2,13 @@
 
 Before you get started with solving the practice exercise, here are some additional questions for which will help you revise all the concepts you have learnt in this session. Download the jupyter notebook provided below and get started:
 
-
-
 Given below are the solutions to the ab0ve questions, download the notebook given below and take a look at the solution:
-
-
 
 Now let us test our newly acquired python skills on some practice questions (**un-graded**)
 
 Download the Python file given below; it includes an exercise to test your understanding of the concepts learnt in this session:
 
-
-
 Based on your answers obtained in the notebook, attempt the following quiz:
-
-
 
 #### Total Orders
 
@@ -31,8 +23,6 @@ Qn: Count the total number of orders [Orders include both processed and returned
 - 129
 
 Ans: D. `len(processed_orders) + len(returned_orders)`
-
-
 
 #### The Silver Order
 
@@ -54,8 +44,6 @@ orders.sort()
 orders[49]
 ```
 
-
-
 #### Was the Order Good Enough?
 
 Qn: Is the 50th order a returned order or a processed order?
@@ -67,8 +55,6 @@ Qn: Is the 50th order a returned order or a processed order?
 Ans: A. *To check whether an element is present in a list, you need to use the membership operator.*
 
 `1099 in processed_orders`
-
-
 
 #### Last Good Order!
 
@@ -89,8 +75,6 @@ processed_orders.sort()
 processed_orders[-1]
 ```
 
-
-
 #### Fantastic Four
 
 Qn: Identify the first four orders that were processed. [Note: Assume the order IDs are being generated consecutively]
@@ -106,7 +90,3 @@ Qn: Identify the first four orders that were processed. [Note: Assume the order
 Ans: C. *In order to find the first four processed orders, you first need to sort the elements in the processed order; then, using the slicing concept, you have to pass the start and end indexes based on the element you require.*
 
 `processed_orders[0:4]`
-
-
-
-

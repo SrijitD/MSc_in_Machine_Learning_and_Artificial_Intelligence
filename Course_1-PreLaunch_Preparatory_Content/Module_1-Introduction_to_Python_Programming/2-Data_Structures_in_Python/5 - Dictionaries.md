@@ -78,8 +78,6 @@ profession = input_dict[104][2]
 print(profession)
 ```
 
-
-
 #### Dictionary
 
 Qn: Using this [document](https://docs.python.org/3/tutorial/datastructures.html#dictionaries), answer the following question:
@@ -102,8 +100,6 @@ Ans: A, B & C
 
 - *The dict function can be used to create a dictionary.*
 
-
-
 #### Dictionary Operation
 
 Qn: Suppose dict_1 = {"Python'':40, "R'':45}. What command should be used to delete the entry "R"?
@@ -117,8 +113,6 @@ Qn: Suppose dict_1 = {"Python'':40, "R'':45}. What command should be used to del
 - del dict_1('R':40)
 
 Ans: B *Yes, del is used to delete a dictionary key.*
-
-
 
 #### Dictionary to List
 
@@ -138,8 +132,6 @@ print(list(d.keys()))
 - ['Python', 'R']
 
 Ans: D. *The keys() method returns only the key elements; and list() converts these keys into the list format.*
-
-
 
 ### Dict_Error
 
@@ -173,8 +165,6 @@ else:
 
 print(answer)
 ```
-
-
 
 ### List of Values in a Dictionary
 
