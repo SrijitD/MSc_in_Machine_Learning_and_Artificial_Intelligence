@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2 - Data Types</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><h1 id="data-types">Data Types</h1>
+<p>In this segment, we will discuss a very important aspect of any data set: Data types. In a particular data set, you have multiple types of variables with different kinds of data types such as integers, string, floats, etc.</p>
+<p>For data analysis, you will use the following libraries through the entire module, which you must have already covered in prep content:</p>
+<ul>
+<li><strong>Pandas:</strong>  It is a library to deal with dataframes in Python. Pandas is an acronym derived from panel data. It is solely used for data analysis purposes in Python.</li>
+<li><strong>NumPy:</strong>  This library is used for performing numerical operations on data sets.</li>
+</ul>
+<p>Now, in the forthcoming video, we will go through the bank marketing data set with Rahim and try to find out the data types that are present in it.</p>
+<p><strong>VIDEO</strong></p>
+<h4 id="python-libraries">Python Libraries</h4>
+<p>Qn: What are the key features of the Pandas library?</p>
+<ul>
+<li>Data alignment</li>
+<li>Memory-efficient</li>
+<li>Reshaping</li>
+<li>Merge and join</li>
+</ul>
+<p>Ans: All of the above. <em>Pandas is the library in Python which deals with the data frames. It is very user-friendly while handling big data sets. It is a memory-efficient library. Furthermore, it also provides many other data operations, such as merging, joining or reshaping the datasets.</em></p>
+<h4 id="data-cleaning">Data Cleaning</h4>
+<p>Qn: From the options below, choose the appropriate data type for numeric type of data.</p>
+<ul>
+<li>int64, object, timedelta[ns]</li>
+<li>float64, int64</li>
+<li>datetime64, float64, object</li>
+<li>bool, datetime64</li>
+</ul>
+<p>Ans: B, <em>Both float64 and int64 are of the numeric data type.</em></p>
+<p>In general, any data set is expected to have data of different types. Here are some examples of data along with their data types.</p>
+<p><img src="https://i.ibb.co/c6PQy3J/Data-Types.png" alt="Data_Types"></p>
+<h4 id="data-type">Data Type</h4>
+<p>Qn: Let’s say there is a column in a dataset which essentially contains numerical values. But its data type is an object, which needs to be rectified and should be converted into int or float type.</p>
+<p>Choose the correct command to convert such object type column in a dataframe into integer or float type. Multiple options may be correct.</p>
+<ul>
+<li>df[“feature”]= df[“feature”].astype(int)</li>
+<li>df.[“feature”]= df.[“feature”].astype(int)</li>
+<li>df[“feature”]= df[“feature”].astype(float)</li>
+<li>df.[“feature”]= df.[“feature”].astype(float)</li>
+</ul>
+<p>Ans: A, C. <em>These two particular commands can be used to convert any type of variable into int or float.</em></p>
+<h4 id="data-type-1">Data Type</h4>
+<p>Qn: Find the average age of the customers in the bank marketing data set.</p>
+<ul>
+<li>51</li>
+<li>40</li>
+<li>50</li>
+<li>41</li>
+</ul>
+<p>Ans: 41. <em>Convert the age variable into numeric type from object type, which can be an integer, and then find the mean.</em></p>
+<pre><code>df['age'] = df['age'].astype('float')
+df['age'].mean()
+</code></pre>
+<p>In the next segment, you will learn about the steps in the data cleaning process, specifically, fixing the rows and columns.</p>
+<blockquote>
+<p>Written with <a href="https://stackedit.io/">StackEdit</a>.</p>
+</blockquote>
+</div>
+</body>
+
+</html>

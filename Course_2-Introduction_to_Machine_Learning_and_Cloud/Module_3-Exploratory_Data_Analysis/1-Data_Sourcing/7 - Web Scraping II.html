@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>7 - Web Scraping II</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><h1 id="web-scraping-ii">Web Scraping-II</h1>
+<p>You have a very basic understanding of what an HTML page looks like. Now, in this segment, we will get to the application part, i.e., how you can fetch website data using Python.</p>
+<p>In the forthcoming video, Rahim will help you understand the HTML page of an IMDb web page.</p>
+<p><strong>VIDEO</strong></p>
+<h4 id="data-sourcing">Data Sourcing</h4>
+<p>Qn: Select the appropriate statements about a div tag in HTML page out of the 4 options given below. Multiple options may be correct.</p>
+<ul>
+<li>It is a class.</li>
+<li>It is a container type structure, which contains other HTML elements.</li>
+<li>It has a nested structure.</li>
+<li>There can not be another div inside a div.</li>
+</ul>
+<p>Ans: B &amp; C. <em>Div is used to buckets things on the web page; it has a nested structure, which contains other HTML elements in it.</em> <em>It may contain other HTML tags like a, p, h, div, href or classes.</em></p>
+<p>So, in the video, you saw the web page of the top 50 movies on IMDb. The page has movie names, ratings, votes, director details and cast in a very specific container-like structure. Now, we will get to the next part, where you will learn how to code in order to fetch data from a web page in Python. You will learn about this in the next video.</p>
+<p><strong>VIDEO</strong></p>
+<p>Here is a summary of the major takeaways from this video:</p>
+<ul>
+<li><strong>request library:</strong>  It is a Python library that is used to read the data of a web page from the URL of that page.</li>
+<li><strong>BeautifulSoup:</strong>  It is a class that is used to beautify the structure of HTML code so that the user can read it to get an idea about the HTML code syntax.</li>
+<li>The web scraping process can be divided into these four major parts:</li>
+</ul>
+<ol>
+<li>
+<p><strong>Reading:</strong>  HTML page read and upload</p>
+</li>
+<li>
+<p><strong>Parsing:</strong>  Beautifying the HTML code in an understandable format</p>
+</li>
+<li>
+<p><strong>Extraction:</strong>  Extracting data from a web page</p>
+</li>
+<li>
+<p><strong>Transformation:</strong>  Converting the information into the required format, e.g., CSV</p>
+</li>
+</ol>
+<p>You are provided with the well-commented Jupyter notebook that has been covered in the video. This is just for your reference, and it is a very basic example of web scraping. There are many other techniques and concepts in web scraping, but they are out of the scope of this module. However, you have been given an idea about the process of web scraping with a basic understanding of HTML.</p>
+<p>You have gone through the web page containing the top 50 movies on the IMDb website and saw the scraping process using Python. This page contains information on movies such as name, rating, votes, run time, genre, director details, actors and plot. As explained earlier, if you want to fetch information from a web page in a CSV file, then you need to look into the HTML code of the web page to get an idea about the tags and attributes.</p>
+<p>Now, try to answer the following questions on the web scraping of the same IMDb top 50 movies web page.</p>
+<h4 id="web-scraping">Web Scraping</h4>
+<p>Qn: You already know that the HTML code has a nested structure. In the IMDB web page, there is a dedicated class which contains the genre of the movie. A dedicated class for the genre of the movie will be nested inside the other classes as well. Can you identify such classes which contain the genre of the movie in the HTML code of IMDB web page? Multiple options may be correct.</p>
+<ul>
+<li>text-muted</li>
+<li>genre</li>
+<li>lister-item-content</li>
+<li>lister-item mode-advanced</li>
+</ul>
+<p>Ans: All of the above.</p>
+<ul>
+<li><em>This particular class itself contains the “genre” class; hence, the text-muted class contains the genre of the movie.</em></li>
+<li><em>The “genre” class is a dedicated class to display the genre of the movie in HTML page; hence, it contains the genre of the movie.</em></li>
+<li><em>The “lister-item-content” class contains all the information about the movie data and the genre class is nested inside the“lister-item-content” class; hence, this class contains the genre of the movie.</em></li>
+<li><em>The “lister-item mode-advanced” is the class for one particular movie segment, which contains “lister-item-content” as well as image class; hence, it contains the genre of the movie.</em></li>
+</ul>
+<p>Qn: Suppose you want to fetch the little description of the movie “Fight Club” that is written just below the rating. What should be the correct code for that?</p>
+<ul>
+<li>A<br>
+des = containers[0].findAll(“p”, {“class”: “text-muted”})<br>
+print(des.text)</li>
+<li>B<br>
+des = containers[3].findAll(“p”, {“class”: “text-muted”})<br>
+print(des[1].text)</li>
+<li>C<br>
+des = containers[0].findAll(“p”, {“class”: “text-muted”})<br>
+print(des [0].text)</li>
+<li>D<br>
+des = containers[4].findAll(“p”, {“class”: “text-muted”})<br>
+print(des[1].text)</li>
+</ul>
+<p>Ans: <em>Fight Club is at index value 3 and, hence, the index value of containers is correct. The description of the movie is at index value 1. Hence, it is the correct option.</em></p>
+<p>Qn: Suppose you want to fetch the votes for the movie “The Godfather”. What should be the correct code syntax for that?</p>
+<ul>
+<li>A<br>
+votes= containers[10].findAll(“span”, {“name”: “nv”})<br>
+print(votes[0].text)</li>
+<li>B<br>
+votes= containers[9].findAll(“span”, {“name”: “nv”})<br>
+print(votes[0].text)</li>
+<li>C<br>
+votes= containers[10].findAll(“span”, {“name”: “nv”})<br>
+print(votes.text)</li>
+<li>D<br>
+votes= containers[9].findAll(“span”, {“name”: “nv”})<br>
+print(votes.text)</li>
+</ul>
+<p>Ans: B, <em>The Godfather” has an index value of 9 and the number of votes is contained at index value 0.</em></p>
+<blockquote>
+<p>Written with <a href="https://stackedit.io/">StackEdit</a>.</p>
+</blockquote>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>7 - Fixing Invalid Values and Filter Data</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><h1 id="fixing-invalid-values-and-filter-data">Fixing Invalid Values and Filter Data</h1>
+<p>In the previous segments, you learnt about the concepts to deal with different types of irregularities in a data set. You also went through the bank marketing dataset, wherein you saw the practical aspect of all the concepts covered. Now, data sets also have some other irregularities, which you need to get rid of. Although our bank marketing dataset does not have irregularities of these types, it is essential to deal with them as well.</p>
+<p>In the forthcoming video, you will learn about fixing the invalid values in a data set.</p>
+<p><strong>VIDEO</strong></p>
+<p>If your data set has invalid values, and if you do not know which accurate values could replace those invalid values, then it is recommended that you treat these values as missing. For example, if the Contacts columns in a data set contain the string ‘tr8ml’, then it is recommended that you remove the invalid value and treat it as a missing value.</p>
+<p>Now, let us summarize what you learnt about fixing the invalid values in a data set. Here is a list of the points that were covered. You could use this as a checklist for future data cleaning exercises:</p>
+<ul>
+<li>
+<p><strong>Encode unicode properly:</strong>  In case the data is being read as junk characters, try to change the encoding; for example, use CP1252 instead of UTF-8.</p>
+</li>
+<li>
+<p><strong>Convert incorrect data types:</strong>  Change the incorrect data types to the correct data types for ease of analysis. For example, if the numerical values are stored as strings, then it would not be possible to calculate metrics such as mean and median. Some common data type corrections include changing a string to a number (“12,300” to “12300”), a string to a date (“2013-Aug” to “2013/08”), a number to a string (“PIN Code 110001” to “110001”), and so on.</p>
+</li>
+<li>
+<p><strong>Correct the values that lie beyond the range:</strong>  If some values lie beyond the logical range, for example, if temperature is less than -273℃ (0 K), then you would need to correct those values as required. A close look at the data set would help you determine whether there is a scope for correction or whether the value needs to be removed.</p>
+</li>
+<li>
+<p><strong>Correct the values that do not belong to a list:</strong>  Remove the values that do not belong to a list. For example, in a data set of the blood groups of individuals, the strings ‘E’ or ‘F’ are invalid values and can be removed.</p>
+</li>
+<li>
+<p><strong>Fix incorrect structure:</strong>  Values that do not follow a defined structure can be removed from a data set. For example, in a data set containing the pin codes of Indian cities, a pin code of 12 digits would be an invalid value and would need to be removed. Similarly, a phone number of 12 digits would be an invalid value.</p>
+</li>
+<li>
+<p><strong>Validate internal rules</strong>: Internal rules, if present, should be correct and consistent. For example, the date of a product’s delivery should definitely come after the date of purchase.</p>
+</li>
+</ul>
+<p>After you have fixed the missing values, standardized the existing values and corrected the invalid values in a data set, you would arrive at the last stage of data cleaning. Although you would have a largely accurate data set by now, you may not need all of it for your analysis. It is important for you to understand what you require in order to draw insights from the data, and then choose relevant parts of the data set for your analysis. Thus, you need to filter the data in order to get what you require for your analysis.</p>
+<p>In the next video, Anand will walk you through the different steps in filtering data.</p>
+<p><strong>VIDEO</strong></p>
+<p>Now, let us summarize what you learnt about filtering data. Here is a list of the points that were covered. You could use this as a checklist for future data cleaning exercises:</p>
+<ul>
+<li>
+<p><strong>Deduplicate data:</strong>  Remove identical rows and rows in which some columns are identical</p>
+</li>
+<li>
+<p><strong>Filter rows:</strong>  Filter rows by segment and date period to obtain only rows relevant to the analysis</p>
+</li>
+<li>
+<p><strong>Filter columns:</strong>  Filter columns relevant to the analysis</p>
+</li>
+<li>
+<p><strong>Aggregate data:</strong>  Group by the required keys and aggregate the rest</p>
+</li>
+</ul>
+<blockquote>
+<p>Written with <a href="https://stackedit.io/">StackEdit</a>.</p>
+</blockquote>
+</div>
+</body>
+
+</html>

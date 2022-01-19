@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2 - Numerical vs Numerical Analysis</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><h1 id="numeric-vs-numeric-analysis">Numeric vs Numeric Analysis</h1>
+<p>In this segment, using the Bank marketing dataset, you will learn how to analyse two numerical variables. There are multiple tools to analyse numerical variables. In the forthcoming video, you will learn about the different tools and plots that are helpful for extracting insights using numerical variables from a data set.</p>
+<p><strong>VIDEO</strong></p>
+<h4 id="correlation">Correlation</h4>
+<p>Qn: In the correlation matrix, there are multiple values written in boxes that show the relation between the variables. These values are called ‘Pearson coefficients’. Based on your understanding of the correlation matrix, choose which of the following statements is correct. Here is an image of the correlation matrix for your reference:<br>
+<img src="https://i.ibb.co/YhhFZqj/IRIS-Dataset-Corelation-Flower-Params.png" alt="IRIS_Dataset_Corelation_Flower_Params"></p>
+<p>One very important concept that has been covered in this video is that of the correlation coefficient. The correlation coefficient depicts only a linear relationship between numerical variables. It does not depict any other relationship between variables. Nevertheless, a zero correlation does not imply that there is no relationship between variables. It merely indicates that there will be no linear relationship between them. Also, the correlation between variables can be negative or positive. A negative correlation means that if the value of one variable increases, then the value of another decreases, whereas it is the opposite for a positive correlation.</p>
+<p>The higher the coefficient of correlation between numerical variables, the higher is the linear relationship between them.</p>
+<p>From the <strong>correlation matrix</strong>  below,  you can observe that petal length has a high correlation with sepal length, with a correlation coefficient of 0.87. Also, there is a very high correlation coefficient of 0.96 between petal width and petal length.</p>
+<p><img src="https://i.ibb.co/YhhFZqj/IRIS-Dataset-Corelation-Flower-Params.png" alt="IRIS_Dataset_Corelation_Flower_Params"></p>
+<ul>
+<li>The correlation matrix quantifies only the linear dependence between the variables; it does not capture the nonlinear relations between them.</li>
+<li>A negative correlation means if one variable increases, the other will decrease.</li>
+<li>The correlation coefficient is sensitive to outliers.</li>
+</ul>
+<p>Ans: All of the above.</p>
+<ul>
+<li><em>The correlation matrix depicts only the linear relation among the variables; it does not depict the other relations.</em></li>
+<li><em>Correlation between two variables can be negative or positive. If there is a positive correlation, then if one variable increases, the other will increase; the opposite occurs for a negative correlation.</em></li>
+<li><em>Outliers affect the correlation coefficient. If there are outliers, the linear relation among the variables will be affected.</em></li>
+</ul>
+<p>However, the correlation matrix has its own limitations where you cannot see the exact distribution of a variable with another numerical variable. To solve this problem, we use  <strong>pair plots</strong>. Pair plots are scatter plots of all the numerical variables in a data set. It shows the exact variation of one variable with respect to others. In this image, you can observe how one variable is varying with respect to another.</p>
+<p><img src="https://i.ibb.co/HrdymLY/IRIS-Dataset-Pair-Plot-Flower-Params.png" alt="IRIS_Dataset_PairPlot_Flower_Params"></p>
+<p>Now, in the next video, Rahim will explain how to perform a numerical bivariate analysis using the bank marketing dataset.</p>
+<p><strong>VIDEO</strong></p>
+<p>So, in the video, you saw how a pair plot can help you determine that there is no correlation between the ‘age’, ‘balance’ and ‘salary’ variables. You can refer to this image and observe how there is no correlation between these variables.</p>
+<p><img src="https://i.ibb.co/Lh5wr3B/Bank-Dataset-Pair-Plot.png" alt="Bank_Dataset_PairPlot"></p>
+<p>A high correlation coefficient does not imply that there will be a correlation with another numerical variable every time, because there can be no causation between them. There may be cases where you will see a high correlation coefficient between two variables, but there would be no relationship between them. You will understand this in detail in the next segment that how correlation is related to the causation.</p>
+<p><strong>Comprehension: Correlation</strong></p>
+<p>Consider these four scatter plots of two variables A and B.</p>
+<p><img src="https://i.ibb.co/8BfK0kz/Corelation-Plots.png" alt="Corelation_Plots"></p>
+<p>Based on your learning from this segment, answer the questions given below.</p>
+<h4 id="correlation-1">Correlation</h4>
+<p>Qn: Out of the four plots, which has the least correlation coefficient?</p>
+<ul>
+<li>Plot-1</li>
+<li>Plot-2</li>
+<li>Plot-3</li>
+</ul>
+<p>Ans: <em>Plot-3 does not show any relation between the variables; hence, it has the least correlation coefficient.</em></p>
+<p>Qn: Which of the plots above has very a low correlation coefficient but has some relation between the variables?</p>
+<ul>
+<li>Plot-1</li>
+<li>Plot-2</li>
+<li>Plot-3</li>
+</ul>
+<p>Ans: <em>There is some relation between the variables in Plot-2, but it is not linear.</em></p>
+<p>Qn: Which of the plots above has a negative correlation?</p>
+<ul>
+<li>Plot-1</li>
+<li>Plot-4</li>
+<li>Plot-3</li>
+</ul>
+<p>Ans: <em>In Plot-4, with increase in one variable, the other variable decreases; hence, there is a negative correlation between the variables.</em></p>
+<blockquote>
+<p>Written with <a href="https://stackedit.io/">StackEdit</a>.</p>
+</blockquote>
+</div>
+</body>
+
+</html>

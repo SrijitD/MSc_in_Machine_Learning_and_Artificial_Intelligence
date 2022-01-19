@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>8 - Summary</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><h1 id="summary">Summary</h1>
+<p>Having completed this session, you must be clear about the various irregularities that can be present in a data set. They can include unfixed rows/columns, missing values and outliers, or may even be in the form of non-standard/unscaled data, and so on.</p>
+<p>Let us summarize the steps in data cleaning:</p>
+<ul>
+<li><strong>Fixing rows and columns:</strong>  You need to remove irrelevant columns and heading lines from the data set. Irrelevant columns or rows are those which are of absolutely no use for the analysis of the data set. For example, in the Bank Marketing Dataset, the headers and customer ID columns are of absolutely no use to the analysis.</li>
+<li><strong>Removing/imputing missing values:</strong>  There are different types of missing values in a data set. Based on their type and origin, you need to take a decision about whether they can be removed if their percentage is too less or whether they can be considered a separate category. There is an important possibility where you need to impute missing values with some other value. While performing imputation, you should be careful that it does not add any wrong information to the data set. Imputation can be done using the mean, median or mode, or using quantile analysis.</li>
+<li><strong>Handling outliers:</strong> Outliers are those points which are beyond the normal trend. Outliers are of two types:
+<ol>
+<li>
+<p><strong>Univariate</strong>  and</p>
+</li>
+<li>
+<p><strong>Multivariate</strong>.</p>
+</li>
+</ol>
+</li>
+</ul>
+<p>An essential aspect that was covered is that outliers should not always be treated as anomalies in a data set. You can understand this using the Bank Marketing Dataset itself, where age has outliers, although the high values of age are as relevant as the other values.</p>
+<ul>
+<li><strong>Standardizing values:</strong> Sometimes data sets have many entries that are not in the correct format. For example, in the Bank Marketing dataset itself, you saw that the duration of calls was in seconds as well as minutes. It has to be in the same format. The other standardization involves units and precision standardization.</li>
+<li><strong>Fixing invalid values:</strong> Sometimes, there are some values in the dataset that are invalid, maybe in the form of their unit, range, data type, format, etc. It is essential to treat such irregularities before processing a data set.</li>
+<li><strong>Filtering data:</strong> Sometimes filtering out certain details can help you get a clearer picture of a data set.</li>
+</ul>
+<p>It is very important to get rid of such irregularities as the ones above to be able to analyse a data set. Otherwise, it may hamper further analysis of the data set, either while building a machine learning model or during EDA itself.</p>
+<p>So, now that you have learnt about the process of data cleaning, the next critical step is data analysis. This is covered in the following two sessions:</p>
+<ul>
+<li>Univariate analysis</li>
+<li>Bivariate/multivariate analysis.</li>
+</ul>
+<blockquote>
+<p>Written with <a href="https://stackedit.io/">StackEdit</a>.</p>
+</blockquote>
+</div>
+</body>
+
+</html>
