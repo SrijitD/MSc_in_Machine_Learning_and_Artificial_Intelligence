@@ -12,8 +12,6 @@ Having understood about relational operators, let’s now look at the if-else c
 
 ![if-elif](https://cdn.upgrad.com/UpGrad/temp/de581248-4fd9-4b85-b67f-e029ea038fb6/Capture.PNG)
 
-if-elif
-
 **VIDEO**
 
 In the example discussed above: 
@@ -126,8 +124,6 @@ Now let's look at a <u>real-world example</u> of the if-else construct:
 
 **VIDEO**
 
-
-
 #### The If-Else Construct
 
 Qn: What is the output of the following code?
@@ -152,8 +148,6 @@ print('No')
 Ans: C. *Indentation is very important in Python, and the code above throws an error saying expected indented block.*
 
 ![](https://i.ibb.co/WWrwJBM/Python-Indentation-Error.png)
-
-
 
 #### Maximum of Three Numbers
 
@@ -190,8 +184,6 @@ else:
 
 Ans: B. *In the first step of the if-statement, if you have observed a, it is being printed which means the condition should check whether a is highest among the three i.e both a>b and a>c under if condition has to be true. In order to join these two conditions, you need to use a logical and operator since you want both the conditions to be true. Similarly in the second condition, you want b to be printed; so, the condition to this would b > c and b > a.*
 
-
-
 #### Reverse Engineering
 
 Qn: Which of the following sequences of inputs would give the output 'C' 'A' 'D' 'B' over multiple iterations?
@@ -220,8 +212,6 @@ else:
 
 Ans: C. *For 'C', the obtained marks should be greater than or equal to 70. For 'A', the obtained marks should be greater than or equal to 90. For 'D', the obtained marks should be greater than or equal to 60. For 'B', the obtained marks should be greater than or equal to 80.*
 
-
-
 #### Can You Guess the Output?
 
 Qn: What will the following segment of code print? Try doing this verbally.
@@ -244,8 +234,6 @@ else:
 - B and C
 
 Ans: B. *10 > 0 returns True. True or False is True. Hence, 'B' gets printed.*
-
-
 
 #### A Search for the Truth
 
@@ -272,8 +260,6 @@ else:
 - D
 
 Ans: B. *T or T will be a T. The code will return the value that satisfies these statements. A will be returned for an F, as (F and T) = F, (F or F) = F. B will be returned for a T, as (F and F) = F, (T and T) = T, (F or T) = T.*
-
-
 
 ### If-Else
 

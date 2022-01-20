@@ -47,5 +47,3 @@ The in-video and in-content questions for this module are **not graded**.
 Data Scientist at Walmart Labs
 
 Behzad is a Doctor of Philosophy (Ph.D.) in Electrical and Computer Engineering; communication and signal processing from the New Jersy Institue of Technology. He has been working in the software engineering and data science field for the last 12+ years. Behzad currently employs his machine learning skill-set to create retails graphs for Walmart labs.
-
-

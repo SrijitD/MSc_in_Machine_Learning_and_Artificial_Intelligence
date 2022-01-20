@@ -35,8 +35,6 @@ In this session, you will learn
 
 You can download the Python notebooks used in the lecture from the link below. It is recommended that you keep executing the commands on your computer at pace with the lecture. You can also parallelly try experimenting with other commands that you may have in mind.  
 
-
-
 ## People you will hear from in this session
 
 **Subject Matter Expert**

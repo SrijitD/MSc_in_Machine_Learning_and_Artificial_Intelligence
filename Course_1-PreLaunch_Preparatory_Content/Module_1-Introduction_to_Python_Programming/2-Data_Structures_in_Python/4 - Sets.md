@@ -4,8 +4,6 @@ In the earlier segments, you learnt about lists and tuples, which are ordered se
 
 **VIDEO**
 
-
-
 By now, you would have found the answer to our earlier question about why sets are used: They can eliminate duplicates. This feature is necessary while handling massive data where most of it is just redundant and repeating. Let’s take a look at an example to understand this better:
 
 Let’s say you have a huge list that contains student grades:
@@ -60,8 +58,6 @@ B = {1,2,3,4,5}
   - **A^B →** {0, 6, 8, 1, 3, 5}
 
 The order of elements shown above may not be the same when you actually execute the above operations. It is because sets are unordered, which means they do not store the positional index of an element in the set.
-
-
 
 ### Sets Practice
 
@@ -119,8 +115,6 @@ print(len(nums))
 
 Ans: B. *Set() removes duplicates and returns the unique values. Hence, nums would be updated as {1, 2, 3, 4}, and when you print len(nums), it will be 4 and not 7.*
 
-
-
 **A Fun Activity**
 
 Try to decode the set operation give below:
@@ -130,5 +124,3 @@ Try to decode the set operation give below:
 Instead of using commands, you can also use simple mathematical operators between sets to perform the various operations. Go through the below link to understand how:
 
 [Operations on Sets](https://docs.python.org/3/tutorial/datastructures.html#sets)
-
-

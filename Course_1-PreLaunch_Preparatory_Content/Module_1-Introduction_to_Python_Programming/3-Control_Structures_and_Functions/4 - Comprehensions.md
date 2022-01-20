@@ -60,8 +60,6 @@ The comprehension technique can work on sets as well. Let's look at an applicati
 
 **VIDEO**
 
-
-
 In the above video, you saw the use of sets comprehension to create a small application which returns the vowels in a name. The code in is given below: 
 
 ```python
@@ -71,8 +69,6 @@ vowels
 ```
 
 Now, based on your learning from the previous video attempt the coding question given below:
-
-
 
 ### List Comprehension
 
@@ -94,8 +90,6 @@ n = int(input())
 final_list = [n**2 for n in range(1,n+1)]
 print(final_list)
 ```
-
-
 
 #### Problem
 
@@ -123,35 +117,6 @@ list_vowel = [word for word in input_list if word[0] in ['a', 'e', 'i', 'o', 'u'
 print(list_vowel)
 ```
 
-
-
-#### Dictionary Comprehension
-
-Qn: Following is the code to create a dictionary where the keys are multiples of 3 among the first 100 natural numbers and each value is the cube of the key.
-
-```python
-input_list = list(range(1,100))
-output_dict = {}
-
-for val in input_list:
-    if val % 3 == 0:
-        output_dict[val] = val**3
-```
-
-Now, what would be corresponding dictionary comprehension for the code involved in dictionary creation? 
-
-- output_dict= [val:val**3 for val in input_list if val%3=0]
-
-- output_dict= {for val in input_list if val%3==0 val:val**3 }
-
-- output_dict= { if val%3==0 val:val**3 for val in input_list}
-
-- output_dict= {val : val**3 for val in input_list if val % 3 == 0}
-
-Ans: D. *A dictionary comprehension should be inside curly brackets, and the expression inside the brackets first starts with the operation/output that you desire, and then loops and conditionals occur in the same order of the regular code.*
-
-
-
 #### List Comprehension
 
 What will the output of the following code be?
@@ -168,11 +133,30 @@ print([i+j for i in "abc" for j in "def"])
 
 Ans: A. *For every value of j, i and j are concatenated in a list.*
 
-
-
-
-
 #### Dictionary Comprehension
+
+Qn: Following is the code to create a dictionary where the keys are multiples of 3 among the first 100 natural numbers and each value is the cube of the key.
+
+```python
+input_list = list(range(1,100))
+output_dict = {}
+
+for val in input_list:
+    if val % 3 == 0:
+        output_dict[val] = val**3
+```
+
+Now, what would be corresponding dictionary comprehension for the code involved in dictionary creation?
+
+- output_dict= [val:val**3 for val in input_list if val%3=0]
+
+- output_dict= {for val in input_list if val%3==0 val:val**3 }
+
+- output_dict= { if val%3==0 val:val**3 for val in input_list}
+
+- output_dict= {val : val**3 for val in input_list if val % 3 == 0}
+
+Ans: D. *A dictionary comprehension should be inside curly brackets, and the expression inside the brackets first starts with the operation/output that you desire, and then loops and conditionals occur in the same order of the regular code.*
 
 Qn: What will the output of the following code be?
 

@@ -42,8 +42,6 @@ Ans: B.
 
 - If you run the `groupby` command without any aggregation command, you do not get a new dataframe. Try running the `groupby` command above without the `sum()` or `mean()` function.
 
-
-
 ### Dataframe grouping
 
 #### Problem
@@ -68,7 +66,6 @@ df_1 = df[["month", "day", "rain", "wind"]]
 df_1 = df_1.groupby(by=["month", "day"]).mean()
 
 print(df_1.head(20))
-
 ```
 
 In the next segment, you will learn how to deal with multiple DataFrames.

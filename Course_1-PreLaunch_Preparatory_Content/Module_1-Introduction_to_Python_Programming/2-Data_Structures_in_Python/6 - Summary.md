@@ -15,5 +15,3 @@ If you want to know more about Python data structures and advanced algorithms cl
 1. [Python data structures](https://docs.python.org/3/tutorial/datastructures.html)
 
 2. [Problem- solving with algorithms](https://runestone.academy/runestone/books/published/pythonds/Introduction/GettingStartedwithData.html#built-in-collection-data-types)
-
-

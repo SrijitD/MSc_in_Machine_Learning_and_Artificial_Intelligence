@@ -37,8 +37,6 @@ df = pd.read_csv('https://media-doselect.s3.amazonaws.com/generic/NMgEjwkAEGGQZB
 print(df.head())
 ```
 
-
-
 Now that you know how hierarchical indexing is done and what its benefits are, let's take a look at the ways of extracting information from a DataFrame. In this segment, you will learn some basic functions that will be useful for describing the data stored in the dataframes. The same Notebook will be used in the next segment as well.
 
 **VIDEO**
@@ -94,7 +92,6 @@ df = pd.read_csv('https://query.data.world/s/vBDCsoHCytUSLKkLvq851k2b8JOCkF')
 print(df.describe())#Type your code for describing the dataset)
 print(df.columns)#Type your code for printing the columns of the dataset)
 print(df.shape)#Type your code for printing the shape of the dataset)
-
 ```
 
 In the next segment, you will learn how to slice and index the data in a dataframe.

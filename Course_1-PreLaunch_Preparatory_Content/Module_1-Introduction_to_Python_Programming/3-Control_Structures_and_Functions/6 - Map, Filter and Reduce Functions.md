@@ -48,7 +48,7 @@ Now let us look at the **Filter operation**:
 
 The syntax of the filter function looks as shown below:
 
-**filter(function,iterable object)**
+**`filter(function,iterable object)`**
 
 -  The function object passed to the filter function should always return a boolean value.
 - The iterable object can be a string, list, tuple, set or dictionary.
@@ -98,5 +98,3 @@ For the example above, the reduce function will convert the list of string into 
 `'PaulTed'`
 
 In the next segment, let's solve a few questions related to Map, Filter, and Reduce.
-
-

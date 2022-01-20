@@ -38,7 +38,7 @@ What will be the output of the code provided below?
 
 - [2 3 5]
 
-Ans: B. _The function only gives the first three entries, and this answer follows that._
+Ans: B. _The function only gives the first three entries, and this answer follows that._  
 
 Qn: Given an array:
 

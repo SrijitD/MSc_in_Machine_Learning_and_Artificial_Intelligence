@@ -39,7 +39,7 @@ Ans: Tertiary and primary.
 
 #### Numerical - Categorical Variable Analysis
 
-Here we have the bank marketing data set, which contains the job variable. What inferences can you draw by taking a look at the mean values of salary in each job category? Write your answer in the text box provided below.
+Qn: Here we have the bank marketing data set, which contains the job variable. What inferences can you draw by taking a look at the mean values of salary in each job category? Write your answer in the text box provided below.
 
 ![Job_Salary_Mean_Bar_Plot](https://i.ibb.co/YjrWQvb/Job-Salary-Mean-Bar-Plot.png)
 

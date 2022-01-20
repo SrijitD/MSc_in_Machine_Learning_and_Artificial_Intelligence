@@ -18,8 +18,6 @@ In this assignment, you will try to find some interesting insights into a few mo
 
 The following Python file consists of certain questions based on the concepts that you have learnt in this session. You are expected to code in the Jupyter Notebook in order to arrive at the correct solutions to the questions provided and to answer the MCQs given below.
 
-
-
 #### Structure of a Dataframe
 
 Qn: How many rows and columns are present in the dataframe? 
@@ -33,8 +31,6 @@ Qn: How many rows and columns are present in the dataframe? 
 - (3866, 26)
 
 Ans: C. *You can use the `shape` command to check the number of rows and columns in a dataframe.*
-
-
 
 #### Columns with Null values
 
@@ -54,8 +50,6 @@ Ans: D. *You can find the number of columns with null values using the following
 
 `movies.isnull().sum()` *returns the sum of null values in each column. Over that, you can implement the condition as provided above.*
 
-
-
 #### Dropping Columns
 
 Qn: What is the count of columns in the new dataframe?
@@ -69,8 +63,6 @@ Qn: What is the count of columns in the new dataframe?
 - 17
 
 Ans: B. *You can check the number of columns using the 'shape' function again.*
-
-
 
 #### Deriving a Metric
 
@@ -87,8 +79,6 @@ Qn: Which column has the highest percentage of null values?
 Ans: A. *You can calculate the percentage of null values using the code learnt in Question 2.*
 
 `round(100*(movies.isnull().sum()/len(movies.index)), 2)`
-
-
 
 #### Replacing Null values
 
@@ -110,8 +100,6 @@ Ans: C. *To replace the values, you can equate the entries with language column 
 
 `(movies.language == 'English').sum()`
 
-
-
 #### Sorting a dataframe
 
 Qn: Which movie is ranked 5th from the top in the list obtained?
@@ -131,8 +119,6 @@ Ans: A. *You can create the column 'Profit' using the following code:*
 *Once you have the column ready, you can use the sort function:*
 
 `top_10 = movies.sort_values(by = 'profit', ascending = False).head(10)`
-
-
 
 #### Analysing dataframes
 
@@ -169,8 +155,6 @@ plt.hist(IMDb_Top_250['imdb_score'], bins = 5, range = (7.5,10), edgecolor = 'cy
 plt.show()
 ```
 
-
-
 #### Operations on Dataframe
 
 Qn: Which actor is highest rated among the three actors according to the user reviews?
@@ -192,8 +176,6 @@ Combined_by_segment = Combined.groupby('actor_1_name')
 Combined_by_segment['num_user_for_reviews'].mean()
 ```
 
-
-
 #### Operations on Dataframe
 
 Qn: Which actor is highest rated among the three actors according to the critics?
@@ -214,5 +196,3 @@ Combined = pd.concat([Meryl_Streep, Brad_Pitt, Leo_Caprio])
 Combined_by_segment = Combined.groupby('actor_1_name')
 Combined_by_segment['num_critic_for_reviews'].mean()
 ```
-
-

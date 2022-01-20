@@ -44,5 +44,3 @@ print(df_1.head(20))
 ## Additional Resources:
 
 Now that you have hands-on experience with Pandas, here is the [Pandas official documentation](https://pandas.pydata.org/pandas-docs/version/0.15/tutorials.html) for your reference.
-
-

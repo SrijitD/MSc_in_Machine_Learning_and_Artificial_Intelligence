@@ -48,8 +48,6 @@ A1.y + A2.z
 
 Ans: A. *Using A1.update(), the values of A1.y and A1.z would be updated to 30 and 40, respectively. The values of A2.y and A2.z would remain the same.*
 
-
-
 #### Methods
 
 Qn: What is the output of the code below?
@@ -85,8 +83,6 @@ A1.y + A2.z
 - Error in update_z()
 
 Ans: D. *Self keyword binds the attributes to the values of an instance but since here you are not authorised to handle instance variables it would return an error saying self is not defined.*
-
-
 
 Qn: What is the output of the code below?
 

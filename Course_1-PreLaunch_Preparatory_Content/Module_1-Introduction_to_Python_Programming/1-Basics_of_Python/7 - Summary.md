@@ -14,8 +14,6 @@ Data structures are typically data containers that could store numerous values t
 
 Up next, we will dive deep into various data structures supported by Python and learn about each one of them in detail.
 
-
-
 ## **Additional Reading**
 
 If you want to learn more about what is provided in this module, you can optimally use the following resources.

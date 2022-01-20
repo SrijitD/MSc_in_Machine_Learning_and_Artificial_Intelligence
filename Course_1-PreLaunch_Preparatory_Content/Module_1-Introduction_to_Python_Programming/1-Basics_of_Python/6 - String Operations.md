@@ -21,7 +21,7 @@ String concatenation is just one of the way to manipulate a string, let us have 
 
 **VIDEO**
 
-In the previous video, you learned about <u>indexing&nbsp;</u> in strings. Always remember that <u>&nbsp;forward indexing</u> starts with **0,** and <u>reverse indexing</u> starts with **-1.**
+In the previous video, you learned about <u>indexing&nbsp;</u> in strings. Always remember that **forward indexing** starts with **0,** and **reverse indexing** starts with **-1.**
 
 We should also keep in mind the distinct feature of immutability that string data type provides, which means that once a string is created, it cannot be changed.
 
@@ -51,11 +51,9 @@ Ans: A & D.
 
 - *Negative indexing starts from backward with the last character having an index value -1. Following this P would have an index value of -18 and n would have an index value of -13. Hence, to extract python, you need to give start index -18 and end index as -12. Note here that you shouldn't provide -13 for the same reason that end index isn't included.*
 
-
-
 #### Operations on Strings?!
 
-The len() function in Python returns the length of the string when a string is passed as an argument. For example, len(‘Python’) would return an integer value 6.
+Qn: The len() function in Python returns the length of the string when a string is passed as an argument. For example, len(‘Python’) would return an integer value 6.
 
 With this in mind, what would be the output of the following code?
 
@@ -73,8 +71,6 @@ x[len(x * 2) - 5]
 - Error
 
 Ans: C. _Using a star operator on a string will result in repetition, so x*2 would give ‘lenlen’ and on passing this to the length function, it would give us an output 6. The expression inside would finally equate to x[1], which is ‘e’._
-
-
 
 Earlier in the segment, you saw how to do indexing and slicing in strings. Now let us take a step forward and learn how to change the character-case for a string or remove unwanted characters adjacent to a given string variable.
 
@@ -98,8 +94,6 @@ Now with the data structured in this manner in order to get a category and th
 Now, in the upcoming video, we'll learn how to count the number of occurrences of a substring in a string.
 
 **VIDEO**
-
-
 
 ### String Problem
 
@@ -135,5 +129,3 @@ message1=input_str[0::2]
 message2=input_str[1::2]
 print(f"{message1},{message2}")
 ```
-
-

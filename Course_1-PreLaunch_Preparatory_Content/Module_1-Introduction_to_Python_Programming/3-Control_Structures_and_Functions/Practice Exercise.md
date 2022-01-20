@@ -2,17 +2,11 @@
 
 By now you are well versed with the concepts of basic python programming. Given below are some practice questions. Download the jupyter notebook given below and solve these questions before moving on to the practice exercise:
 
-
-
 Once you are done solving the questions, refer to the solution notebook below to find the correct answers:
-
-
 
 Now let us test our newly acquired python skills on some practice questions (**un-graded**)
 
 Attempt the questions on map, filter and reduce functions.
-
-
 
 ### Map Function
 
@@ -40,10 +34,6 @@ input_list = ast.literal_eval(input_str)
 count = sum(map(lambda x: x[0] == 'S', input_list))
 print(count)
 ```
-
-
-
-
 
 ### Map Function
 
@@ -78,10 +68,6 @@ name = list(map(combine_name, first_name, last_name))
 print(name)
 ```
 
-
-
-
-
 ### Filter Function
 
 #### Problem
@@ -111,10 +97,6 @@ list_answer = list(filter(lambda x: x % 5 == 0, input_list))
 
 print(list_answer)
 ```
-
-
-
-
 
 ### Filter Function
 
@@ -148,10 +130,6 @@ sp = list(filter(lambda x: x[0] == "s" and x[-1] == "p", input_list))
 print(sp)
 ```
 
-
-
-
-
 ### Reduce Function
 
 #### Problem
@@ -184,10 +162,6 @@ concat_str = reduce(lambda x, y: x + " " + y, input_list)
 print(concat_str)
 ```
 
-
-
-
-
 ### Reduce Function
 
 #### Problem
@@ -216,5 +190,3 @@ answer = reduce(lambda x, y: x if x>y else y, input_list)
 
 print(answer)
 ```
-
-

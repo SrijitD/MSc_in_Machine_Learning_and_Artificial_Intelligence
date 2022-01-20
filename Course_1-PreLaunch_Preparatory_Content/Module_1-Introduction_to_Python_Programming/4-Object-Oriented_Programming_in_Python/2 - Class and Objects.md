@@ -37,8 +37,6 @@ The next question that arises is whether it is possible for this employee class 
 
 **VIDEO**
 
-
-
 #### Class Instance
 
 Qn: Which of the following would create an instance to this class?
@@ -59,8 +57,6 @@ class Student:
 - Error
 
 Ans: C. *Since the init method doesn’t have any argument other than self, it won’t accept any argument while creating an instance to the class.*
-
-
 
 #### Class
 
@@ -84,8 +80,6 @@ class Student:
 - None
 
 Ans: D. *There won’t be any error in any of the declarations since all the options are taking the three necessary arguments as mentioned in the init method. The only difference in each of the declarations would be the assignment of the instance values to the class attributes.*
-
-
 
 #### Class Variable
 
@@ -117,12 +111,6 @@ Ans: A & B.
 - *Student standard is a class variable, so it can be updated directly using Classname.attributename and this would apply to all the instances of the class. Student standard can also be updated using object.attributename, but this would apply to only this instance of the class.*
 
 - *Student standard is a class variable, so it can be updated directly using Classname.attributename and this would apply to all the instances of the class. Student standard can also be updated using object.attributename, but this would apply to only this instance of the class.*
-  
-  
-
-
-
-
 
 So, let’s add a class variable called company code to our employee class using the code given below:
 
@@ -149,5 +137,3 @@ You cannot simply use E1.company_code = 'XYZ’ to change the company_code. This
 `Employee.company_code ='XYZ'`
 
 In the upcoming segments, you will be learning about the different methods and functions that can be applied to the data in python.
-
-

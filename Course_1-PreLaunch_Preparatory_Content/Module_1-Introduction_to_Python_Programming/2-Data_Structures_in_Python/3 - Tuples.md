@@ -41,8 +41,6 @@ t[0][2]
 
 Ans: C. *The output here would be ‘s’. t[0] would fetch the first element in the tuple, which is a string. Since this string is also an iterable set of characters, [2] would give the third character of the string.*
 
-
-
 **VIDEO**
 
 Immutability is the differentiating property between lists and tuples. The elements in a tuple cannot be changed once the tuple is declared. You have to make a new tuple using concatenation if you wish to change a value in a given tuple. You also saw tuples can be sorted just like lists.  Let us now see how to iterate over a tuple in the upcoming video:
@@ -62,6 +60,8 @@ tuple
 ```
 
 Towards the end of the video, you saw how the inbuilt **dir()** function helps to look for the list of methods that can be used while handling tuples. The **dir()** function only gives the list of methods available; instead, using the **help()** function and passing an empty tuple gives you a brief description of each of the methods available with tuples:
+
+#### 
 
 #### Tuple Indexing
 
@@ -83,7 +83,7 @@ Ans: A & B.
 
 - *A tuple cannot be modified.*
 
-
+#### 
 
 #### Creating a Tuple
 
@@ -103,7 +103,7 @@ Ans: B & C.
 
 - *A tuple is a collection of objects. This object can also be a tuple; here, (1,2,3) is a tuple and it acts as an object of tuple x.*
 
-
+#### 
 
 #### A List and a Tuple Together?
 
@@ -114,8 +114,6 @@ Qn: Can a list contain an integer as an element?
 - No
 
 Ans: A. *Yes, a list can contain integer as an element.*
-
-
 
 ### Tuple
 
@@ -147,7 +145,7 @@ tuple_2 = tuple(input_list + ['Python'])
 print(tuple_2)
 ```
 
-![Tuples are immutable. Don't try to change them!](https://i.ibb.co/CM8xyns/Tuples-Meme.png)
+![](https://i.ibb.co/CM8xyns/Tuples-Meme.png)
 
 Tuples are immutable. Don't try to change them!
 

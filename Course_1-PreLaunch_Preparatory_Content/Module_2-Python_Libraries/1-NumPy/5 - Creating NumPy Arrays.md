@@ -20,11 +20,13 @@ In this video, you learnt about the functions of ones and zeros. Let’s watch t
 
 ### Array 'arange' Function
 
-#### Coding
+#### Problem
 
 Description
 
 Create an array of first 10 multiples of 5 using the 'arange' function.
+
+#### Solution
 
 ```python
 import numpy as np
@@ -36,6 +38,8 @@ print(array_multipleof5)
 In both the videos given above, Behzad talked about creating NumPy arrays using the functions mentioned earlier. But, if you notice, all the arrays that Behzad created were one-dimensional. These functions can also be used to create multidimensional arrays. In the following video, you will learn how to create nD arrays.
 
 **VIDEO**
+
+### Create border array
 
 #### Problem
 

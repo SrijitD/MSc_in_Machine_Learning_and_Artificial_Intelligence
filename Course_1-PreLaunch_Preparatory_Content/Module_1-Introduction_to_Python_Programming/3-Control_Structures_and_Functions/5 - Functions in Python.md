@@ -6,8 +6,6 @@ By the end of this segment, you would be able to create your own functions which
 
 **VIDEO**
 
-
-
 Syntax of a function:
 
 ![](https://i.ibb.co/SKQQXnT/Python-Function-Syntax.png)
@@ -16,11 +14,7 @@ In the video above, the function which was built was not really useful. It retur
 
 **VIDEO**
 
-
-
 Now, based on your understanding from the previous video attempt the coding question given below:
-
-
 
 ### Function
 
@@ -53,8 +47,6 @@ def squared(a, b):
 
 print(squared(x,y))
 ```
-
-
 
 As you saw in the 'factorial function' in the earlier video, functions can take multiple parameters. When the functions get complicated, programmers often get confused while passing parameters to a function. Let us now look into more complex examples to build a stronger foundation of functions.
 
@@ -93,8 +85,6 @@ print(list_diff(L1, L2))
 
 Based on your understanding about functions from the previous videos, attempt the quiz given below:
 
-
-
 #### To Err is Human
 
 Qn: Identify the error/errors in the given code to apply the function (x∗y+x+y) on x,y and finally return the value.
@@ -123,8 +113,6 @@ Ans: A, B & C
 
 - *There are two parameters in the function definition, but during the function call, only one argument is being called hence it would throw an error here.*
 
-
-
 #### Function Call for a Function Call
 
 Qn: What would be the output of the following code?
@@ -152,8 +140,6 @@ Ans: C. *There is no error in the piece of code above; it successfully executes
 
 `f(2, f(3)) = 2*7 + 2 + 7 = 23`
 
-
-
 #### Function Call for a Function Call - II
 
 Qn: What would be the output of the following code?
@@ -175,16 +161,16 @@ func(2, func(3))
 
 Ans: D. *An error is thrown on executing the given piece of code. In the function definition, both x and y are required parameters. So, the function call would throw an error if only one argument is given. Here, f(3) is taking only one argument; so, this leads to an error.*
 
-
-
 #### Function Call for a Function Call Returns
 
-What is the output of the following code?
+Qn: What is the output of the following code?
 
+```python
 def func(x = 1 ,y = 2):
     z = x * y + x + y
-    return z
+    return z
 func(2, func(3))
+```
 
 - 35
 
@@ -203,8 +189,6 @@ Ans: A. *In the function definition, both x and y are assigned a default value o
 `2 * 11 + 11 +2`
 
 *While passing the arguments, you may want to maintain the value of x as the default but update the value of y to 3 and then use the concept of keyword argument. f(y=3) would keep the value of x as 1  but would update the value of y to 3.*
-
-
 
 #### Function Parameters
 
@@ -234,21 +218,15 @@ Ans: D. _In the piece of code where the func is being implemented, as per the eq
 
 *In the latter part of the code, where you are implementing ans_list using a list comprehension, func(x) should be applied to every x in L1, i.e., for x in L1.*
 
-
-
-
-
 **Lambda functions** are another way of defining functions to execute small functionalities occurring while implementing a complex functionality. These functions can take multiple parameters as input but can only execute a single expression; in other words, they can only perform a single operation.
 
 **VIDEO**
 
 The format of a lambda expression is as follows:
 
-**function_name  = lambda <space>  input_parameters :  output_parameters** 
+**function_name  = lambda  input_parameters :  output_parameters** 
 
 For example: diff = lambda x,y : x-y is a lambda function to find the difference of two elements.
-
-
 
 ### Lambda
 
@@ -282,8 +260,6 @@ greater = lambda x, y: x if x > y else y
 print(greater(a,b))
 ```
 
-
-
 #### Lambdas
 
 Qn: What is the output of this program?
@@ -302,7 +278,3 @@ min(101*99, 102*98)
 - 9996
 
 Ans: D. *The min function here returns the minimum of two values passed as arguments to the function. So passing 101*99 and 102*98 would return 102*98, in other words, 9996.*
-
-
-
-

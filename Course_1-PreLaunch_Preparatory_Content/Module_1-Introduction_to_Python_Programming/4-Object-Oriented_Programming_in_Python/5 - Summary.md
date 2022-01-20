@@ -8,11 +8,7 @@ The concepts learnt as part of this module would be used to build an <u>Ice-Cr
 
 Download the jupyter notebook linked below and get started. All the best!
 
-
-
 It is highly recommended that you give the practice exercise your best shot. If you are facing any challenge with respect to any particular component, you could look at the solution to the exercise given below:
-
-
 
 Now, let's summarise what you learnt in this session.
 

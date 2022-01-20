@@ -2,11 +2,7 @@
 
 Download the Python file given below; it includes an exercise to test your understanding of the concepts learnt in this session:
 
-
-
 Based on your answers obtained in the notebook, attempt the following quiz:
-
-
 
 #### Senior-Most Employee
 
@@ -24,7 +20,7 @@ Ans: A. *To identify the age of the senior-most employee, first you have to use 
 
 `max(Employee_data.values())`
 
-
+#### 
 
 #### 159th Employee
 
@@ -44,7 +40,7 @@ Ans: C. *Since you want to get the age of the employee with employee id 159, sim
 
 *Completely unrelated; did you know that the 3rd, 4th, and 5th digits of π are 1, 5, and 9?*
 
-
+#### 
 
 #### Start-Up Organisation
 
@@ -62,8 +58,6 @@ Ans: D. *You can find out the number of employees by using the length on the dic
 
 `len(Employee_Data)`
 
-
-
 #### Mean Age
 
 Qn: Calculate the mean age of the employees.
@@ -80,7 +74,7 @@ Ans: A. *The mean age of the employees equals the sum of the ages of employees 
 
 `sum (Employee_data.values())/74`
 
-
+#### 
 
 #### A Couple of Tasks
 
@@ -101,5 +95,3 @@ Task 2: Remove the employ with employee id 143.
 Ans: D. *You know how to update and remove values from the dictionary; however, the critical step here would be to identify the updated length of the dictionary and then use that information to calculate of the mean age of the employees. In the code given below, you can have a look at the different steps involved in arriving at the right answer:*
 
 ![](https://i.ibb.co/pwrFvQy/Calculate-Mean-Two-Tasks.png)
-
-

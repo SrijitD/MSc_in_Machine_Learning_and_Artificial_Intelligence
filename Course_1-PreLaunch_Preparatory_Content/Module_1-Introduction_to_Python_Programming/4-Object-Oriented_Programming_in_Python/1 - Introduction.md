@@ -12,10 +12,6 @@ In this session, we will be covering the important concepts of object-oriented 
 
 You can open the link below to download the Python notebooks used in this session. We recommend that you keep executing the commands on your computer in pace with the lecture. You can parallelly try experimenting with other commands you may have in mind.  
 
-
-
-
-
 ## People you will hear from in this session:
 
 **Subject Matter Expert**

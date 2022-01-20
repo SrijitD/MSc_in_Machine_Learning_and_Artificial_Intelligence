@@ -8,8 +8,6 @@ To conclude, in this session you learnt about the various control structures and
 
 In the next session, you will be learning about object-oriented programing concepts in Python, where you will dive deep into the concepts of classes, objects and object-oriented programming methodologies.
 
-
-
 ## Additional Reading
 
 If you want to know more about functions and comprehensions in Python then click on the links given below:

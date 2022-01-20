@@ -26,8 +26,6 @@ To visualise a pandas series easily, it can be thought of as a one-dimensional 
 You can create a Pandas series from an array-like object using the following command:  
 `pd.Series(data, dtype)`
 
-
-
 ### Selecting Columns of a Dataframe
 
 #### Problem
@@ -48,10 +46,7 @@ df = pd.read_csv(io.StringIO(s.decode('utf-8')))
 
 df_2 = df.loc[:, ["month", "day", "temp", "area"]]
 print(df_2.head(20))
-
 ```
-
-
 
 The methods discussed above allow you to extract columns. But, how would you extract a specific column from a specific row? 
 
@@ -123,15 +118,11 @@ Ans: B.
 
 - *The `iloc` function takes input in the form of position. The specified row is at index ‘2’ (starts at 0) and the columns specified are also correct.*
 
-
-
 #### iloc vs loc
 
 Qn: What is the difference between the use of `iloc` and `loc`?
 
 Ans: *The functionalities of `iloc` and `loc` are different; `iloc` fetches the rows/columns at a particular position (and hence takes an integer as input), whereas `loc` fetches rows/columns with particular labels.*
-
-
 
 ## Subsetting Rows Based on Conditions
 

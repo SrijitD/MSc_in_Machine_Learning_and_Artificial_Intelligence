@@ -72,6 +72,8 @@ There are two functions you can use to sort a list:
 - **sort():** sorts the elements of a list in place
 - **sorted():** assign the sorted elements to a new list. And the original list is left as is.
 
+
+
 #### Indexing from the End
 
 Qn: Suppose list_1 is [2, 33, 222, 14, 25]. What is list_1[-5]?
@@ -85,6 +87,8 @@ Qn: Suppose list_1 is [2, 33, 222, 14, 25]. What is list_1[-5]?
 - Error
 
 Ans: A. *A list supports negative indexing with the last element starting at -1. So, list_1[-5] will return 2.*
+
+
 
 #### I Lost Everything!
 
@@ -105,6 +109,8 @@ print(word)
 - ['1','2','3','4']
 
 Ans: C. *Yes, this is the correct answer. We are indexing all the elements of the list 'word' to an empty list; hence, the final output would be an empty list. Hence, this method can also be used to delete all the items from a list.*
+
+#### 
 
 #### Sorted List
 
@@ -132,7 +138,9 @@ print (L)
 
 Ans: A. *sorted(L) will return a sorted list, and when it comes to strings, it happens based on the character ASCII values. First, it compares the ASCII values of the first characters and sorts the strings. If the first characters have the same value, then it proceeds to the second characters and compares their ASCII values; if this matches again, then it proceeds to the third characters, and this continues until you have sorted them. In this way, the strings are sorted in a list.*
 
-### List_remove_append
+
+
+### List Remove Append
 
 #### Problem
 
@@ -159,6 +167,8 @@ input_list.remove("SPSS")
 input_list.append("SPARK")
 print(input_list)
 ```
+
+
 
 ### List to String
 
@@ -208,7 +218,7 @@ Ans: A. *Using the slicing concept we can extract Python from the nested list. H
 
 `input_list[2][0]`
 
-
+### 
 
 ### String Split
 

@@ -100,8 +100,6 @@ for i in ['Finance', 'HR', 'Sales', 'Marketing']:
     print(i, len(rating[(rating['Training'] == 'No') & (rating['Department'] == i)]) / len(rating[rating['Department'] == i]) * 100)
 ```
 
-
-
 The columns that are created by the user are known as ‘**derived variables**’. Derived variables increase the information conveyed by a DataFrame. Now, you can use the lambda function to modify the DataFrames. 
 
 In the upcoming segments, you will learn how to use the groupby function to aggregate the created DataFrame.

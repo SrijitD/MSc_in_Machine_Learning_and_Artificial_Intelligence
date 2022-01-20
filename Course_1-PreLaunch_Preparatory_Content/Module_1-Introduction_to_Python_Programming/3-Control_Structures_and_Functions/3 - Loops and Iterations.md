@@ -6,8 +6,6 @@ In cases where we need to repeat a pre-set process n number of time the concept
 
 **VIDEO**
 
-
-
 **While loop**
 
 As you saw in the video, the while loop keeps on executing **until** the defined condition is <u>true</u>. Once the condition <u>fails&nbsp;</u> the loop is <u>exited</u>. Such kind of programs are used in every-day applications such as the pin code lock:
@@ -109,7 +107,7 @@ An important thing to note here is that you saw a way to create lists using the 
 
 #### Complete the Code
 
-Complete this piece of code for calculating the element-wise difference between two lists and storing them in L3.
+Qn: Complete this piece of code for calculating the element-wise difference between two lists and storing them in L3.
 
 [Assume that the lists are of the same length.]
 
@@ -136,11 +134,7 @@ Ans: C.
 
 - *Using a range function, range(n) would create elements from 0 to n-1, and for adding new elements to a list, you can use the append function.*
 
-
-
 Now, attempt the coding question given below based on your understanding of iterations.
-
-
 
 ### Iterations
 
@@ -170,8 +164,6 @@ result = [x[0].upper() + x[1:].lower() for x in input_list]
 
 print(result)
 ```
-
-
 
 Suppose a situation arises where the developer has no idea about the number of iterations he needs to have. Such iterations are called event-based iterations. Let's learn about them in detail.
 
@@ -207,8 +199,6 @@ Ans: B, C & D.
 
 - *In this given code snippet, you are basically taking an empty list l. Then, first by iterating a for loop over elements in range object which has elements from -100 to 0, then checking if an element is even or not and if i is even you are appending to list L. At the end of completion of the list the list would have all the negative even elements from -100 to 0. This is exactly what we need.*
 
-
-
 #### Of Fish, Birds, and Mammals
 
 Qn: Using the following [document,](https://docs.python.org/3/tutorial/datastructures.html#dictionaries) answer the following questions. What will the output of the following code be?  
@@ -228,9 +218,3 @@ for i in d:
 - 0 Fish 1 Bird 2 Mammal
 
 Ans: C. *By default, the iteration is over the keys.*
-
-
-
-
-
-

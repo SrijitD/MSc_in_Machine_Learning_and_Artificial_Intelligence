@@ -12,6 +12,8 @@ For your reference Strings' commands and their input parameters are listed on th
 
 Based on your answers obtained in the notebook, attempt the following quiz.
 
+
+
 #### Long Strings
 
 Qn: Calculate the number of characters in the string.
@@ -28,7 +30,7 @@ Ans: A. `len(string)`
 
 *Using the len() function, you can find the length of the string or in other words number of characters in the string*
 
-
+#### 
 
 #### 'a' minor String
 
@@ -46,7 +48,7 @@ Ans: B. *We need to find the number of times 'a' has occurred in the string.  A
 
 `string.count('a')`
 
-
+#### 
 
 #### If Only
 
