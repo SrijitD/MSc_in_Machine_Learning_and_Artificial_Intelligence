@@ -37,9 +37,9 @@ After that, you were introduced to 2 main rules of probability that help you in 
   where **P(A∪B)** denotes the probability that either the event A or B occurs. 
   
               **P(A)** denotes the probability that only the event A occurs
-  
+      
               **P(B)** denotes the probability that only the event B occurs
-  
+      
               **P(A∩B)** denotes the probability that both the events A and B occur simultaneously.
 
 - **Multiplication Rule**: When an event A is not dependent on event B and vice versa, they are known as independent events. And the multiplication rule allows us to compute the probabilities of both of them occurring simultaneously, which is given as
