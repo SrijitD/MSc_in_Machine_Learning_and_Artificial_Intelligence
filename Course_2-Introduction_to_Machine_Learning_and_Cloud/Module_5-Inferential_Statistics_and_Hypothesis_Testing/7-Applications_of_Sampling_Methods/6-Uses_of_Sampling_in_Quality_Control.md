@@ -6,8 +6,9 @@ Hence, you will need to apply the sampling theory here too. Think about it: you 
 
 **VIDEO**
 
-![Sample_Quality_Control_Cycle](https://i.ibb.co/d7FYpHC/Sample-Quality-Control-Cycle.gif)
-[Sample_Quality_Control_Cycle](Sample_Quality_Control_Cycle.gif)
+![Sample_Quality_Control_Cycle](https://i.ibb.co/d7FYpHC/Sample-Quality-Control-Cycle.gif)  
+
+[Sample Quality Control Cycle](Sample_Quality_Control_Cycle.gif)
 
 Let’s say you’re inspecting a batch of bolts in order to assess their quality. So, you decide to check every 1000th bolt and see if it is good or not. Since all the bolts you inspect turn out to be good, you end up deciding that there are no defects in the batch.
 
