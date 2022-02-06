@@ -8,13 +8,13 @@ Before we get to learn about the various nuances involved in data visualisation,
 
 As explained in the video above, it is very easy to be deceived by the numbers and summary statistics. In the example that you saw, each of the branches had similar average sales and discount rates, and the corresponding standard deviations were similar as well, as shown in the table below.
 
-![](https://i.ibb.co/fdX6kh1/State-Month-Sales-Discount-Table.png)
+![State-Month-Sales-Discount-Table](https://i.ibb.co/fdX6kh1/State-Month-Sales-Discount-Table.png)
 
 **Table 1**
 
 However, the patterns in the underlying data and the difference became apparent when visualised through appropriate plots.
 
-![](https://i.ibb.co/ZT3s57t/State-Month-Sales-Discount-Visualization.png)
+![State-Month-Sales-Discount-Visualization](https://i.ibb.co/ZT3s57t/State-Month-Sales-Discount-Visualization.png)
 
 Each of the branches had actually employed a different strategy to calculate its discount rate, and the sales numbers were also quite different across all of them. It is difficult to draw this type of insight and understand the difference between each of the branches using raw numbers alone; therefore, you should utilise an appropriate visualisation technique to ‘look’ at the data.  
 

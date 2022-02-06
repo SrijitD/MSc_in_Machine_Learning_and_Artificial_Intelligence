@@ -1,4 +1,4 @@
-﻿# Graded Questions
+# Graded Questions
 
 In the previous sessions, you learnt that SQL is a querying language, which helps in drawing useful insights from the database. Now, let’s learn more about SQL with the help of a real-world example.
 
@@ -11,6 +11,8 @@ First, let’s understand the process and structure of the database. You need to
 3. Product section
 
 Download details about the attributes for each table from the file attached below.
+
+![Attributes Description](Attributes_Description.xlsx)
 
 1. **Employee Section:**  This section is divided into the following two tables:
 
@@ -46,6 +48,8 @@ You need to prepare the entity relational diagram (ERD) for this case study afte
 You have already been provided with the data set, so you do not have to create any table in the database. You are mainly required to write SQL queries to answer the graded questions.
 
 You will find a blank MySQL workbench with inline comments attached below.
+
+![Graded Questions Workbench](Graded_Questions_Workbench.sql)
 
 You must code each step that has been mentioned in the commented workbench. The questions are related to each other, so if you do not follow the steps diligently, then you will not be able to answer some of the following questions.
 
@@ -534,6 +538,4 @@ Qn: In which office does the employee with the job title 'VP Marketing' work?
 
 Ans: C. *You need to apply the ‘outer join’ clause on the 'offices' and 'employees' tables.*
 
-```sql
 
-```
