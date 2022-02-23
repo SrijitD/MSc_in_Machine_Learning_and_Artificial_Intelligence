@@ -56,6 +56,7 @@ Content accross the course in different courses and modules are mostly .md and .
     - [Hypothesi Testing with Two Populations](Course_2-Introduction_to_Machine_Learning_and_Cloud/Module_5-Inferential_Statistics_and_Hypothesis_Testing/5-Hypothesis_Testing_with_Two_Populations)
     - [A/B Testing Case Study](Course_2-Introduction_to_Machine_Learning_and_Cloud/Module_5-Inferential_Statistics_and_Hypothesis_Testing/6-A_B_Testing_Case_Study)
     - [Applications of Sampling Methods](Course_2-Introduction_to_Machine_Learning_and_Cloud/Module_5-Inferential_Statistics_and_Hypothesis_Testing/7-Applications_of_Sampling_Methods)
+  - [Module 1 - Credit EDA Case Study](Course_2-Introduction_to_Machine_Learning_and_Cloud/Module_1-Credit_EDA_Case_Study)
 - [Docs](Docs)
   - [Books](Docs/Books)
   - [Cheet Sheets](Docs/Cheet_Sheets)

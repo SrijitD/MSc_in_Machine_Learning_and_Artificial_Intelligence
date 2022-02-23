@@ -96,7 +96,7 @@ Qn: At what cutoff rainfall value should the current infrastructure be redesigne
 
 - 2330 mm
 
-Ans: B. *Let X be defined as the rainfall and the cutoff rainfall be denoted by x. Given that μ= 1600 and σ= 400. Thus the Z-value corresponding to x would be (x-1600)/400. Let it be denoted by z. Now as per the question P(Z>=z)= 0.03. This can be written as 1-P(Z<z) =0.03 or P(Z<z)= 0.97. Then from the tables, you get the value of z that satisfies the previous equation as 1.88. Thus you have* $(x-1600)/400 =1.88 or x =1600+1.88*400 = 2352$
+Ans: B. *Let X be defined as the rainfall and the cutoff rainfall be denoted by x. Given that μ= 1600 and σ= 400. Thus the Z-value corresponding to x would be (x-1600)/400. Let it be denoted by z. Now as per the question P(Z>=z)= 0.03. This can be written as 1-P(Z<z) =0.03 or P(Z<z)= 0.97. Then from the tables, you get the value of z that satisfies the previous equation as 1.88. Thus you have* $(x-1600)/400 =1.88\ or\ x =1600+1.88*400 = 2352$
 
 ## Comprehension
 
