@@ -65,10 +65,11 @@ Content accross the course in different courses and modules are mostly .md and .
 
 ## Partner Platforms & Universities
 
-[**UpGrad**](https://www.upgrad.com/)
+[**UpGrad**](https://www.upgrad.com/)  
+![UpGrad](https://i.ibb.co/B3k8QJn/upGrad.jpg)
 
 [**Indian Institute of Technology Madras**](https://www.iitm.ac.in/)
 ![Indian_Institute_of_Technology_Madras](https://i.ibb.co/VTRRkkc/IIT-Madras-Logo.png)
 
-[**Liverpool John Moores University**](https://www.ljmu.ac.uk/)
+[**Liverpool John Moores University**](https://www.ljmu.ac.uk/)  
 ![Liverpool_John_Moores_University](https://i.ibb.co/09WfhTk/LJMU.png)
