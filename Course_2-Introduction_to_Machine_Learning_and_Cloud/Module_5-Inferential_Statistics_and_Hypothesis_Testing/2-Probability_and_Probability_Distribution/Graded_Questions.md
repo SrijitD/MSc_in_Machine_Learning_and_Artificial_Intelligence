@@ -2,12 +2,6 @@
 
 The following questions are graded. All the best!
 
-Question 1/1
-
-Mandatory
-
-**Question 1**Correct
-
 ## Comprehension
 
 As you may already know, roulette is a popular casino game. Let’s understand how the roulette wheel's design ensures that in the long run, the player always loses and the house always wins.
@@ -62,7 +56,7 @@ Qn: What is the probability of the random variable X lying between -1.5 and +2.5
 
 - 0.7
 
-Ans: B. _The probability of the variable lying between -1.5 and 2.5 would be equal to the area under the PDF, between X = -1.5 and X = 2.5. This would be equal to the area of a rectangle, with breadth 0.1 and length 2.5 - (-1.5) = 4. Multiplying the two, you get the area of the rectangle, which is equal to 0.1*4 = 0.4._
+Ans: B. *The probability of the variable lying between -1.5 and 2.5 would be equal to the area under the PDF, between X = -1.5 and X = 2.5. This would be equal to the area of a rectangle, with breadth 0.1 and length 2.5 - (-1.5) = 4. Multiplying the two, you get the area of the rectangle, which is equal to $0.1*4$ = 0.4.*
 
 ## Comprehension
 
@@ -128,7 +122,7 @@ Qn: Now, the company’s QC (Quality Control) department comes and selects a tab
 
 - 99.61%
 
-Ans: A. *Let’s define X as the amount of paracetamol in the selected tablet. Now, X is a normally distributed random variable, with mean μ = 510 mg and standard deviation σ = 20 mg. Now, you have to find the probability of X being more than 450, i.e. P(X>450). Converting this to Z, you get $P(X>450) = P(Z>{450-510}/20) = P(Z>-3) = 1 - P(Z<-3) = 0.9987,\ or\ 99.87\%$
+Ans: A. *Let’s define X as the amount of paracetamol in the selected tablet. Now, X is a normally distributed random variable, with mean μ = 510 mg and standard deviation σ = 20 mg. Now, you have to find the probability of X being more than 450, i.e. P(X>450). Converting this to Z, you get $P(X>450) = P(Z>{450-510}/20) = P(Z>-3) = 1 - P(Z<-3) = 0.9987,\ or\ 99.87\%$*
 
 Qn: Now, let’s say that QC decides to sample one more tablet. This time, it selects a tablet from Batch Y4. Based on previous knowledge, you know that Batch Y4 has a mean paracetamol level of 505 mg, and its standard deviation is 25 mg. This time, QC wants to check both the upper limit and the lower limit for the paracetamol level.
 

@@ -32,7 +32,7 @@ Ans: B. *When you are generating random numbers within a range, the probability 
 2. *Between 20 % and 39%: The probability of any discount in this range is 1/20.*
 3. *Between 40% and 50%: The probability of any discount in this range is 1/11.*
 
-*Now, you want to find out the number of people who have received a discount of lesser than 15%, so you're dealing with the first uniform distribution, i.e., the one between 10% and 19%. Recall that there were 200 users in this range. Hence, the number of users who will receive a discount of 15% or less will be equal to 6×110×200 (6 has been used as for 15% or less, there are 6 possible values, i.e., 10, 11, 12, 13, 14, and 15). Hence, calculating the above expression, you get 120.*
+*Now, you want to find out the number of people who have received a discount of lesser than 15%, so you're dealing with the first uniform distribution, i.e., the one between 10% and 19%. Recall that there were 200 users in this range. Hence, the number of users who will receive a discount of 15% or less will be equal to $6×\frac{1}{10}×200$ (6 has been used as for 15% or less, there are 6 possible values, i.e., 10, 11, 12, 13, 14, and 15). Hence, calculating the above expression, you get 120.*
 
 Qn: This time you want to check how the product is selling between 15% and 30% since you believe that this is the optimal range of the discount. For this, you first need to know how many users out of 1000 have received a discount in this range. Can you find that out, i.e., the approximate number of users who have received a discount between 15% and 30% (both included)?
 
@@ -46,7 +46,7 @@ Qn: This time you want to check how the product is selling between 15% and 30% s
 
 Ans: D. *This time you're dealing with 2 of the discrete uniform distributions, one between 10% and 19% and the other between 20% and 39%. The number of users who got a discount from the first range was 200 and the second range was 640. So the probability of having a discount between 15% - 35% should be broken down into 2 parts - one between 15% and 19% and the other between 20% and 25%. Hence, the total number of users would be:*
 
-$(5×110×200)+(11×120×640)=100+352=452$
+$(5×\frac{1}{10}×200)+(11×\frac{1}{20}×640)=100+352=452$
 
 _**Note:**  5 and 11 have been used because there are 5 possible values of discounts between 15 and 19, and there are 11 possible values of discounts between 20 and 30, respectively._
 

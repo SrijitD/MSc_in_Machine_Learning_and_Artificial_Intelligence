@@ -1,12 +1,5 @@
 # Practice Questions
-
-The following questions are **ungraded** and solely for practice
-
-Question 1/6
-
-Mandatory
-
-#### Application of Sampling Methods
+## Application of Sampling Methods
 
 Qn: What type of sampling is the easiest to do because of its convenience?
 

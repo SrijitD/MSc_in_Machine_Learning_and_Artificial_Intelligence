@@ -14,6 +14,7 @@ You learnt how to make statistical inferences using interval estimates and solve
 ## **Comparing means with known variance**
 
 Here you learned how to conduct hypothesis tests on the means of two **independent** samples where the **standard deviations of both its populations were assumed to be known**. The z-score is calculated using:  
+
 $z = \dfrac{(\bar{x_1}-\bar{x_2})-(\mu_1-\mu_2)}{\sqrt{\dfrac{\sigma^2_1}{n_1}+\dfrac{\sigma^2_1}{n_2}}}$
 
 ## **Comparing means with unknown variance**
@@ -35,11 +36,11 @@ In the case of matched samples, both samples are paired. A matched sample test w
 
 Given two samples, you begin by create a column calculating the difference between the two samples, and solve the test assuming the test is a one-sample test. For a hypothesized value, d0you must identify the test as a right-tailed test, a left-tailed test, or a two-tailed test. SInce you are considering the difference column as your new sample for this test, you need to recalculate the sample mean and sample standard deviation for this test as follows:
 
-      $\bar{d}=\dfrac{\sum_{i=1}^{n}d_i}{n}$
-    
-    $s_d=\sqrt{\dfrac{\sum(d_i-\bar{d})^2}{n-1}}$
+$\bar{d}=\dfrac{\sum_{i=1}^{n}d_i}{n}$
 
-The final test statistic for this test is given by t=¯d−d0sd√n with n-1 degrees of freedom.
+$s_d=\sqrt{\dfrac{\sum(d_i-\bar{d})^2}{n-1}}$
+
+The final test statistic for this test is given by $t=\dfrac{\bar{d}−d_0}{s_d/\sqrt{n}}$ with n-1 degrees of freedom.
 
 ## **Comparing a Single Proportion**
 

@@ -21,20 +21,20 @@ $\sigma$ = population standard deviation
 Qn: Which distribution will be used to compute the test statistic? What is the value of the test statistic?
 
 - T distribution,
-
-        $\dfrac{(5.2-5.0)-(0)}{\sqrt{\dfrac{1.3^2}{155}+\dfrac{1.5^2}{210}}}$
+  
+  $\dfrac{(5.2-5.0)-(0)}{\sqrt{\dfrac{1.3^2}{155}+\dfrac{1.5^2}{210}}}$
 
 - T-distribution
-
-        $\dfrac{(5.2-5.0)-(0)}{\sqrt{\dfrac{1.3^2}{155}-\dfrac{1.5^2}{210}}}$
-
-- Standard normal distribution,
-
-        $\dfrac{(5.2-5.0)-(0)}{\sqrt{\dfrac{1.3^2}{155}+\dfrac{1.5^2}{210}}}$
+  
+  $\dfrac{(5.2-5.0)-(0)}{\sqrt{\dfrac{1.3^2}{155}-\dfrac{1.5^2}{210}}}$
 
 - Standard normal distribution,
+  
+  $\dfrac{(5.2-5.0)-(0)}{\sqrt{\dfrac{1.3^2}{155}+\dfrac{1.5^2}{210}}}$
 
-        $\dfrac{(5.2+5.0)-(0)}{\sqrt{\dfrac{1.3^2}{155}+\dfrac{1.5^2}{210}}}$
+- Standard normal distribution,
+  
+  $\dfrac{(5.2+5.0)-(0)}{\sqrt{\dfrac{1.3^2}{155}+\dfrac{1.5^2}{210}}}$
 
 Ans: D. *This is a test for comparing means when the population standard deviation is known. Hence we will use the Z-distribution and the  z-score is calculated as*
 
@@ -49,7 +49,7 @@ indicating a higher purchase potential.
 
 Use α = 0.05 and the following data to test the following hypothesis
 
-$μ_d=\mu_After−\mu_Before$
+$μ_d=\mu_{After}−\mu_{Before}$
 
 ![Television-Ad-Purchase-Table](https://i.ibb.co/C050q1H/Television-Ad-Purchase-Table.png)
 
@@ -109,7 +109,7 @@ Qn: Use the [p-value calculator](https://www.socscistatistics.com/pvalues/tdistr
 
 - 0.118
 
-Ans: A. *Use the t statistics from the previous question to get the p-value. The degrees of freedom for this test will be 7-1=6. Using this, the final p-value for a one-tailed test comes out to be 0.022*
+Ans: A. *Use the t statistics from the previous question to get the p-value. The degrees of freedom for this test will be $7-1=6$. Using this, the final p-value for a one-tailed test comes out to be 0.022*
 
 #### Types of errors
 

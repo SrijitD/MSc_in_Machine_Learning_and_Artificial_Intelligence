@@ -148,7 +148,7 @@ Qn: Based on the information above, conduct a hypothesis test at a 5% significan
 
 - 0.2
 
-Ans: C. $\mu=8\%;\sigma=3\%;n=36;\bar{x}=7\%;S.E.=3\sqrt{36}=0.5.\ Now, Z_{\bar{x}}=7−80.5=−2$
+Ans: C. $\mu=8\%;\sigma=3\%;n=36;\bar{x}=7\%;S.E.=\frac{3}{\sqrt{36}}=0.5.\ Now, Z_{\bar{x}}=\frac{7−8}{0.5}=−2$
 
 #### p-Value of the Z-Score
 

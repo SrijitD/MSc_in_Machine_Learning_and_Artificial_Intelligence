@@ -52,7 +52,7 @@ Answer the following questions in order to draw a conclusion from the test.
 
 #### p-value Method
 
-Qn: What will theapproximate Z-score for the sample in this case be?
+Qn: What will the approximate Z-score for the sample in this case be?
 
 **Note**: Will the answer be different if you use the T distribution in place of the Z-distribution?
 
@@ -64,7 +64,7 @@ Qn: What will theapproximate Z-score for the sample in this case be?
 
 - 3.10
 
-Ans: B. _Recall that the Z-score is calculated using the formula_$\frac{\bar{X} - \mu}{\sigma/\sqrt{n}}$.
+Ans: B. _Recall that the Z-score is calculated using the formula_ $\frac{\bar{X} - \mu}{\sigma/\sqrt{n}}$.
 
 Here,$\bar{X}=62.6,\ \mu=60,\ \sigma\approx S=10.7,\ n=100$.
 
@@ -112,7 +112,7 @@ Calculate the approximate value of Z-score usingthe data as thefirst step to eva
 
 - -1.79
 
-Ans: D. *You first need to calculate the mean and SD of the relevant column 'Is helpful?' in Excel. If you notice, the mean gives the percentage of users who purchased it because of Game of Thrones. The mean and standard deviation come out to be 0.52and 0.501respectively. This means that 52% of the userspurchased it because of Game of Throneswith a standard deviation of 49.2%.Now, you can easily calculate the Z-value as:*
+Ans: D. _You first need to calculate the mean and SD of the relevant column 'Is helpful?' in Excel. If you notice, the mean gives the percentage of users who purchased it because of Game of Thrones. The mean and standard deviation come out to be 0.52 and 0.501 respectively. This means that 52% of the userspurchased it because of Game of Throneswith a standard deviation of 49.2%.Now, you can easily calculate the Z-value as:_
 
 $\text{Z-value} = \dfrac{\bar{p}-p_0}{\sqrt{\frac{p_0(1-p_0)}{n}}}=\dfrac{0.52−0.6}{\sqrt{\frac{0.6(1−0.6)}{121}}}\approx−1.79$
 
@@ -128,7 +128,7 @@ Qn: From the Z-value you calculated in the last case, what will the p-value be? 
 
 - p-value = 0.2296, Fail to reject the null hypothesis
 
-Ans: A. *From the Z-table, the value at -1.79comes out to be 0.0367. Since this is a left-tailed hypothesis test, this value itself is the p-value. Since, 0.0367is less than the significance level defined, i.e., 0.05, you reject the null hypothesis.*
+Ans: A. _From the Z-table, the value at -1.79comes out to be 0.0367. Since this is a left-tailed hypothesis test, this value itself is the p-value. Since, 0.0367is less than the significance level defined, i.e., 0.05, you reject the null hypothesis._
 
 #### Testing Proportions
 
@@ -152,6 +152,4 @@ Ans: D. On computing the z score, you will get,
 
 $Z = \dfrac{\bar{p}-p_0}{\sqrt{\frac{p_0(1-p_0)}{n}}}=\dfrac{0.469−0.3}{\sqrt{\frac{0.3(1−0.3)}{49}}}\approx2.58$
 
-Z =¯p−p0√p0(1−p0)n=0.469−0.3√0.3(1−0.3)49=2.58
-
-From the calculator, the p-value comes out to be 0.0098for a two-tailed test. Since the significance level is 1% which is more than 0.0098, you can reject the null hypothesis.
+From the calculator, the p-value comes out to be 0.0098 for a two-tailed test. Since the significance level is 1% which is more than 0.0098, you can reject the null hypothesis.

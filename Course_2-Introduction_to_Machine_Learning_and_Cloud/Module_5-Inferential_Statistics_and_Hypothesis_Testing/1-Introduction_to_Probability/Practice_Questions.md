@@ -104,7 +104,7 @@ Qn: Let's say that you're the Business Analytics Head at a national bank. From t
 
 - 0.89
 
-Ans: __The probability that one person would default/not default on the loan has no bearing on the fact that another person would default/not default on the same loan. Hence, you need to use the multiplication rule of probability for this problem. Also, note that we need to find the probability that both of them would not default on the loan. So first, we find that value for one person, which comes out to be 1 - 0.33 = 0.67. Now the probability that both persons would not default on the loan is given by the multiplication rule; this probability comes out to be $0.67*0.67 = 0.45$._
+Ans: _The probability that one person would default/not default on the loan has no bearing on the fact that another person would default/not default on the same loan. Hence, you need to use the multiplication rule of probability for this problem. Also, note that we need to find the probability that both of them would not default on the loan. So first, we find that value for one person, which comes out to be 1 - 0.33 = 0.67. Now the probability that both persons would not default on the loan is given by the multiplication rule; this probability comes out to be $0.67*0.67 = 0.45$._
 
 #### Probability
 

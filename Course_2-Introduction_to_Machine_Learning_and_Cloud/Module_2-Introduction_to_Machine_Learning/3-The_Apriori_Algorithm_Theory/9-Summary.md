@@ -1,4 +1,4 @@
-﻿# Summary
+# Summary
 
 In this segment, Sajan will summarize the entire implementation of the algorithm with the help of a simple flow diagram.
 

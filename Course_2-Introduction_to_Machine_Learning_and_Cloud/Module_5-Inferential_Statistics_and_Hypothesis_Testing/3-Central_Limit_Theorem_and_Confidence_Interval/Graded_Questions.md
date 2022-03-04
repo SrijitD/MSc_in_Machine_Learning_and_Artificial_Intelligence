@@ -6,6 +6,8 @@ A home renting startup, Ghar ki Baat, is planning to offer 2 BHK fully furnished
 
 For that purpose, it has acquired the following data, which has a list of 200 fully furnished 2 BHK flats in Powai, along with the monthly rent charged for them in the year 2016.
 
+Download - [Inferential Statistics - Powai Flats Rent](Inferential_Statistics-Powai_Flats_Rent.csv)
+
 As a data analyst working for Ghar ki Baat, you are tasked with finding the average rent for all 2 BHK fully furnished flats in Powai, Mumbai, using this data.
 
 You can use the first few lines in python to directly calculate the sample statistics and shown below.
