@@ -17,7 +17,7 @@ While you are working on your lab, there are some critical pointers that we'd li
 - Please add the security group of 'MyIP' to your AWS lab before you start any work on your AWS cluster.
 - Please find the guidelines in the document attached below.
 
-Download [NuvePro Usage Guidelines](Docs/AWS/NuvePro_Usage_Guidelines.pdf)
+Download [NuvePro Usage Guidelines](NuvePro_Usage_Guidelines.pdf)
 
 ## AWS upGrad Policy
 

@@ -34,11 +34,11 @@ You learnt how to create an EC2 instance through the following steps:
 
 You can refer to the following documents to get a detailed description of each step.
 
-[Connecting to EC2 Instance - Linux/Mac](Docs/AWS/Connecting_to_EC2_instance-Linux_Mac.pdf)
+[Connecting to EC2 Instance - Linux/Mac](Connecting_to_EC2_instance-Linux_Mac.pdf)
 
-[Connecting to EC2 Instance - Windows](Docs/AWS/Connecting_to_EC2_instance-Windows.pdf)
+[Connecting to EC2 Instance - Windows](Connecting_to_EC2_instance-Windows.pdf)
 
-[Updating Security Groups](Docs/AWS/Updating_Security_Group.pdf)
+[Updating Security Groups](Updating_Security_Group.pdf.md)
 
 **Note: In case you take a break before proceeding to the next video, please refer to the following document.**
 
@@ -50,7 +50,7 @@ In the earlier segment on Users, Groups, Roles and Policies, you learnt about 'r
 
 You learnt how to connect S3 from EC2 without providing any credentials by using the role. All the steps have been laid down in the document below for your reference.
 
-[IAM Role](Docs/AWS/IAM_Role.pdf)
+[IAM Role](IAM_Role.pdf)
 
 Now, based on everything that you have learnt so far, try to answer the following question.
 

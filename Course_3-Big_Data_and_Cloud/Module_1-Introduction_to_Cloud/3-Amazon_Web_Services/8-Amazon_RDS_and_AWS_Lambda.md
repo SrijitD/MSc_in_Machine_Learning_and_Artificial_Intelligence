@@ -40,7 +40,7 @@ Now that you have understood what Amazon RDS is, let’s quickly learn how to c
 
 All the steps have been provided in the following document.
 
-Download [RDS Instance](Docs/AWS/RDS_Instance.pdf) Documentation
+Download [RDS Instance](RDS_Instance.pdf) Documentation
 
 In the next video, let's explore the created database instance in Amazon Web Server.
 
