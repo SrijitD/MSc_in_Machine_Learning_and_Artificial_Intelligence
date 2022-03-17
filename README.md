@@ -58,6 +58,8 @@ Content accross the course in different courses and modules are mostly .md and .
     - [Applications of Sampling Methods](Course_2-Introduction_to_Machine_Learning_and_Cloud/Module_5-Inferential_Statistics_and_Hypothesis_Testing/7-Applications_of_Sampling_Methods)
   - [Case Study - Bank Loan Default Risk EDA](Course_2-Introduction_to_Machine_Learning_and_Cloud/Case_Study-Bank_Loan_Default_Risk_EDA)
 - [Course 3 - Big Data and Cloud](Course_3-Big_Data_and_Cloud)
+  - [Module 1 - Hadoop Framework](Course_3-Big_Data_and_Cloud/Module_1-Hadoop_Framework)
+    -[Hadoop Distributed File System](Course_3-Big_Data_and_Cloud/Module_1-Hadoop_Framework/1-Hadoop_Distributed_File_System)
   - [Module 2 - Introduction to Cloud](Course_3-Big_Data_and_Cloud/Module_3-Introduction_to_Cloud)
     - [Why Cloud?](Course_3-Big_Data_and_Cloud/Module_3-Introduction_to_Cloud/1-Why_Cloud)
     - [Deployment and Service Models](Course_3-Big_Data_and_Cloud/Module_3-Introduction_to_Cloud/2-Deployment_and_Service_Models)
