@@ -18,7 +18,7 @@ Read the following scenario and answer the questions below based on your underst
 
 - When the ‘UNKNOWN’ class becomes significantly large, all user information is clustered to identify new user profiles.
 
-Clustering is different from classification in the sense that the output class(es) are not known in the case of clustering. So, clustering is done with the assumption that the existing classification of user-profiles may not be valid any longer. \[You had heard about these during our discussion on [supervised](https://learn.upgrad.com/v/course/609/session/73516/segment/411858) and [unsupervised](https://learn.upgrad.com/v/course/609/session/73516/segment/411859) algorithms]
+Clustering is different from classification in the sense that the output class(es) are not known in the case of clustering. So, clustering is done with the assumption that the existing classification of user-profiles may not be valid any longer. \[You had heard about these during our discussion on [supervised](Course_2-Introduction_to_Machine_Learning_and_Cloud/Module_2-Introduction_to_Machine_Learning/1-Understanding_Machine_Learning/8-Supervised_Learning_Algorithms.md) and [unsupervised](Course_2-Introduction_to_Machine_Learning_and_Cloud/Module_2-Introduction_to_Machine_Learning/1-Understanding_Machine_Learning/9-Unsupervised_Learning_Algorithms) algorithms]
 
 ## Coming up
 
