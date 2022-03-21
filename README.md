@@ -61,6 +61,7 @@ Content accross the course in different courses and modules are mostly .md and .
   - [Module 1 - Hadoop Framework](Course_3-Big_Data_and_Cloud/Module_1-Hadoop_Framework)
     - [Hadoop Distributed File System](Course_3-Big_Data_and_Cloud/Module_1-Hadoop_Framework/1-Hadoop_Distributed_File_System)
     - [MapReduce and YARN](Course_3-Big_Data_and_Cloud/Module_1-Hadoop_Framework/2-MapReduce_and_YARN)
+    - [EMR CLuster](Course_Course_3-Big_Data_and_Cloud/Module_1-Hadoop_Framework/3-EMR_Cluster)
   - [Module 3 - Introduction to Cloud](Course_3-Big_Data_and_Cloud/Module_3-Introduction_to_Cloud)
     - [Why Cloud?](Course_3-Big_Data_and_Cloud/Module_3-Introduction_to_Cloud/1-Why_Cloud)
     - [Deployment and Service Models](Course_3-Big_Data_and_Cloud/Module_3-Introduction_to_Cloud/2-Deployment_and_Service_Models)
