@@ -73,6 +73,7 @@ Content accross the course in different courses and modules are mostly .md and .
   - [Module 4 - Hive and Querying](Course_3-Big_Data_and_Cloud/Module_4-Hive_and_Querying)
     - [Introduction to Hive](Course_3-Big_Data_and_Cloud/Module_4-Hive_and_Querying/1-Introduction_to_Hive)
     - [Basic Hive Queries](Course_3-Big_Data_and_Cloud/Module_4-Hive_and_Querying/2-Basic_Hive_Queries)
+    - [Advanced Hive Queries](Course_3-Big_Data_and_Cloud/Module_4-Hive_and_Querying/3-Advanced_Hive_Queries)
 
 - [Docs](Docs)
   - [Amazon Web Services](Docs/AWS)
