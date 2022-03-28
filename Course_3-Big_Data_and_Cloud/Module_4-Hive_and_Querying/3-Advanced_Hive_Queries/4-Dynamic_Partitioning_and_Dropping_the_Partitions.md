@@ -61,7 +61,133 @@ Here, Vishwa has taken an example whose problem statement is as follows:
 Thus, you can see that the query running time for the partitioned table was found to be lesser than that of the non-partitioned table.
 
 ```shell
+hive> use demo;
+OK
+Time taken: 0.994 seconds
 
+hive> create table if not exists dyn_part_user_info (id int, age int, gender string, ratings int) partitioned by (profession string) row format  delimited fields terminated by '|' lines terminated by '\n';
+OK
+Time taken: 0.107 seconds
+hive> drop table dync_part_user_info;
+OK
+Time taken: 0.278 seconds
+
+hive> set hive.exec.dynamic.partition=true;
+hive> set hive.exec.dynamic.partition.mode=nonstrict;
+hive> insert into table dyn_part_user_info partition(profession) select id, age, gender, reviews, profession from user_info;
+Query ID = hadoop_20220327213943_c2f8706b-75a1-4c04-8223-4f3d2e4d9cd6
+Total jobs = 1
+Launching Job 1 out of 1
+Tez session was closed. Reopening...
+Session re-established.
+Status: Running (Executing on YARN cluster with App id application_1648410869414_0014)
+
+----------------------------------------------------------------------------------------------
+        VERTICES      MODE        STATUS  TOTAL  COMPLETED  RUNNING  PENDING  FAILED  KILLED
+----------------------------------------------------------------------------------------------
+Map 1 .......... container     SUCCEEDED      1          1        0        0       0       0
+Reducer 2 ...... container     SUCCEEDED      2          2        0        0       0       0
+----------------------------------------------------------------------------------------------
+VERTICES: 02/02  [==========================>>] 100%  ELAPSED TIME: 7.37 s
+----------------------------------------------------------------------------------------------
+Loading data to table demo.dyn_part_user_info partition (profession=null)
+
+Loaded : 21/21 partitions.
+     Time taken to load dynamic partitions: 2.296 seconds
+     Time taken for adding to write entity : 0.007 seconds
+OK
+Time taken: 23.788 seconds
+hive>
+    > ;
+hive> exit;
+[hadoop@ip-172-31-24-155 ~]$ hadoop fs -ls /user/hive/warehouse/demo.db/dyn_part_user_info
+Found 21 items
+drwxrwxrwt   - hadoop hdfsadmingroup          0 2022-03-27 21:40 /user/hive/warehouse/demo.db/dyn_part_user_info/profession=administrator
+drwxrwxrwt   - hadoop hdfsadmingroup          0 2022-03-27 21:40 /user/hive/warehouse/demo.db/dyn_part_user_info/profession=artist
+drwxrwxrwt   - hadoop hdfsadmingroup          0 2022-03-27 21:40 /user/hive/warehouse/demo.db/dyn_part_user_info/profession=doctor
+drwxrwxrwt   - hadoop hdfsadmingroup          0 2022-03-27 21:40 /user/hive/warehouse/demo.db/dyn_part_user_info/profession=educator
+drwxrwxrwt   - hadoop hdfsadmingroup          0 2022-03-27 21:40 /user/hive/warehouse/demo.db/dyn_part_user_info/profession=engineer
+drwxrwxrwt   - hadoop hdfsadmingroup          0 2022-03-27 21:40 /user/hive/warehouse/demo.db/dyn_part_user_info/profession=entertainment
+drwxrwxrwt   - hadoop hdfsadmingroup          0 2022-03-27 21:40 /user/hive/warehouse/demo.db/dyn_part_user_info/profession=executive
+drwxrwxrwt   - hadoop hdfsadmingroup          0 2022-03-27 21:40 /user/hive/warehouse/demo.db/dyn_part_user_info/profession=healthcare
+drwxrwxrwt   - hadoop hdfsadmingroup          0 2022-03-27 21:40 /user/hive/warehouse/demo.db/dyn_part_user_info/profession=homemaker
+drwxrwxrwt   - hadoop hdfsadmingroup          0 2022-03-27 21:40 /user/hive/warehouse/demo.db/dyn_part_user_info/profession=lawyer
+drwxrwxrwt   - hadoop hdfsadmingroup          0 2022-03-27 21:40 /user/hive/warehouse/demo.db/dyn_part_user_info/profession=librarian
+drwxrwxrwt   - hadoop hdfsadmingroup          0 2022-03-27 21:40 /user/hive/warehouse/demo.db/dyn_part_user_info/profession=marketing
+drwxrwxrwt   - hadoop hdfsadmingroup          0 2022-03-27 21:40 /user/hive/warehouse/demo.db/dyn_part_user_info/profession=none
+drwxrwxrwt   - hadoop hdfsadmingroup          0 2022-03-27 21:40 /user/hive/warehouse/demo.db/dyn_part_user_info/profession=other
+drwxrwxrwt   - hadoop hdfsadmingroup          0 2022-03-27 21:40 /user/hive/warehouse/demo.db/dyn_part_user_info/profession=programmer
+drwxrwxrwt   - hadoop hdfsadmingroup          0 2022-03-27 21:40 /user/hive/warehouse/demo.db/dyn_part_user_info/profession=retired
+drwxrwxrwt   - hadoop hdfsadmingroup          0 2022-03-27 21:40 /user/hive/warehouse/demo.db/dyn_part_user_info/profession=salesman
+drwxrwxrwt   - hadoop hdfsadmingroup          0 2022-03-27 21:40 /user/hive/warehouse/demo.db/dyn_part_user_info/profession=scientist
+drwxrwxrwt   - hadoop hdfsadmingroup          0 2022-03-27 21:40 /user/hive/warehouse/demo.db/dyn_part_user_info/profession=student
+drwxrwxrwt   - hadoop hdfsadmingroup          0 2022-03-27 21:40 /user/hive/warehouse/demo.db/dyn_part_user_info/profession=technician
+drwxrwxrwt   - hadoop hdfsadmingroup          0 2022-03-27 21:40 /user/hive/warehouse/demo.db/dyn_part_user_info/profession=writer
+
+[hadoop@ip-172-31-24-155 ~]$ hive
+
+Logging initialized using configuration in file:/etc/hive/conf.dist/hive-log4j2.properties Async: false
+hive> use demo;
+OK
+Time taken: 1.309 seconds
+hive> show partitions part_user_info;
+OK
+profession=doctor
+profession=engiener
+Time taken: 0.508 seconds, Fetched: 2 row(s)
+hive> alter table part_user_info drop partition (profession='doctor');
+Dropped the partition profession=doctor
+OK
+Time taken: 1.446 seconds
+hive> show partitions part_user_info;
+OK
+profession=engiener
+Time taken: 0.194 seconds, Fetched: 1 row(s)
+hive> select gender, sum(ratings) from user_info where profession= ??[hadoop@ip-172-31-24-155 ~]$ ;
+[hadoop@ip-172-31-24-155 ~]$ hive
+
+Logging initialized using configuration in file:/etc/hive/conf.dist/hive-log4j2.properties Async: false
+hive> use demo;
+OK
+Time taken: 1.431 seconds
+hive> select gender, sum(ratings) from user_info where profession = 'engineer' group by gender ;
+FAILED: SemanticException [Error 10004]: Line 1:19 Invalid table alias or column reference 'ratings': (possible column names are: id, age, gender, profession, reviews)
+hive> select gender, sum(reviews) from user_info where profession = 'engineer' group by gender ;
+Query ID = hadoop_20220327215302_290cb39d-8d8f-43ba-8176-cb79c2935535
+Total jobs = 1
+Launching Job 1 out of 1
+Status: Running (Executing on YARN cluster with App id application_1648410869414_0016)
+
+----------------------------------------------------------------------------------------------
+        VERTICES      MODE        STATUS  TOTAL  COMPLETED  RUNNING  PENDING  FAILED  KILLED
+----------------------------------------------------------------------------------------------
+Map 1 .......... container     SUCCEEDED      1          1        0        0       0       0
+Reducer 2 ...... container     SUCCEEDED      2          2        0        0       0       0
+----------------------------------------------------------------------------------------------
+VERTICES: 02/02  [==========================>>] 100%  ELAPSED TIME: 6.93 s
+----------------------------------------------------------------------------------------------
+OK
+F   81982
+M   3077991
+Time taken: 11.092 seconds, Fetched: 2 row(s)
+hive> select gender, sum(ratings) from dyn_part_user_info where profession = 'engineer' group by gender ;
+Query ID = hadoop_20220327215340_b2f7ae1e-335f-4232-8147-a7fd7c66c033
+Total jobs = 1
+Launching Job 1 out of 1
+Status: Running (Executing on YARN cluster with App id application_1648410869414_0016)
+
+----------------------------------------------------------------------------------------------
+        VERTICES      MODE        STATUS  TOTAL  COMPLETED  RUNNING  PENDING  FAILED  KILLED
+----------------------------------------------------------------------------------------------
+Map 1 .......... container     SUCCEEDED      1          1        0        0       0       0
+Reducer 2 ...... container     SUCCEEDED      2          2        0        0       0       0
+----------------------------------------------------------------------------------------------
+VERTICES: 02/02  [==========================>>] 100%  ELAPSED TIME: 5.18 s
+----------------------------------------------------------------------------------------------
+OK
+F   81982
+M   3077991
+Time taken: 6.637 seconds, Fetched: 2 row(s)
 ```
 
 In the next segment, you will learn about bucketing.

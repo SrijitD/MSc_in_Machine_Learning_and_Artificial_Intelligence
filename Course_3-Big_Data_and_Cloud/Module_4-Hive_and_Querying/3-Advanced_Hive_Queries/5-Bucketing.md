@@ -109,8 +109,6 @@ Found 7 items
 -rwxrwxrwt   1 hadoop hdfsadmingroup        769 2022-03-27 22:08 /user/hive/warehouse/demo.db/buck_user_info/gender=F/000005_0
 -rwxrwxrwt   1 hadoop hdfsadmingroup        782 2022-03-27 22:08 /user/hive/warehouse/demo.db/buck_user_info/gender=F/000006_0
 
-hive> select gender, sum(ratings) as total_ratings from user_info where profession='artist' and age < 35 group by gender;
-FAILED: SemanticException [Error 10004]: Line 1:19 Invalid table alias or column reference 'ratings': (possible column names are: id, age, gender, profession, reviews)
 hive> select gender, sum(reviews) as total_ratings from user_info where profession='artist' and age < 35 group by gender;
 Query ID = hadoop_20220327221152_2a0ce7c0-8afc-4c85-9ea1-59c74bfbb8a5
 Total jobs = 1
