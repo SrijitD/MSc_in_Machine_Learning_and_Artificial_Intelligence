@@ -61,4 +61,4 @@ DataNode 4: block c, block a and block d
 
 - DataNode 2 and DataNode 3
 
-Ans: B. *The client will choose the nearest DataNode while reading the data. If the nearest DataNode is unavailable, then it selects the next nearest DataNode to read the data. In such a case, DataNode 1, which was the nearest DataNode, went down. So, the client will choose DataNode 4 and DataNode 3, which are the next nearest DataNodes for reading blocks a and b, respectively.*
+Ans: C. *The client will choose the nearest DataNode while reading the data. If the nearest DataNode is unavailable, then it selects the next nearest DataNode to read the data. In such a case, DataNode 1, which was the nearest DataNode, went down. So, the client will choose DataNode 4 and DataNode 3, which are the next nearest DataNodes for reading blocks a and b, respectively.*
