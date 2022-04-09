@@ -159,6 +159,8 @@ Qn: Suppose you want to partition the 'Airlines' data using 'Year' as the part
 
 Ans: D. _You are supposed to do the partition on the table based on the year, then apply bucketing on 'DayofWeek' and create the 'airlines_bucketed' table._
 
+Ans: D. *You are supposed to do the partition on the table based on the year, then apply bucketing on 'DayofWeek' and create the 'airlines_bucketed' table.*
+
 Qn: What is the count of the diverted flights that flew on Fridays in the year 2005?
 
 - 3
