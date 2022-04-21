@@ -78,6 +78,11 @@ Content accross the course in different courses and modules are mostly .md and .
     - [Case Study Part I](Course_3-Big_Data_and_Cloud/Case_Study-Data_Warehousing_and_Data_Management/1-Case_Study_Part_I)
     - [Case Study Part II](Course_3-Big_Data_and_Cloud/Case_Study-Data_Warehousing_and_Data_Management/2-Case_Study_Part_II)
     - [E-Commerce Assignment](Course_3-Big_Data_and_Cloud/E_Commerce_Assignment)
+- [Course 4 - Big Data Processing using Apache Spark](Course_4-Big_Data_Processing_using_Apache_Spark)
+  - [Module 1 - Introduction to Spark](Course_4-Big_Data_Processing_using_Apache_Spark/Module_1-Introduction_to_Spark)
+    - [Basics of Spark](Course_4-Big_Data_Processing_using_Apache_Spark/Module_1-Introduction_to_Spark/1-Basics_of_Spark)
+    - [RDD Programming I](Course_4-Big_Data_Processing_using_Apache_Spark/Module_1-Introduction_to_Spark/2-RDD_Programming_I)
+    - [RDD Programming II](Course_4-Big_Data_Processing_using_Apache_Spark/Module_1-Introduction_to_Spark/3-RDD_Programming_II)
 
 - [Docs](Docs)
   - [Amazon Web Services](Docs/AWS)
