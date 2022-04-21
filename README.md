@@ -77,6 +77,7 @@ Content accross the course in different courses and modules are mostly .md and .
   - [Case Study - Data Warehousing and Data Management](Course_3-Big_Data_and_Cloud/Case_Study-Data_Warehousing_and_Data_Management)
     - [Case Study Part I](Course_3-Big_Data_and_Cloud/Case_Study-Data_Warehousing_and_Data_Management/1-Case_Study_Part_I)
     - [Case Study Part II](Course_3-Big_Data_and_Cloud/Case_Study-Data_Warehousing_and_Data_Management/2-Case_Study_Part_II)
+    - [E-Commerce Assignment](Course_3-Big_Data_and_Cloud/E_Commerce_Assignment)
 
 - [Docs](Docs)
   - [Amazon Web Services](Docs/AWS)
