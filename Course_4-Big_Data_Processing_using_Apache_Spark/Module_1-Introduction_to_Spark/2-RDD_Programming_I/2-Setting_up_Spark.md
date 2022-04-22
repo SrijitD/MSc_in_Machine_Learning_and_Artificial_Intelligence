@@ -17,7 +17,7 @@ As part of this session, you will be running queries on RDDs on an EC2 instance.
 
 Note that each step must be processed carefully. If you commit any mistake in the process, you need to remove the instance and start over. Once you have completed all the steps mentioned in the document, your instance will be ready to host the Spark environment.
 
-Download [Spark Installation](Docs/Installation_Guide/Spark_Installation.pdf)
+Download [Spark Installation](Spark_Installation.pdf)
 
 In the next video, Professor Janakiram will walk you through the Spark environment. This will help you get acquainted with the Spark console and the RDD data structure.
 
