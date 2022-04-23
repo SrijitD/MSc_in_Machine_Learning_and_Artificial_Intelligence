@@ -1,0 +1,104 @@
+# Catalyst Optimiser - II
+
+Let's now dig deeper and move on to the next step of optimisation performed by the Catalyst Optimiser.
+
+## Physical Plan
+
+After the logical plan is created, the process of creating a physical plan begins. Let’s take the query that was optimised in the earlier segment.
+
+![Optimised Logical Plan](https://i.ibb.co/xg1WNBZ/Optimised-Logical-Plan.jpg)
+
+We can optimise this plan further by choosing the right algorithms to perform each task. For example; the join command in the query can be executed in multiple ways; sort-merge join, shuffle-hash join or broadcast join. \[We will not go into the details of joins as it is beyond the  scope of this module. You can read more about  joins [here](https://medium.com/datakaresolutions/optimize-spark-sql-joins-c81b4e3ed7da).] Similarly there are multiple algorithms to read in the data, aggregate columns, and so on.
+
+A physical plan involves laying down specific instructions regarding which algorithm to use in order to execute the optimised logical plan. The choice of the right combination of algorithms for the different steps is based on the cost model. In the next video, you will see what the physical plan for the optimised plan above looks like.
+
+**VIDEO**
+
+As we learnt from the video above, a physical plan highlights the details of the choices of algorithms to be used in a query. Note that this physical plan is selected by the cost based optimiser after comparing different physical plans. For this particular SQL query that we are analysing, the following algorithms are selected for the different steps:
+
+- Read the parquet and JSON files
+
+- A sort-merge join is performed on these files
+
+- The last step involves applying the hash-aggregate function.  
+
+The following diagram depicts a physical plan :
+
+![Catalyst Optimiser Physical Plan](https://i.ibb.co/n1C2w6d/Catalyst-Optimiser-Physical-Plan.jpg))
+
+## Cost Model
+
+The Cost Model is the only step of the catalyst optimiser that is not rule-based. As the name suggests it uses a cost-based optimiser (CBO) for decision making. By default, the CBO is deactivated; you can activate it using the following command:
+
+```python
+spark.conf.set("spark.sql.cbo.enabled","true")
+```
+
+Multiple physical plans are formed from an optimised logical plan. All these physical plans are then fed to this cost model which then performs a cost-based analysis on them. It estimates the computational effort for each operation based on the number of rows of each table and the size of the output and then selects the most optimised plan.
+
+Keep in mind that these selections are based on estimations, not actual calculations. So there is always room for improvement.
+
+## Catalyst Optimiser Architecture
+
+Now that you have learnt about the various parts of the catalyst optimiser, let's take a look at the entire process in a bigger picture by studying the architecture diagram of the optimiser.
+
+**VIDEO**
+
+The diagram below shows the catalyst optimiser architecture. You learnt about steps in the catalyst optimiser in detail in the topics covered above. Now let's take a look at some interesting points related to the catalyst optimiser:
+
+![Catalyst Optimizer](https://i.ibb.co/2Z0ksyf/Catalyst-Optimizer.jpg)
+
+- **The Analysis Phase:** From the input query, a logical plan is created; in this plan, the column names and column data types are not yet checked; they are directly taken from the query. This state of unverified column names and data types is called an unresolved logical plan. The analyser resolves this plan with the help of the Catalogue. The Catalogue has all the information on the databases, tables, columns, temporary views etc. Consider a simple query “select yearly_sal/12 from salary_table”. The analyser checks the following:
+    1. Whether the column is present in the catalogue. (A column named yearly_sal needs to exist)
+
+    2. Whether the column is under the same table as specified (here, under the table salary_table)
+
+    3. Whether the data type of the column will allow the specified operation to be carried out. (The column datatype needs to be an integer, float)
+
+- All the steps involved in this process are purely rule-based except the cost model, which is cost-based.  
+
+- In the diagram above, you can see that the optimisation plan is broadly divided into four parts:
+
+    1. **Analysis**: This step involves analysing the query and creating a logical plan using various relation names from the catalogue and mapping the attributes where needed.
+
+    2. **Logical optimisation:** As mentioned earlier, this is purely a rule-based approach, and hence, it creates a rule-based optimised logical plan.
+
+    3. **Physical planning**: This step picks up the logical plan and creates one or more physical plans which are then sent to the cost model, where a cost-based analysis is carried out.
+
+    4. **Code generation**: As the name suggests, this phase focuses on the creation of RDD-level code. The bytecodes that are generated by the optimiser are faster and a little different from the Java bytecodes created by RDDs. Another advantage here is that bytecodes can also be executed across different machines directly, thereby making the Spark cluster implementation even more efficient.
+
+Now that you have a good understanding of the Catalyst Optimiser, test your knowledge by solving the following questions:
+
+#### Catalyst Optimiser
+
+Qn: Which of the following is not a part of Catalyst Optimiser?
+
+- Logical plan
+
+- Execution of the optimised plan
+
+- Physical plan
+
+- Generation of final code
+
+Ans: B. *The catalyst optimiser includes the following main parts: a query plan, logical plan, physical plan, and an optimised plan, and a cost model. Execution is not a part of the optimiser.*
+
+Qn: State whether the following statement is true or false:
+
+"Catalog in an optimiser contains data sources that are used to resolve the attributes."
+
+- True
+
+- False
+
+Ans: A. *Catalog and Catalyst rules together resolve the unresolved attributes using the data sources available.*
+
+You have learnt the working of the catalyst optimiser, now let's see how it actually works on a code.
+
+## Additional Reading
+
+1. To read more about Spark SQL Optimisation, refer the [link here](http://data-flair.training/blogs/spark-sql-optimization/).
+
+2. You can read more about Catalyst Optimiser at [this link](http://databricks.com/glossary/catalyst-optimizer)
+
+3. To understand more about cost-based optimiser, refer the [following link](http://www.youtube.com/watch?v=qS_aS99TjCM&feature=youtu.be)
