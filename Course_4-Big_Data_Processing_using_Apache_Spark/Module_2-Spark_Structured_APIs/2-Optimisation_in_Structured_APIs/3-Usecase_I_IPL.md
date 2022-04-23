@@ -1,6 +1,6 @@
 # Usecase I - IPL
 
-In the previous segments, you understood the internal working of the optimiser in SparkSQL, and you are already well aware of dataframes. Let's now go through a use case for a better understanding of the entire Spark SQL process along with optimiser. Once you understand the use case, the next step will be to visualise the entire process using the Spark UI and then solve the use case in the upcoming segments. 
+In the previous segments, you understood the internal working of the optimiser in SparkSQL, and you are already well aware of dataframes. Let's now go through a use case for a better understanding of the entire Spark SQL process along with optimiser. Once you understand the use case, the next step will be to visualise the entire process using the Spark UI and then solve the use case in the upcoming segments.
 
 Let's now begin by understanding the use case in the following video.
 
@@ -12,13 +12,11 @@ In the dataset, mentioned in the video above, we have a few tables. One table ha
 
 **The task at hand:**
 
-1.  Find the total number of sixes hit in the Wankhede stadium.
-    
-2.  Find the venue at which the maximum number of runs were scored.  
-     
-    
+1. Find the total number of sixes hit in the Wankhede stadium.
 
-Now, let’s look at the data preparation steps that Sajan performed: 
+2. Find the venue at which the maximum number of runs were scored.  
+
+Now, let’s look at the data preparation steps that Sajan performed:
 
 ```python
 #read the csv file for number of runs scored

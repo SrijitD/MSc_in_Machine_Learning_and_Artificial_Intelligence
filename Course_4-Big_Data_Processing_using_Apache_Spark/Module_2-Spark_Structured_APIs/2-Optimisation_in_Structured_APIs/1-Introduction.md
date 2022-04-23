@@ -4,8 +4,7 @@ In the previous session, you were introduced to the concept of structured APIs i
 
 ## In this session
 
-We will discuss the concepts of dataframes, which will give you a good understanding of optimisation in structured APIs.  You will also be introduced to the workings and architecture of catalyst optimiser, which is the internal optimiser forming one of the major differences between RDDs, and structured data abstractions. 
-
+We will discuss the concepts of dataframes, which will give you a good understanding of optimisation in structured APIs.  You will also be introduced to the workings and architecture of catalyst optimiser, which is the internal optimiser forming one of the major differences between RDDs, and structured data abstractions.
 
 **Subject matter expert**
 

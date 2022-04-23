@@ -6,7 +6,6 @@ You solved the IPL problem in the previous segments. You will be using the same 
 
 Download [IPL dataset](IPL_Dataset.zip)
 
-
 #### Optimization in SparkSQL
 
 Qn: Who was the ‘Man of the Match’ the maximum number of times?
@@ -32,7 +31,6 @@ abcd.orderBy(abcd['count'].desc()).show()
 
 *The player whose name appears at the top of the list is the player with the maximum number of 'Man of the Match' awards. In this case, the player is CH Gayle.*
 
-
 Qn: Find the total runs scored by the player who won most of the Man of the Match awards. (found in the earlier question) Note: Do not count the extras
 
 - 3606
@@ -41,9 +39,9 @@ Qn: Find the total runs scored by the player who won most of the Man of the Ma
 
 - 4804
 
-- 4891 
+- 4891
 
-Ans: A. *You need to find the runs scored by CH Gayle for that join player and ball_by_ball tables. The following code will help you.* 
+Ans: A. *You need to find the runs scored by CH Gayle for that join player and ball_by_ball tables. The following code will help you.*
 
 ```python
 df_ball = spark.read.csv("Ball_By_Ball.csv", inferSchema=True, header = True)
@@ -62,7 +60,6 @@ from pyspark.sql.functions import sum
 
 df.select(sum(df.Runs_Scored)).show()
 ```
-
 
 #### Querying in SparkSQL
 
@@ -100,7 +97,6 @@ final_df = df.groupby("Player_Name").sum('Runs_Scored')
 
 final_df.orderBy(final_df['sum(Runs_Scored)'].desc()).show()
 ```
-
 
 #### Optimisation in SparkSQL
 
