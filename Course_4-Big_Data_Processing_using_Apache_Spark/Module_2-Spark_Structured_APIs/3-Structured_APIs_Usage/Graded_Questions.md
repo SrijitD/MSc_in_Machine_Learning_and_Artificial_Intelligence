@@ -6,8 +6,6 @@ For question 3, 4 and 5 use the following dataset.
 
 Download [Data file for Q3 Q4 and Q5](employees_1.json)
 
-
-
 #### Read command
 
 Qn: The following read command was used to read data and it was executed successfully.  
@@ -26,7 +24,7 @@ What should be the file format here?
 
 Ans: D. _Yes, if no format is specified spark by default considers parquet_
 
-#### 
+####
 
 #### Reading data
 
@@ -46,13 +44,11 @@ State whether the above is True or False.
 
 Ans: B. _This session will not be able to execute HIVE queries as it has not enabled HIVE._
 
-
-
 #### Reading data
 
 Qn: Read the JSON file attached on this page, into your spark application and answer the following question.
 
-The data type of the column salary and DOB is ___and____ respectively. Fill in the blanks with the correct options.
+The data type of the column salary and DOB is _**and**__ respectively. Fill in the blanks with the correct options.
 
 - integer, string
 
@@ -73,8 +69,6 @@ _Then you need to print the schema of the data frame to check the data types. Us
 ```python
 df.printSchema()
 ```
-
-
 
 #### Casting Data Types
 
@@ -98,13 +92,11 @@ More than one option can be correct.
   df = df.withColumn('DOB_date',df["DOB"].cast(Date()))
   ```
 
-Ans: B & C. *This will add a column with salaray as integer and  DOB as a date. But do be careful this works inly when the date is in iso 8601 date format. If the format does not match then the string date casting will return null values.*
-
-
+Ans: B & C. _This will add a column with salaray as integer and  DOB as a date. But do be careful this works inly when the date is in iso 8601 date format. If the format does not match then the string date casting will return null values._
 
 #### Write Data
 
-Qn: In the earlier question, you converted the salary and the date columns to the right data types. Now to save the dataframe with only the two corrected columns (salary_int, DOB_date) as a csv file on the EC2 instance, which of the following code will correct? More than one option can be correct. 
+Qn: In the earlier question, you converted the salary and the date columns to the right data types. Now to save the dataframe with only the two corrected columns (salary_int, DOB_date) as a csv file on the EC2 instance, which of the following code will correct? More than one option can be correct.
 
 - ```python
   df.write.csv('emplyee_corrected', Header = True)
@@ -122,4 +114,4 @@ Qn: In the earlier question, you converted the salary and the date columns to th
   df.write.option("header", "true").csv('emplyee_corrected.csv')
   ```
 
-Ans: B & C. *This code will write a file to the current directory in the csv format there will be only the selected columns.*
+Ans: B & C. _This code will write a file to the current directory in the csv format there will be only the selected columns._
