@@ -83,6 +83,10 @@ Content accross the course in different courses and modules are mostly .md and .
     - [Basics of Spark](Course_4-Big_Data_Processing_using_Apache_Spark/Module_1-Introduction_to_Spark/1-Basics_of_Spark)
     - [RDD Programming I](Course_4-Big_Data_Processing_using_Apache_Spark/Module_1-Introduction_to_Spark/2-RDD_Programming_I)
     - [RDD Programming II](Course_4-Big_Data_Processing_using_Apache_Spark/Module_1-Introduction_to_Spark/3-RDD_Programming_II)
+  - [Module 2 - Spark Structured APIs](Course_4-Big_Data_Processing_using_Apache_Spark/Module_2-Spark_Structured_APIs)
+    - [Introduction to Structured APIs](Course_4-Big_Data_Processing_using_Apache_Spark/Module_2-Spark_Structured_APIs/1-Introduction_to_Structured_APIs)
+    - [Optimisation in Structured APIs](Course_4-Big_Data_Processing_using_Apache_Spark/Module_2-Spark_Structured_APIs/2-Optimisation_in_Structured_APIs)
+    - [Structured APIs Usage](Course_4-Big_Data_Processing_using_Apache_Spark/Module_2-Spark_Structured_APIs/3-Structured_APIs_Usage)
 
 - [Docs](Docs)
   - [Amazon Web Services](Docs/AWS)
