@@ -10,7 +10,6 @@ The data set for this assessment is quite large. You can download it from the li
 
 Download [Bitcoin Solution Notebook](Bitcoin_Assessment_Solutions.ipynb)
 
-
 **Session 1 - Segment 8**
 
 Download [SQL Assignment Solution](Spark_SQL_assignment.ipynb)

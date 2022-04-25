@@ -6,7 +6,7 @@ You found that there are missing values and null values in our data. As a next s
 
 Generally, the median or mean of the complete column variable serves as a good approximate value. Removing the records often leads to the loss of some valuable information so you may impute those values instead. In this video, you saw two methods for handling missing values.
 
-- In the first method, you remove the records with missing values by using the dropna() method present in Spark. This method drops all the rows that may contain a missing value. 
+- In the first method, you remove the records with missing values by using the dropna() method present in Spark. This method drops all the rows that may contain a missing value.
   
   ```python
   df2 = df1.dropna()
@@ -33,7 +33,7 @@ Qn: Can the Imputer() in Spark only replace missing values with the mean of that
 
 Ans:B. *Imputer() is used for handling missing values while preparing the dataset for machine learning. Imputer() can also replace the missing values with the median of the attributes.*
 
-## Additional Reading:
+## Additional Reading
 
 1. Refer this link to read more about [Imputations in machine learning](https://dzone.com/articles/the-art-of-missing-value-imputations)
 

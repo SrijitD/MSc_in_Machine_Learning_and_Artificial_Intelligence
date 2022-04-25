@@ -5,7 +5,6 @@ In the previous segments, you went through various steps that are performed whil
 **VIDEO**
 
 Instead of executing a transform method at each preparation step, a pipeline clubs all the steps of data cleansing, scaling, normalising etc. in the desired sequence. Creating a pipeline will save you multiple steps and make your code more efficient. Also, once you have designed a pipeline with all the required steps, it can be reused for various datasets without severely altering the nature of the code for a similar dataset.  
- 
 
 A pipeline can be built by declaring the Pipeline object available in Spark ML library. Further, you need to build a PipelineModel by fitting the pipeline object on the data. Unlike the steps involved in previous segments, the PipelineModel will only take one data frame as input and output the final prepared DataFrame.
 
@@ -25,5 +24,5 @@ So far you did different operations such as scaling the dataset, imputing missin
 
 ## Additional Reading
 
-1.  Refer this link to read more about [Pipelines](https://spark.apache.org/docs/latest/ml-pipeline.html) 
-2.   [The elegance of the Spark ML Pipeline](https://blog.insightdatascience.com/spark-pipelines-elegant-yet-powerful-7be93afcdd42)
+1. Refer this link to read more about [Pipelines](https://spark.apache.org/docs/latest/ml-pipeline.html)
+2. [The elegance of the Spark ML Pipeline](https://blog.insightdatascience.com/spark-pipelines-elegant-yet-powerful-7be93afcdd42)

@@ -1,6 +1,6 @@
 # ML Lib Overview
 
-In this segment, you will go through a few data preparation steps that are usually performed before building a machine learning model. This exercise is meant to give you a quick understanding of the MLlib API and also make you comfortable using it. 
+In this segment, you will go through a few data preparation steps that are usually performed before building a machine learning model. This exercise is meant to give you a quick understanding of the MLlib API and also make you comfortable using it.
 
 An **important note** as you move along the course is you will be using **Spark ML library** which is a **dataframe based API**, unlike mllib library which is an RDD based API. Spark Mllib is expected to be removed in the upcoming versions.
 
@@ -20,7 +20,6 @@ The read() method is available through the SparkSession and also supports variou
 
 The columns with garbage values (MPG and HORSEPOWER) were auto inferred to the data type string. You can cast them to type double by using the **.cast()** method. After casting the columns, the entries with garbage values and NA will be converted to null. In the next segment you will learn how to handle this scenario.
 
-
 #### Reading Data
 
 Qn: If don’t you make use of the option "inferschema" or if you set the particular option to be "false". The attributes of the dataframe will automatically casted to which of the following data type?
@@ -35,7 +34,6 @@ Qn: If don’t you make use of the option "inferschema" or if you set the partic
 
 Ans: C. *The option inferschema, infers the schema of the dataframe automatically. On not specifying this option all the attributes in the dataframe take the data type string. You won’t get a compilation error if you don’t make use of .option() methods.*
 
-
 #### Importing Data
 
 Qn: You can read which of the following file formats into a DataFrame using the read() method?
@@ -49,4 +47,3 @@ Qn: You can read which of the following file formats into a DataFrame using the 
 - TextFile
 
 Ans: All of the above. *The read() method can read CSV, Json, parquet and Text file formats into a dataframe.*
-
