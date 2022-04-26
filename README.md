@@ -87,7 +87,7 @@ Content accross the course in different courses and modules are mostly .md and .
     - [Introduction to Structured APIs](Course_4-Big_Data_Processing_using_Apache_Spark/Module_2-Spark_Structured_APIs/1-Introduction_to_Structured_APIs)
     - [Optimisation in Structured APIs](Course_4-Big_Data_Processing_using_Apache_Spark/Module_2-Spark_Structured_APIs/2-Optimisation_in_Structured_APIs)
     - [Structured APIs Usage](Course_4-Big_Data_Processing_using_Apache_Spark/Module_2-Spark_Structured_APIs/3-Structured_APIs_Usage)
-    [Basic EDA using Spark ML library](Course_4-Big_Data_Processing_using_Apache_Spark/Module_2-Spark_Structured_APIs/4-Basic_EDA_using_Spark_ML_library)
+    - [Basic EDA using Spark ML library](Course_4-Big_Data_Processing_using_Apache_Spark/Module_2-Spark_Structured_APIs/4-Basic_EDA_using_Spark_ML_library)
 
 - [Docs](Docs)
   - [Amazon Web Services](Docs/AWS)
