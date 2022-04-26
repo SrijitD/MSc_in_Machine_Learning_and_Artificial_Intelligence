@@ -4,11 +4,11 @@
 
 [Watch INTRO Video](https://www.youtube.com/watch?v=DfAkM0hktH0)
 
-Learn to deploy Machine Learning models using Cloud computing with an M.Sc. Degree from Liverpool John Moores University, and an Advanced Certification from IIT Madras  
+Learn to deploy Machine Learning models using Cloud computing with an M.Sc. Degree from Liverpool John Moores University, and an Advanced Certification from IIT Madras.  
 
 ## Content Formatting
 
-Content accross the course in different courses and modules are mostly .md and .ipynb formats with a few .pdf documents and .sql files for database related modules. Highly recomend to download the entire repo and view content in respective IDE or browser
+Content accross the course in different courses and modules are mostly .md and .ipynb formats with a few .pdf documents and .sql files for database related modules. Highly recomend to download the entire repo and view content in respective IDE or browser.
 
 *PS: This respository is not meant to promote plagarism or be used as an alternative to actually taking up the course. Purpose of this repository is only to be used as a reference for the course. The content of this repository is intended to be used as an additive not a replacement for actual studying or practicing course content. Please use this as content reference only and if interested do enroll through the course. A basic honor system is expected to be maintained everyone.*
 
@@ -95,6 +95,16 @@ Content accross the course in different courses and modules are mostly .md and .
   - [Cheet Sheets](Docs/Cheet_Sheets)
   - [Course Overview](Docs/Course_Overview)
   - [Instalation Guides](Docs/Instalation_Guides)
+
+## Programing Languages and Tools covered
+
+- [python](https://www.python.org/)
+- [TensorFlow](https://www.tensorflow.org/)
+- [MySQL](https://www.mysql.com/)
+- [Apache HIVE](https://hive.apache.org/)
+- [Apache Spark](https://spark.apache.org/)
+- [Amazon Web Services](https://aws.amazon.com/)
+- [Apache Hadoop](https://hadoop.apache.org/)
 
 ## Partner Platforms & Universities
 
