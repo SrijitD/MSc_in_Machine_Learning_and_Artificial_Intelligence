@@ -53,10 +53,10 @@ Support(orange) = 8/10 = 0.8
 
 Qn: What is the final set of one-item sets which qualify against the minimum threshold?
 
-- `{{apple}, {orange}, {banana}, {kiwi}}`
-- `{{apple, orange, banana}}`
-- `{{apple, orange}, {kiwi}}`
-- `{{apple}, {orange}, {banana}}`
+- `{ {apple}, {orange}, {banana}, {kiwi} }`
+- `{ {apple, orange, banana} }`
+- `{ {apple, orange}, {kiwi} }`
+- `{ {apple}, {orange}, {banana} }`
 
 Ans: Calculate the support values of all the items involved, and items with support values greater than 0.5 will be part of the one-item set.  
 
@@ -70,10 +70,10 @@ Since support values of apple, orange and banana are greater than 0.5 they will 
 
 Qn: What is the final set of 3-item sets which qualify against the minimum threshold?  
 
-- `{{apple}, {orange}, {banana}, {kiwi}}`
-- `{{apple, orange, banana}}`
+- `{ {apple}, {orange}, {banana}, {kiwi} }`
+- `{ {apple, orange, banana} }`
 - No such set exists
-- `{{apple}, {orange}, {banana}}`
+- `{ {apple}, {orange}, {banana} }`
 
 Ans: In the previous question, you found that only the items apple, orange and banana qualify against the minimum threshold value. So any three-item sets containing items other than these three wouldn’t qualify against the minimum threshold. If you check the support value for the itemset {orange, apple, banana}, it comes out to be 0.4. This means that there is no three-item set which qualifies against the minimum support criteria.  
 
