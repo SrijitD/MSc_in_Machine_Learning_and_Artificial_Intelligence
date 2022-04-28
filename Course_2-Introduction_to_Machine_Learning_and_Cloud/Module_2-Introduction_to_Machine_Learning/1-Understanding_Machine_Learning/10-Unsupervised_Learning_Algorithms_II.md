@@ -53,10 +53,10 @@ Support(orange) = 8/10 = 0.8
 
 Qn: What is the final set of one-item sets which qualify against the minimum threshold?
 
-- {{apple}, {orange}, {banana}, {kiwi}}
-- {{apple, orange, banana}}
-- {{apple, orange}, {kiwi}}
-- {{apple}, {orange}, {banana}}
+- `{{apple}, {orange}, {banana}, {kiwi}}`
+- `{{apple, orange, banana}}`
+- `{{apple, orange}, {kiwi}}`
+- `{{apple}, {orange}, {banana}}`
 
 Ans: Calculate the support values of all the items involved, and items with support values greater than 0.5 will be part of the one-item set.  
 
@@ -70,31 +70,30 @@ Since support values of apple, orange and banana are greater than 0.5 they will 
 
 Qn: What is the final set of 3-item sets which qualify against the minimum threshold?  
 
-- {{apple}, {orange}, {banana}, {kiwi}}
-- {{apple, orange, banana}}
+- `{{apple}, {orange}, {banana}, {kiwi}}`
+- `{{apple, orange, banana}}`
 - No such set exists
-- {{apple}, {orange}, {banana}}
+- `{{apple}, {orange}, {banana}}`
 
 Ans: In the previous question, you found that only the items apple, orange and banana qualify against the minimum threshold value. So any three-item sets containing items other than these three wouldn’t qualify against the minimum threshold. If you check the support value for the itemset {orange, apple, banana}, it comes out to be 0.4. This means that there is no three-item set which qualifies against the minimum support criteria.  
 
 Qn: What is the confidence of the rule {apple} => {banana}? [round up to one decimal value]?  
 Ans: Confidence denotes the likelihood of occurrence of an event. The confidence of the rule {apple} => {banana} is  
 
-support({apple, banana})/support({apple}) = 0.5/0.8 = 0.6  
+`support({apple, banana})/support({apple}) = 0.5/0.8 = 0.6  `
 
 Qn: Identify the set of final rules generated.  
 
-- {apple} => {orange}, {apple} => {banana}, {orange} => {apple}, {banana} => {apple}
-- {orange} => {apple}, {apple} => {orange}
-- {orange} => {banana}, {apple} => {banana}
-- {apple} => {orange}, {orange} => {banana}, {orange} => {apple}, {banana} => {orange}  
+- `{apple} => {orange}, {apple} => {banana}, {orange} => {apple}, {banana} => {apple}`
+- `{orange} => {apple}, {apple} => {orange}`
+- `{orange} => {banana}, {apple} => {banana}`
+- `{apple} => {orange}, {orange} => {banana}, {orange} => {apple}, {banana} => {orange}  `
 
 Ans: Confidence of a rule {A} => {B} is support(A, B)/support(A).  
 The support values are as follows:  
-{apple} = 0.8, {orange} = 0.8, {banana} = 0.7  
-{apple, orange} = 0.7  
-{orange, banana} = 0.5  
-{apple, banana} = 0.5
+`{apple} = 0.8, {orange} = 0.8, {banana} = 0.7  `
+`{apple, orange} = 0.7  `
+`{orange, banana} = 0.5  `
+`{apple, banana} = 0.5`
 
-If you calculate the confidence values of all the possible rules, only the confidence values of the rules {orange} => {apple} and  
-{apple} => {orange} are above the threshold 0.8.
+If you calculate the confidence values of all the possible rules, only the confidence values of the rules `{orange} => {apple}` and  `{apple} => {orange}` are above the threshold 0.8.
