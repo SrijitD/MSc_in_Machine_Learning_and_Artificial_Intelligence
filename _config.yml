@@ -1,1 +1,6 @@
 theme: jekyll-theme-cayman
+plugins:
+- jekyll-remote-theme
+title: Master of Science in Machine Learning & Artificial Intelligence
+description: 
+Course material for Master of Science in Machine Learning & Artificial Intelligence by UpGrad in collaboration with Indian Institute of Technology, Madras & Liverpool John Moores University.
