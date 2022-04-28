@@ -80,20 +80,20 @@ Ans: In the previous question, you found that only the items apple, orange and b
 Qn: What is the confidence of the rule {apple} => {banana}? [round up to one decimal value]?  
 Ans: Confidence denotes the likelihood of occurrence of an event. The confidence of the rule {apple} => {banana} is  
 
-`support({apple, banana})/support({apple}) = 0.5/0.8 = 0.6  `
+`support({apple, banana})/support({apple}) = 0.5/0.8 = 0.6`
 
 Qn: Identify the set of final rules generated.  
 
 - `{apple} => {orange}, {apple} => {banana}, {orange} => {apple}, {banana} => {apple}`
 - `{orange} => {apple}, {apple} => {orange}`
 - `{orange} => {banana}, {apple} => {banana}`
-- `{apple} => {orange}, {orange} => {banana}, {orange} => {apple}, {banana} => {orange}  `
+- `{apple} => {orange}, {orange} => {banana}, {orange} => {apple}, {banana} => {orange}`
 
 Ans: Confidence of a rule {A} => {B} is support(A, B)/support(A).  
 The support values are as follows:  
-`{apple} = 0.8, {orange} = 0.8, {banana} = 0.7  `
-`{apple, orange} = 0.7  `
-`{orange, banana} = 0.5  `
+`{apple} = 0.8, {orange} = 0.8, {banana} = 0.7`
+`{apple, orange} = 0.7`
+`{orange, banana} = 0.5`
 `{apple, banana} = 0.5`
 
 If you calculate the confidence values of all the possible rules, only the confidence values of the rules `{orange} => {apple}` and  `{apple} => {orange}` are above the threshold 0.8.
