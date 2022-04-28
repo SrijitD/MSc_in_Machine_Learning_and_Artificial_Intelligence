@@ -1,6 +1,11 @@
-theme: jekyll-theme-cayman
-plugins:
-- jekyll-remote-theme
-title: Master of Science in Machine Learning & Artificial Intelligence
-description: 
-Course material for Master of Science in Machine Learning & Artificial Intelligence by UpGrad in collaboration with Indian Institute of Technology, Madras & Liverpool John Moores University.
+# Site Settings
+locale                   : "en-US"
+title                    : "Master of Science in Machine Learning & Artificial Intelligence"
+title_separator          : "-"
+name                     : &name "Tom Mathews"
+description              : &description "personal description"
+url                      : https://mathews-tom.github.io/ # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+baseurl                  : "MSc_in_Machine_Learning_and_Artificial_Intelligence" # the subpath of your site, e.g. "/blog"
+repository               : "Mathews-Tom/MSc_in_Machine_Learning_and_Artificial_Intelligence"
+theme                    : jekyll-theme-cayman
+
