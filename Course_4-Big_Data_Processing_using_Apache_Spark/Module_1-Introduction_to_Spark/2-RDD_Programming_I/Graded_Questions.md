@@ -67,10 +67,10 @@ Qn: What is the average insurance utilised by both female and male patients resp
 Ans: B. *You may have separated the headers in the previous question. Here, you are expected to calculate the group-wise average for Males and Females. As discussed, implementing reduceByKey() directly will not result in a correct answer as average is not a commutative function. So, you can use the groupByKey() function to first club all the values together and then, calculate the sum and count of elements using the map() function.*
 
 ```python
-rdd=file2.map(lambda x:x.split(",")).map(lambda y:(y[1], float(y[6]))).groupByKey()
+rdd=file2.map(lambda x: x.split(",")).map(lambda y: (y[1], float(y[6]))).groupByKey()
 
 #calculate the average as follows:
-rdd.map(lambda x: sum(x[1])/len(x[1])).collect()
+rdd.map(lambda x: sum(x[1]) / len(x[1])).collect()
 ```
 
 Qn: Compute the highest BMI in the given data. Also mention whether the person with the highest BMI is male or female.
@@ -95,7 +95,7 @@ headers_rdd = sc.parallelize([headers])
 file2 = file.subtract(headers_rdd)
 
 #Find the maximum BMI using the following command:
-rdd=file2.map(lambda x:x.split(",")).map(lambda y:(y[1], float(y[2])))
+rdd=file2.map(lambda x: x.split(",")).map(lambda y: (y[1], float(y[2])))
 rdd.max()
 ```
 
@@ -110,6 +110,6 @@ Qn: Using the given data, find out which type of individuals have higher total i
 Ans: B. *It can be computed using map() and reduceByKey() transformations on a paired RDD between the columns - smoker and charges. Also, it is reflected by the data that it is easier for nonsmokers to get their claims cleared by the insurance companies.*
 
 ```python
-rdd2=rdd1.reduceByKey(lambda x:x[0]-x[1])
-rdd2.collect()
+rdd1 = file2.map(lambda x: x.split(",")).map(lambda y: (y[4], float(y[6]))).groupByKey()
+rdd1.map(lambda x: sum(x[1])).collect()
 ```
