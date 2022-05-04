@@ -1,17 +1,16 @@
 # Introduction
 
-In this session, we will implement the case study on Spark Streaming, and you will perform real-time hashtag analysis on Twitter data. 
+In this session, we will implement the case study on Spark Streaming, and you will perform real-time hashtag analysis on Twitter data.
 
 Let’s start with Sajan explaining the problem statement.
 
 **VIDEO**
 
-## In this session:
+## In this session
 
 You will learn how to code in PySpark for Streaming and fetch real-time Twitter data to perform Hashtag analysis.
 
-
-## People you will hear from in this module: 
+## People you will hear from in this module
 
 Subject matter expert  
 **[Sajan Kedia](https://in.linkedin.com/in/sajan-kedia-b06a6821)**  

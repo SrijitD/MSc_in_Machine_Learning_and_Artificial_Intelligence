@@ -30,7 +30,7 @@ This notebook is about Spark operations. In the following video, Sajan will walk
 
 **VIDEO**
 
-You saw that we created the Spark Context and the Spark Streaming Context, which are the same as those you learnt about in the previous modules on Spark. 
+You saw that we created the Spark Context and the Spark Streaming Context, which are the same as those you learnt about in the previous modules on Spark.
 
 Note that while defining the Spark Streaming Context, you need to put the value of the sliding interval, which is 10 seconds in this case. Sliding interval determines at what interval you wish to perform the hashtag analysis.
 
@@ -53,7 +53,6 @@ There are 3 key things to observe here:
 3. The _stream_data_ is the first DStream created. On this, the window operation is applied.
 
 In the code snippet below, you can see that there is a window length of 20 seconds. This means that all the tweets in a window of 20 seconds shall be stored until the analysis is performed for the sliding interval, which we set earlier as 10 seconds. Post that, the memory shall be cleared for the new DStream.  
- 
 
 ```python
 twitter_data = stream_data.window(20)

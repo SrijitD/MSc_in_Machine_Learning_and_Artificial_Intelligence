@@ -1,6 +1,6 @@
 # Fetching Tweets
 
-In the previous segment, you learnt how to import the required libraries, how a tweet looks like in the JSON format and how the tweepy library help in creating a streaming object. 
+In the previous segment, you learnt how to import the required libraries, how a tweet looks like in the JSON format and how the tweepy library help in creating a streaming object.
 
 In the next video, you’ll understand the authentication and socket creation process.
 
@@ -41,7 +41,7 @@ print("Listening on port: %s" % str(port))
 
 In the first line, you are creating a socket object, _s_. A socket object helps in making different system calls. Here, we are going to use the socket object, s to run the Spark streaming job.
 
-`s.bind((host, port))` binds the address ("127.0.0.1", 7777) to the socket, s. 
+`s.bind((host, port))` binds the address ("127.0.0.1", 7777) to the socket, s.
 
 Now, when you execute this,
 
@@ -57,14 +57,14 @@ until the socket _s_ gets connected to the Spark Streaming job, it'll not be 
 
 So, let's summarise the steps involved in this notebook:
 
-1.  You create a _socket_, _s_ to connect to the Spark Streaming job.
-2.  The socket is waiting to accept a connection from the Spark Streaming job.
-3.  When the connection is established, the variable _c_, (which has the destination port, that is the port of the Spark Streaming job) is passed on to _send_twitter_data(c)_.
-4.  This, in turn, triggers the class _TwitterListener()_, which is of the type _StreamListener_.
-5.  Inside _TwitterListener()_, you do the following:
-    1.  Assign _c_ to the _client_socket_.
-    2.  Send the _tweet_text_ received within the tweepy stream, _twitter_stream_data_ to the _client_socket,_ which is _c_.
-6.  Finally, you filter the stream, _twitter_stream_data_ on the word _'corona'._
+1. You create a _socket_, _s_ to connect to the Spark Streaming job.
+2. The socket is waiting to accept a connection from the Spark Streaming job.
+3. When the connection is established, the variable _c_, (which has the destination port, that is the port of the Spark Streaming job) is passed on to _send_twitter_data(c)_.
+4. This, in turn, triggers the class _TwitterListener()_, which is of the type _StreamListener_.
+5. Inside _TwitterListener()_, you do the following:
+    1. Assign _c_ to the _client_socket_.
+    2. Send the _tweet_text_ received within the tweepy stream, _twitter_stream_data_ to the _client_socket,_ which is _c_.
+6. Finally, you filter the stream, _twitter_stream_data_ on the word _'corona'._
 
 **In this way, you are establishing the input for the Spark Streaming job, streaming data from Twitter.**
 
