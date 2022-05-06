@@ -1,3 +1,9 @@
 # Evaluation Rubrics
 
-![Evaluation Rubrics](https://i.ibb.co/W3vKsqW/Evaluation-Rubrics.png)
+| Criteria | Meets Expectations | Does No Meet Expectations |
+| --- | --- | --- |
+| Importing the data to HDFS (5%) | Data is successfully transfered into the Hadoop distributed file system. (You can use any ingestion method taught in the course.) | Data not transfered to HDFS.<br/><br/>Any loss of the original data. |
+| Creating Hive tables (10%) | A table is created with correct schema and data is successfully loaded into the table | The schema is not defined correctly.<br/><br/>Loading data into the files without taking the inut file format into consideration. |
+| Optimization techniques (15%) | Exploring appropriate optimisation techniques such as creating partitioned tables and bucketed tables.<br/><br/>Compared the performance before and after applying optimisation techniqies. (You may show this comparision for only a single query.)<br/><br/>Considering the nature of the questions asked as part of hive analysis creating a final table involving appropriate optimisations. | No optimisation techniques used.<br/><br/>No documentation about performance comparision. |
+| Analysis using Hive queries (60%) | The Queries are syntactically correct.<br/><br/>The results do not contain unnecessary columns and have all the required columns.<br/><br/>The results are displayes in the correct order, whenever mentioned.<br/><br/>The group by and order by cluases and subqueries are used correctly.<br/><br/>UDFs and UDAFs are used appropriately for concise querying. | Queries generate syntax-related erros with incorrect results.<br/><br/>The results contain unnecessary columns or do not have the required ones.<br/><br/>No proper comments in the final submitted report. |
+| Documentation (10&) | All the commands and queries are well documented with the screenshot of the results. | Failing to submit the final document.<br/><br/>No appropriate comments for the hive queries. |
