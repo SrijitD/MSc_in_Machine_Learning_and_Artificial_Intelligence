@@ -30,6 +30,6 @@ Let’s summarise your learnings from this session:
 
 To give a comparison of SQL commands with Hive, you can refer to this [cheat sheet](http://hortonworks.com/wp-content/uploads/2016/05/Hortonworks.CheatSheet.SQLtoHive.pdf) for reference provided by Hortonworks.
 
-Download [Hive SQL Comparison](Docs/Cheet_Sheets/SQL_to_Hive.pdf)
+Download [Hive SQL Comparison](https://github.com/Mathews-Tom/Machine_Learning_and_Artificial_Intelligence_Hub/blob/main/Guides/SQL_to_Hive.pdf)
 
 So, these are the concepts you learnt in this session. In the next session, you will be introduced to advanced Hive querying.
