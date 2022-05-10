@@ -16,15 +16,14 @@ As Sajan mentioned, the main objective of this case study is not to go into the 
 
 You will learn the following:
 
--   Basics of Recommendation system
--   Recommendation system: Collaborative filtering.
--   Introduction to ALS algorithm
--   Matrix factorization in ALS
--   Cost function in ALS
--   ALS Algorithm and Parallelisation
+- Basics of Recommendation system
+- Recommendation system: Collaborative filtering.
+- Introduction to ALS algorithm
+- Matrix factorization in ALS
+- Cost function in ALS
+- ALS Algorithm and Parallelisation
 
-
-## People you will hear from in this module: 
+## People you will hear from in this module
 
 Subject matter expert  
 [Sajan Kedia](http://in.linkedin.com/in/sajan-kedia-b06a6821)  
