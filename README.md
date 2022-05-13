@@ -88,6 +88,11 @@ Content accross the course in different courses and modules are mostly .md and .
     - [Optimisation in Structured APIs](Course_4-Big_Data_Processing_using_Apache_Spark/Module_2-Spark_Structured_APIs/2-Optimisation_in_Structured_APIs)
     - [Structured APIs Usage](Course_4-Big_Data_Processing_using_Apache_Spark/Module_2-Spark_Structured_APIs/3-Structured_APIs_Usage)
     - [Basic EDA using Spark ML library](Course_4-Big_Data_Processing_using_Apache_Spark/Module_2-Spark_Structured_APIs/4-Basic_EDA_using_Spark_ML_library)
+  - [Module 3 - PySpark Implementation Streaming and ALS](Course_4-Big_Data_Processing_using_Apache_Spark/Module_3-PySpark_Implementation_Streaming_and_ALS)
+    - [Spark Streaming](Course_4-Big_Data_Processing_using_Apache_Spark/Module_3-PySpark_Implementation_Streaming_and_ALS/1-Spark_Streaming)
+    - [Twitter Hashtags Analysis](Course_4-Big_Data_Processing_using_Apache_Spark/Module_3-PySpark_Implementation_Streaming_and_ALS/2-Twitter_Hashtags_Analysis)
+    - [Recommendation System](Course_4-Big_Data_Processing_using_Apache_Spark/Module_3-PySpark_Implementation_Streaming_and_ALS/3-Recommendation_System)
+    - [ALS Implementation](Course_4-Big_Data_Processing_using_Apache_Spark/Module_3-PySpark_Implementation_Streaming_and_ALS/4-ALS_Implementation)
 
 - [Docs](Docs)
   - [Amazon Web Services](Docs/AWS)
