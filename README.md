@@ -1,5 +1,11 @@
 # Master of Science in Machine Learning & Artificial Intelligence
 
+[![Visits Badge](https://badges.pufler.dev/visits/Mathews-Tom/MSc_in_Machine_Learning_and_Artificial_Intelligence)](#)
+[![Languages](https://img.shields.io/github/languages/count/Mathews-Tom/MSc_in_Machine_Learning_and_Artificial_Intelligence?style=flat-square
+)](#)
+[![Top Languages](https://img.shields.io/github/languages/top/Mathews-Tom/MSc_in_Machine_Learning_and_Artificial_Intelligence?style=flat-square
+)](#)
+
 [Course](https://www.upgrad.com/us/machine-learning-ms-ljmu-iitm) material for Master of Science in Machine Learning & Artificial Intelligence by UpGrad in collaboration with Indian Institute of Technology, Madras & Liverpool John Moores University.  
 
 [Watch INTRO Video](https://www.youtube.com/watch?v=DfAkM0hktH0)
