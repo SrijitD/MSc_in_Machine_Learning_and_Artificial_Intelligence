@@ -14,10 +14,6 @@ Now, try and answer the following questions based on your learning of structured
 
 **Note:** These questions are **graded.** All the best!
 
-Question 1/4
-
-Mandatory
-
 #### Structured APIs in Spark
 
 Qn: Using the data frame abstraction, calculate the number of ‘Iris_setosa’ species.
