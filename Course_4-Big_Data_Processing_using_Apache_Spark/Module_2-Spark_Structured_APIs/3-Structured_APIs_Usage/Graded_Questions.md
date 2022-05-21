@@ -22,9 +22,7 @@ What should be the file format here?
 
 - parquet
 
-Ans: D. _Yes, if no format is specified spark by default considers parquet_
-
-####
+Ans: D. *Yes, if no format is specified spark by default considers parquet*
 
 #### Reading data
 
