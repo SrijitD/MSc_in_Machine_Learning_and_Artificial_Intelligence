@@ -1,5 +1,5 @@
-Sr. No.,Antecedent,Consequent,Confidence,Association_Rule,Transaction,Expected_Revenue_Increase_Pct,Discount_Pct,Expected_Revenue,Actual_Revenue,Profit
-0,['burgers'],['pancakes'],0.12079510703363913,{burgers} -> {pancakes},"['burgers', 'avocado']",0.05,[1.893770166294366],175.53114916852817,180.0,-4.468850831471826
+Sr. No.,Antecedent,Consequent,Confidence,Association_Rule,Transaction,Expected_Revenue_Increase_Pct,Discount_Pct,Expected_Revenue,Actual_Revenue,Profit_Loss
+0,['burgers'],['frozen vegetables'],0.12079510703363913,{burgers} -> {frozen vegetables},"['burgers', 'avocado']",0.05,[0.8593578905873593],180.3516052735316,180.0,0.35160527353158955
 1,['low fat yogurt'],['frozen vegetables'],0.13240418118466898,{low fat yogurt} -> {frozen vegetables},"['low fat yogurt', 'salmon']",0.05,[0.7840101985066472],75.53997450373338,75.0,0.5399745037333759
 2,['low fat yogurt'],['frozen vegetables'],0.13240418118466898,{low fat yogurt} -> {frozen vegetables},['low fat yogurt'],0.05,[0.7840101985066472],15.539974503733381,15.0,0.5399745037333812
 3,['olive oil'],"['spaghetti', 'mineral water']",0.15587044534412955,"{olive oil} -> {spaghetti, mineral water}",['olive oil'],0.05,"[0.5148944153759563, 1.329195666212241]",181.36867387997194,180.0,1.3686738799719365
