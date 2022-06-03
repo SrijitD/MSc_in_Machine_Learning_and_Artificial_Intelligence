@@ -1,0 +1,16 @@
+Sr. No.,Antecedent,Consequent,Confidence,Association_Rule,Transaction,Expected_Revenue_Increase_Pct,Expected_Revenue,Actual_Revenue,Profit_Loss
+0,['avocado'],['mineral water'],0.348,{avocado} -> {mineral water},"['burgers', 'avocado']",0.05,181.0,180.0,1.0
+1,['salmon'],['mineral water'],0.4012539184952978,{salmon} -> {mineral water},"['low fat yogurt', 'salmon']",0.05,76.0,75.0,1.0
+2,['low fat yogurt'],['mineral water'],0.313588850174216,{low fat yogurt} -> {mineral water},['low fat yogurt'],0.05,16.0,15.0,1.0
+3,['olive oil'],['mineral water'],0.4190283400809717,{olive oil} -> {mineral water},['olive oil'],0.08,181.6,180.0,1.5999999999999943
+4,['salmon'],['mineral water'],0.4012539184952978,{salmon} -> {mineral water},"['turkey', 'salmon']",0.05,171.0,170.0,1.0
+5,['milk'],['mineral water'],0.3703703703703704,{milk} -> {mineral water},"['low fat yogurt', 'milk']",0.05,66.0,65.0,1.0
+6,['green tea'],['mineral water'],0.23511604439959638,{green tea} -> {mineral water},['green tea'],0.0,50.0,50.0,0.0
+7,['salmon'],['mineral water'],0.4012539184952978,{salmon} -> {mineral water},"['shrimp', 'salmon']",0.05,131.0,130.0,1.0
+8,['cooking oil'],['mineral water'],0.3942558746736292,{cooking oil} -> {mineral water},"['french fries', 'cooking oil']",0.05,211.0,210.0,1.0
+9,['avocado'],['mineral water'],0.348,{avocado} -> {mineral water},['avocado'],0.05,91.0,90.0,1.0
+10,['red wine'],['mineral water'],0.38862559241706157,{red wine} -> {mineral water},"['red wine', 'chocolate']",0.05,211.0,210.0,1.0
+11,['milk'],['mineral water'],0.3703703703703704,{milk} -> {mineral water},"['champagne', 'milk']",0.05,281.0,280.0,1.0
+12,['frozen smoothie'],['mineral water'],0.32,{frozen smoothie} -> {mineral water},"['frozen smoothie', 'fresh bread']",0.05,71.0,70.0,1.0
+13,['herb & pepper'],['mineral water'],0.34501347708894875,{herb & pepper} -> {mineral water},"['herb & pepper', 'green tea']",0.05,76.0,75.0,1.0
+14,['burgers'],['eggs'],0.33027522935779813,{burgers} -> {eggs},"['mineral water', 'burgers', 'chocolate']",0.05,143.25,140.0,3.25

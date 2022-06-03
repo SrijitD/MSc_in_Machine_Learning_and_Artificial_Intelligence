@@ -1,0 +1,16 @@
+Sr. No.,Antecedent,Consequent,Confidence,Association_Rule,Transaction,Expected_Revenue_Increase_Pct,Discount_Pct,Expected_Revenue,Actual_Revenue,Profit_Loss
+0,['burgers'],['frozen vegetables'],0.12079510703363913,{burgers} -> {frozen vegetables},"['burgers', 'avocado']",0.05,[0.8593578905873593],180.3516052735316,180.0,0.35160527353158955
+1,['low fat yogurt'],['frozen vegetables'],0.13240418118466898,{low fat yogurt} -> {frozen vegetables},"['low fat yogurt', 'salmon']",0.05,[0.7840101985066472],75.53997450373338,75.0,0.5399745037333759
+2,['low fat yogurt'],['frozen vegetables'],0.13240418118466898,{low fat yogurt} -> {frozen vegetables},['low fat yogurt'],0.05,[0.7840101985066472],15.539974503733381,15.0,0.5399745037333812
+3,['olive oil'],"['spaghetti', 'mineral water']",0.15587044534412955,"{olive oil} -> {spaghetti, mineral water}",['olive oil'],0.05,"[0.5148944153759563, 1.329195666212241]",181.36867387997194,180.0,1.3686738799719365
+4,['turkey'],['burgers'],0.1705756929637527,{turkey} -> {burgers},"['turkey', 'salmon']",0.05,[0.8608663729809102],170.6261013215859,170.0,0.6261013215859066
+5,['milk'],"['eggs', 'mineral water']",0.10082304526748971,"{milk} -> {eggs, mineral water}","['low fat yogurt', 'milk']",0.0,"[0.6861073150898435, 2.0549103619348297]",65.0,65.0,0.0
+6,['green tea'],['cake'],0.10696266397578205,{green tea} -> {cake},['green tea'],0.05,[1.3156104279716563],47.63292179021258,50.0,-2.3670782097874223
+7,['shrimp'],['pancakes'],0.14738805970149252,{shrimp} -> {pancakes},"['shrimp', 'salmon']",0.05,[1.5520807479109788],127.23959626044511,130.0,-2.7604037395548886
+8,['french fries'],['cake'],0.1045241809672387,{french fries} -> {cake},"['french fries', 'cooking oil']",0.0,[1.3463027868572701],210.0,210.0,0.0
+9,['avocado'],['mineral water'],0.348,{avocado} -> {mineral water},['avocado'],0.1,[0.5953514955229569],90.80929700895409,90.0,0.8092970089540898
+10,['chocolate'],['olive oil'],0.1000813669650122,{chocolate} -> {olive oil},"['red wine', 'chocolate']",0.0,[3.2653169668951594],210.0,210.0,0.0
+11,['milk'],"['eggs', 'mineral water']",0.10082304526748971,"{milk} -> {eggs, mineral water}","['champagne', 'milk']",0.0,"[0.6861073150898435, 2.0549103619348297]",280.0,280.0,0.0
+12,['frozen smoothie'],['eggs'],0.17473684210526316,{frozen smoothie} -> {eggs},"['frozen smoothie', 'fresh bread']",0.05,[0.39588347857395273],71.96337869463466,70.0,1.963378694634656
+13,['green tea'],['cake'],0.10696266397578205,{green tea} -> {cake},"['herb & pepper', 'green tea']",0.05,[1.3156104279716563],72.63292179021258,75.0,-2.3670782097874223
+14,['chocolate'],['olive oil'],0.1000813669650122,{chocolate} -> {olive oil},"['mineral water', 'burgers', 'chocolate']",0.0,[3.2653169668951594],140.0,140.0,0.0

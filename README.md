@@ -99,11 +99,10 @@ Content accross the course in different courses and modules are mostly .md and .
     - [Twitter Hashtags Analysis](Course_4-Big_Data_Processing_using_Apache_Spark/Module_3-PySpark_Implementation_Streaming_and_ALS/2-Twitter_Hashtags_Analysis)
     - [Recommendation System](Course_4-Big_Data_Processing_using_Apache_Spark/Module_3-PySpark_Implementation_Streaming_and_ALS/3-Recommendation_System)
     - [ALS Implementation](Course_4-Big_Data_Processing_using_Apache_Spark/Module_3-PySpark_Implementation_Streaming_and_ALS/4-ALS_Implementation)
+  - [Market Basket Analysis Assignment](Course_4-Big_Data_Processing_using_Apache_Spark/Market_Basket_Analysis_Assignment)
 
 - [Docs](Docs)
   - [Amazon Web Services](Docs/AWS)
-  - [Books](Docs/Books)
-  - [Cheet Sheets](Docs/Cheet_Sheets)
   - [Course Overview](Docs/Course_Overview)
   - [Instalation Guides](Docs/Instalation_Guides)
 
