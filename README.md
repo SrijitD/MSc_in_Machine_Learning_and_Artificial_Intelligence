@@ -16,7 +16,7 @@ Learn to deploy Machine Learning models using Cloud computing with an M.Sc. Degr
 
 Content accross the course in different courses and modules are mostly .md and .ipynb formats with a few .pdf documents and .sql files for database related modules. Highly recomend to download the entire repo and view content in respective IDE or browser.
 
-*PS: This respository is not meant to promote plagarism or be used as an alternative to actually taking up the course. Purpose of this repository is only to be used as a reference for the course. The content of this repository is intended to be used as an additive not a replacement for actual studying or practicing course content. Please use this as content reference only and if interested do enroll through the course. A basic honor system is expected to be maintained everyone.*
+*PS: This respository is not meant to promote plagarism or to be used as an alternative to actually taking up the course. Purpose of this repository is only to be used as a reference for the course. The content of this repository is intended to be used as an additive not a replacement for actual studying or practicing course content. Please use this as content reference only and if interested do enroll through the course. A basic honor system is expected to be maintained everyone.*
 
 ## Contents
 
