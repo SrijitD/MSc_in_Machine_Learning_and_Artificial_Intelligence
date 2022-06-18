@@ -132,7 +132,7 @@ Let’s say you have an input file with 12 rows and four columns. Each column co
 
 #### Map Task
 
-Let’s assume that the key here will be the column ID and the value is the sum as computed by the mapper code for each block. So, after the map task for a given block, you will get a column ID and a sum of values (stored in that block) for the column. What will the outcome be after the mapper code finishes execution?
+Qn: Let’s assume that the key here will be the column ID and the value is the sum as computed by the mapper code for each block. So, after the map task for a given block, you will get a column ID and a sum of values (stored in that block) for the column. What will the outcome be after the mapper code finishes execution?
 
 ![Map Task](https://i.ibb.co/whCnFNP/Map-Task-Question.png)
 
