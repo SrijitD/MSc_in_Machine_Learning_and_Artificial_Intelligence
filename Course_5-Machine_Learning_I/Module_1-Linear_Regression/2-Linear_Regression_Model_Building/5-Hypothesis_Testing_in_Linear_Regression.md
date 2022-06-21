@@ -118,4 +118,28 @@ Qn: Suppose that for a linear model, you got β1 as 0.5. Also, the standard er
 
 - 0.4
 
-Ans: 
+Ans: B. *Recall that the t-score for $\beta_1$ is given as $\dfrac{β1}{SE_{\beta_1}}$.*
+
+*Hence, you have: t-score $= \dfrac{0.5}{0.02}=25$
+
+#### Significance of Beta
+
+Qn: From the t-score you got in the previous question, what can you say about the significance of $\beta_1$?
+
+Sample Size = 25
+
+Assume level of significance = 0.05
+
+You can use the t-table [here](http://www.sjsu.edu/faculty/gerstman/StatPrimer/t-table.pdf).
+
+- $\beta_1$ is significant.
+
+- $\beta_1$ is insignificant.
+
+- Can't be said.
+
+Ans: A. *Correct! Recall that for the t distribution, degrees of freedom = sample size - 2 = 23*
+
+*Using the t score computed in the previous problem and the degrees of freedom, the p value is close to 0.02.*  
+
+*Since p value < $\alpha$, we reject $H_0$ and conclude that $\beta_1$ is significant.*
