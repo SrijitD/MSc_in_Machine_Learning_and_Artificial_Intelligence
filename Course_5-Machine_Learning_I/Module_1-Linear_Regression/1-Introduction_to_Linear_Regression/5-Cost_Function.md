@@ -68,7 +68,6 @@ The final equation for y (price) can thus be represented as given below:
 
 ![Image 2](https://i.ibb.co/G5w7Gbk/Image-2.png)
 
-Image 2
 
 What we are interested in finding here is β, just like in the case y = mx, where our objective is to find m, which is the only variable in the equation.
 
@@ -81,7 +80,7 @@ Here again, you consider the cost function which is nothing but the sum of squar
 
 $\hat{\beta}=(X^TX)^{−1}X^TY$
 
-On finding beta using the given values xi, you can find the value of ^yi. Hence,
+On finding beta using the given values xi, you can find the value of $\hat{y_i}$. Hence,
 
 $\hat{y}=X.\hat{\beta}$
 
@@ -152,4 +151,4 @@ Ans: B. *The beta cap contains information about the slope and intercept of the 
 > $\hat{y}=X\hat{\beta}=\begin{bmatrix}6.5\\7\\7.5\end{bmatrix},\ (y-\hat{y})=\begin{bmatrix}-1.5\\3\\-1.5\end{bmatrix},\ SSE = 1.5^2 + 3^2 + 1.5^2 = 13.5 = 27/2$
 
 
-Now, that you have manually estimated the coefficient vector, **^β** by doing the matrix calculations, let's try to do the same in the next segment using Numpy.
+Now, that you have manually estimated the coefficient vector, **$\hat{\beta}$ by doing the matrix calculations, let's try to do the same in the next segment using Numpy.
