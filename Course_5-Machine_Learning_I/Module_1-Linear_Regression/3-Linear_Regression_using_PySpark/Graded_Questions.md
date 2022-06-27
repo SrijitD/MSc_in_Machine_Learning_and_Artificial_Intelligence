@@ -60,7 +60,7 @@ Qn: As mentioned in the notebook, what is the r2 score of the model built on 'MP
 
 - 0.79
 
-Ans: B. *Refer to the code here. Hence, scaling does not affect the overall model performance but helps in better interpretation.*
+Ans: C. *Refer to the code here. Hence, scaling does not affect the overall model performance but helps in better interpretation.*
 
 ```python
 #Initialize a new dataframe
