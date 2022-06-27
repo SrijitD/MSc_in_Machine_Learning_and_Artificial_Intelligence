@@ -67,9 +67,49 @@ Here, the x-axis represents the number of successes, and the y-axis represents t
 
 ![Bernoulli vs Binomial Distribution Q2 3](https://i.ibb.co/YdV0x8S/Bernoulli-vs-Binomial-Distribution-Q2-3.png)
 
-n; Image A
+- n; Image A
 
-n +1 ; Image B
+- n +1; Image B
+
+Ans: B. *For n trials, the possible number of outputs will be n + 1, with the probability distribution as shown in the graph.*
+
+*Individual values can be calculated by using the formula $P=\binom{n}{k}p^k*(1−p)^{(n−k)}$,*
+
+*where, 
+			n = total number of trails
+			k = number of successes 
+			p = is the probability of success in a single trial. *
+
+*Now, success in this experiment is defined as getting heads. If a coin is tossed 4 times, the possible number of success are 0 heads, 1 head, 2 heads, 3 heads and 4 heads.*
+
+Probability of 0 heads: $P=\binom{4}{0}0.5^0×(1−0.5)^{(4−0)}=1×1×0.5^4=0.0625$
+
+Probability of 1 head: $P=\binom{4}{1}0.5^1×(1−0.5)^{(4−1)}=4×0.5×0.5^3=0.25$
+
+Probability of 2 heads: $P=\binom{4}{2}0.5^2×(1−0.5)^{(4−2)}=6×0.5^2×0.5^2=0.375$
+
+Probability of 3 head: $P=\binom{4}{3}0.5^3×(1−0.5)^{(4−3)}=4×0.5^3×0.5=0.25$
+
+Probability of 4 heads: $P=\binom{4}{4}0.5^0×(1−0.5)^{(4−4)}=1×0.5^4×1=0.0625$
+
+#### Binomial Distribution
+
+Qn: Which of the following statements is true about a binomial distribution?  
+(Note: More than one option may be correct.)
+
+- A binomial distribution is used to model results for multiple independent Bernoulli processes.
+
+- When the number of trials is one, the binomial and Bernoulli distributions become the same.
+
+- A binomial distribution can also model multiple experiments with more than two outputs.
+
+- A binomial distribution can also model multiple experiments with continuous outputs.
+
+Ans: A & B.
+
+- *Multiple trials with binary outputs are modelled with a binomial distribution.*
+
+- *Put the value n = 1 in the binomial distribution.*
 
 Now, let’s collate the concepts that you have learnt so far in this session:
 
