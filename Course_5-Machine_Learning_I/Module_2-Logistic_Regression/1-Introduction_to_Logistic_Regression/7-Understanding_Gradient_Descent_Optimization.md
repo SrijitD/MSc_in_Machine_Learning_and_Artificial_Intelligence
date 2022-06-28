@@ -101,5 +101,49 @@ Qn: Consider the minimisation of the function $L(w_1,w_2)=w^2_1+w^2_2$. You per
 
 - (3.2,−3.84)
 
-Ans: 
+Ans: A. 
+
+$w_2=w_1−\alpha\dfrac{\delta{L}}{\delta{w}}$
+
+$W_{2,x}=4−(0.1)*(8)=3.2$
+
+$W_{2,y}=(−3.2)−(0.1)*(−6.4)=−2.56$
+
+So $W_2=(3.2,−2.56)$
+
+#### Gradient of Loss Function
+
+Qn: Consider an $k$-dimensional setting where the loss function $L$ depends on $k$ parameters. Choose all the correct statements from those given below about the gradient of the loss function with respect to the model parameters. (Note: More than one option may be correct.)
+
+- The gradient is a $k$-dimensional vector.
+
+- The gradient vector is a scalar.
+
+- The gradient gives the direction in which the loss decreases the most rapidly.
+
+- The gradient gives the direction in which the loss increases the most rapidly.
+
+Ans: A & D. *The gradient vector will have the same dimension as the weights. The gradient vector is the direction in which the loss value increases the most rapidly.*
+
+#### Gradient of a Loss With Respect to Multiple Variables
+
+Qn: Suppose a layer in your machine learning model has a large number of weights, k weights, denoted by the variable w. In some iteration of the algorithm, the gradient is computed as follows:
+$$\dfrac{\delta{L}}{\delta{w}}=\begin{bmatrix}\dfrac{\delta{L}}{\delta{w_1}}\\\dfrac{\delta{L}}{\delta{w_2}}\\...\\\dfrac{\delta{L}}{\delta{w_j}}\\\dfrac{\delta{L}}{\delta{w_{j+1}}}\\\dfrac{\delta{L}}{\delta{w_{j+2}}}\\...\\\dfrac{\delta{L}}{\delta{w_k}}\end{bmatrix}=\begin{bmatrix}0.45\\-0.30\\...\\\dfrac{\delta{L}}{\delta{w_j}}\\0.20\\0.00\\...\\\dfrac{\delta{L}}{\delta{w_k}}\end{bmatrix}$$
+Imagine a $k$-dimensional space whose each dimension (axis) corresponds to one weight of the model. Choose all the correct statements from those given below.  
+(Note: More than one option may be correct.)
+
+- In the next iteration, the algorithm should move in the direction of the decreasing $w_1$.
+
+- In the next iteration, the algorithm should move in the direction of the increasing $w_1$.
+
+- In the next iteration, the algorithm should move towards the increasing $w_2$.
+
+- In the next iteration, the algorithm will take a larger step along the dimension $w_1$ than $w_2$.
+
+- In the next iteration, the algorithm will take a larger step along the dimension $w_2$ than $w_1$.
+
+- Changing $w_{j+2}$ slightly does not significantly affect the value of the current loss.
+
+Ans: A, C, D & F. *The loss with respect to $w$ increases if $\dfrac{\delta{L}}{\delta{w}}$ is positive (and vice versa). If it is zero, it means that the loss does not depend (locally) on that variable. Also, the magnitude of the gradient defines how large a step the algorithm takes along that variable.*
+
 Now that you have a good understanding of the gradient descent optimization process to minimize a particular loss/cost function, in the next segment, you will learn how to minimise the loss function of the logistic regression model, the log loss function.
