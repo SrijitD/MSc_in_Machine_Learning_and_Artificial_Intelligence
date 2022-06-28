@@ -100,7 +100,7 @@ Qn: Identify the columns that can be part of my varlist. \[More than option can 
 
 - bathrooms
 
-Ans: A, B, C. *My varlist should have columns with values as 'Yes' or 'No'. You need to define the varlist as:*
+Ans: A, B & C. *My varlist should have columns with values as 'Yes' or 'No'. You need to define the varlist as:*
 
 ```python
 varlist =  ['mainroad', 'guestroom', 'basement', 'hotwaterheating', 'airconditioning', 'prefarea']
