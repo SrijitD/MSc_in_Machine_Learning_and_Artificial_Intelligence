@@ -1,6 +1,7 @@
 # Master of Science in Machine Learning & Artificial Intelligence
 
-[![Visits Badge](https://badges.pufler.dev/visits/Mathews-Tom/MSc_in_Machine_Learning_and_Artificial_Intelligence)](#)
+![VisitorsBadge](https://visitor-badge-reloaded.herokuapp.com/badge?page_id=MSc_in_Machine_Learning_and_Artificial_Intelligence&color=55acb7&style=for-the-badge&logo=Github)    
+
 [![Languages](https://img.shields.io/github/languages/count/Mathews-Tom/MSc_in_Machine_Learning_and_Artificial_Intelligence?style=flat-square
 )](#)
 [![Top Languages](https://img.shields.io/github/languages/top/Mathews-Tom/MSc_in_Machine_Learning_and_Artificial_Intelligence?style=flat-square
@@ -100,7 +101,16 @@ Content accross the course in different courses and modules are mostly .md and .
     - [Recommendation System](Course_4-Big_Data_Processing_using_Apache_Spark/Module_3-PySpark_Implementation_Streaming_and_ALS/3-Recommendation_System)
     - [ALS Implementation](Course_4-Big_Data_Processing_using_Apache_Spark/Module_3-PySpark_Implementation_Streaming_and_ALS/4-ALS_Implementation)
   - [Market Basket Analysis Assignment](Course_4-Big_Data_Processing_using_Apache_Spark/Market_Basket_Analysis_Assignment)
-
+- [Course 5 - Machine Learning I](Course_5-Machine_Learning_I)
+  - [Module 1 - Linear Regression](Course_5-Machine_Learning_I/Module_1-Linear_Regression)
+    - [Introduction to Linear Regression](Course_5-Machine_Learning_I/Module_1-Linear_Regression/1-Introduction_to_Linear_Regression)
+    - [Linear Regression Model Building](Course_5-Machine_Learning_I/Module_1-Linear_Regression/2-Linear_Regression_Model_Building)
+    - [Linear Regression using PySpark](Course_5-Machine_Learning_I/Module_1-Linear_Regression/3-Linear_Regression_using_PySpark)
+    - [Linear Regression Case Study](Course_5-Machine_Learning_I/Module_1-Linear_Regression/4-Linear_Regression_Case_Study)
+    - [Industry Relevance of Linear Regression](Course_5-Machine_Learning_I/Module_1-Linear_Regression/5-Industry_Relevance_of_Linear_Regression)
+  - [Module 2 - Logistic Regression](Course_5-Machine_Learning_I/Module_2-Logistic_Regression)
+    - [1 Introduction to Logistic Regression](Course_5-Machine_Learning_I/Module_2-Logistic_Regression1-Introduction_to_Logistic_Regression)
+    - [2 Logistic Regression Model Building with Python](Course_5-Machine_Learning_I/Module_2-Logistic_Regression2-Logistic_Regression_Model_Building_with_Python)
 - [Docs](Docs)
   - [Amazon Web Services](Docs/AWS)
   - [Course Overview](Docs/Course_Overview)
