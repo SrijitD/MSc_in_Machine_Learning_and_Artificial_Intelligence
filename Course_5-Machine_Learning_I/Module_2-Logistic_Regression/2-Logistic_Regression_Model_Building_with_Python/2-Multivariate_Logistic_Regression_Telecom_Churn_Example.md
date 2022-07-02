@@ -17,19 +17,19 @@ Based on all this past information, you want to build a model that will predict 
 
 You can download the relevant data sets here.
 
-Download [Churn Data](churn_data.csv)
+Download [Churn Data](../churn_data.csv)
 
-Download [Internet Data](internet_data.csv)
+Download [Internet Data](../internet_data.csv)
 
-Download [Customer Data](customer_data.csv)
+Download [Customer Data](../customer_data.csv)
 
 Also, here is the data dictionary.
 
-Download [Telecom Churn Data Dictionary](Telecom_Churn_Data_Dictionary.csv)
+Download [Telecom Churn Data Dictionary](../Telecom_Churn_Data_Dictionary.csv)
 
 You can also download the code file and follow along. 
 
-Download [Logistic Regression in Python - Telecom Churn Case Study](Logistic_Regression_Telecom_Churn_Case_Study.ipynb)
+Download [Logistic Regression in Python - Telecom Churn Case Study](../Logistic_Regression_Telecom_Churn_Case_Study.ipynb)
 
 So, here is what the data frame churn_data looks like.
 
