@@ -125,7 +125,7 @@ Qn: Consider a function $p(y|x,w) = g(x,w)$. $g(x)$ is the sigmoid function. If
 
 - -1 to 1
 
-Ans: B. *The sigmoid function is always between 0 and 1 but does not include 1 or 0.*
+Ans: C. *The sigmoid function is always between 0 and 1 but does not include 1 or 0.*
 
 #### Evaluation Metrics
 
@@ -139,6 +139,6 @@ Qn: A logistic regression model is used to classify 1000 data points into classe
 
 - 300
 
-Ans: Use prevalence to find the total number of data points that actually belong to class A (Positives).
+Ans: D. *Use prevalence to find the total number of data points that actually belong to class A (Positives).*
 $$prevalence=\frac{TP+FN}{TP+FN+FP+TN}$$$$0.5=\frac{TP+FN}{1000}$$$TP+FN=500$. Now use the total number of data points in class A to find the true positives(Correctly predicted as class A). 
 $$Recall=\frac{TP}{TP+FN}$$$$0.6=\frac{TP}{500}$$$$TP=300$$
