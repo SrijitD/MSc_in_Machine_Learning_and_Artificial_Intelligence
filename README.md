@@ -1,10 +1,10 @@
 # Master of Science in Machine Learning & Artificial Intelligence
 
-![VisitorsBadge](https://visitor-badge-reloaded.herokuapp.com/badge?page_id=MSc_in_Machine_Learning_and_Artificial_Intelligence&color=55acb7&style=for-the-badge&logo=Github)    
+![VisitorsBadge](https://visitor-badge-reloaded.herokuapp.com/badge?page_id=MSc-in-Machine-Learning-and-Artificial-Intelligence&color=55acb7&style=for-the-badge&logo=Github)    
 
-[![Languages](https://img.shields.io/github/languages/count/Mathews-Tom/MSc_in_Machine_Learning_and_Artificial_Intelligence?style=flat-square
+[![Languages](https://img.shields.io/github/languages/count/Mathews-Tom/MSc-in-Machine-Learning-and-Artificial-Intelligence?style=flat-square
 )](#)
-[![Top Languages](https://img.shields.io/github/languages/top/Mathews-Tom/MSc_in_Machine_Learning_and_Artificial_Intelligence?style=flat-square
+[![Top Languages](https://img.shields.io/github/languages/top/Mathews-Tom/MSc-in-Machine-Learning-and-Artificial-Intelligence?style=flat-square
 )](#)
 
 [Course](https://www.upgrad.com/us/machine-learning-ms-ljmu-iitm) material for Master of Science in Machine Learning & Artificial Intelligence by UpGrad in collaboration with Indian Institute of Technology, Madras & Liverpool John Moores University.  
@@ -110,8 +110,9 @@ Content accross the course in different courses and modules are mostly .md and .
     - [Industry Relevance of Linear Regression](Course_5-Machine_Learning_I/Module_1-Linear_Regression/5-Industry_Relevance_of_Linear_Regression)
   - [Module 2 - Logistic Regression](Course_5-Machine_Learning_I/Module_2-Logistic_Regression)
     - [Introduction to Logistic Regression](Course_5-Machine_Learning_I/Module_2-Logistic_Regression/1-Introduction_to_Logistic_Regression)
-    - [Logistic Regression Model Building with Python](Course_5-Machine_Learning_I/Module_2-Logistic_Regression/2-Logistic_Regression_Model_Building_with_Python)
-    - [Logistic Regression Model Evaluation with Python](Course_5-Machine_Learning_I/Module_2-Logistic_Regression/3-Logistic_Regression_Model_Evaluation_with_Python)
+    - [Logistic Regression - Model Building with Python](Course_5-Machine_Learning_I/Module_2-Logistic_Regression/2-Logistic_Regression_Model_Building_with_Python)
+    - [Logistic Regression - Model Evaluation with Python](Course_5-Machine_Learning_I/Module_2-Logistic_Regression/3-Logistic_Regression_Model_Evaluation_with_Python)
+    - [Logistic Regression - Model Building with PySpark](Course_5-Machine_Learning_I/Module_2-Logistic_Regression/4-Logistic_Regression_Model_Building_with_PySpark)
 - [Docs](Docs)
   - [Amazon Web Services](Docs/AWS)
   - [Course Overview](Docs/Course_Overview)
