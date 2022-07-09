@@ -113,6 +113,7 @@ Content accross the course in different courses and modules are mostly .md and .
     - [Logistic Regression - Model Building with Python](Course_5-Machine_Learning_I/Module_2-Logistic_Regression/2-Logistic_Regression_Model_Building_with_Python)
     - [Logistic Regression - Model Evaluation with Python](Course_5-Machine_Learning_I/Module_2-Logistic_Regression/3-Logistic_Regression_Model_Evaluation_with_Python)
     - [Logistic Regression - Model Building with PySpark](Course_5-Machine_Learning_I/Module_2-Logistic_Regression/4-Logistic_Regression_Model_Building_with_PySpark)
+    - [Bias-Variance Tradeoff and Regularization](Course_5-Machine_Learning_I/Module_2-Logistic_Regression/5-Bias_Variance_Tradeoff_and_Regularization)
 - [Docs](Docs)
   - [Amazon Web Services](Docs/AWS)
   - [Course Overview](Docs/Course_Overview)
